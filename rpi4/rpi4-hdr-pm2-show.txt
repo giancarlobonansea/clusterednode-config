@@ -1,0 +1,42 @@
+ Describing process with id 3 - name clusteredHDRnode 
+┌───────────────────┬──────────────────────────────────────────────────┐
+│ status            │ online                                           │
+│ name              │ clusteredHDRnode                                 │
+│ restarts          │ 0                                                │
+│ uptime            │ 3h                                               │
+│ script path       │ /home/pi/clusterednode-hdrhist/current/hdrsrv.js │
+│ script args       │ N/A                                              │
+│ error log path    │ /home/pi/.pm2/logs/clusteredHDRnode-error-3.log  │
+│ out log path      │ /home/pi/.pm2/logs/clusteredHDRnode-out-3.log    │
+│ pid path          │ /home/pi/.pm2/pids/clusteredHDRnode-3.pid        │
+│ interpreter       │ node                                             │
+│ interpreter args  │ --expose-gc                                      │
+│ script id         │ 3                                                │
+│ exec cwd          │ /home/pi/clusterednode-hdrhist/current           │
+│ exec mode         │ cluster_mode                                     │
+│ node.js version   │ 6.2.1                                            │
+│ watch & reload    │ ✔                                                │
+│ unstable restarts │ 0                                                │
+│ created at        │ 2016-06-22T11:41:29.303Z                         │
+└───────────────────┴──────────────────────────────────────────────────┘
+ Revision control metadata 
+┌──────────────────┬────────────────────────────────────────────────────────────┐
+│ revision control │ git                                                        │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-hdrhist.git │
+│ repository root  │ /home/pi/clusterednode-hdrhist/current                     │
+│ last update      │ 2016-06-22T20:16:47.219Z                                   │
+│ revision         │ ad811828a5ad4fe429a851f3a92e7a59a4f3e508                   │
+│ comment          │ Updated README.md                                          │
+│ branch           │ master                                                     │
+└──────────────────┴────────────────────────────────────────────────────────────┘
+ Code metrics value 
+┌──────────────────┬─────────┐
+│ Loop delay       │ 0.37ms  │
+│ pmx:http:latency │ 39.53ms │
+│ HTTP             │ 0req/s  │
+│ Network Upload   │ 0 MB/s  │
+│ Network Download │ 0 MB/s  │
+└──────────────────┴─────────┘
+ Add your own code metrics: http://bit.ly/code-metrics
+ Use `pm2 logs clusteredHDRnode (--lines 1000)` to display logs
+ Use `pm2 monit` to monitor CPU and Memory usage clusteredHDRnode
