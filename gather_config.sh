@@ -1,12 +1,30 @@
 #!/usr/bin/env bash
 # RaspberryPi0
-#ssh -p 32002 -T pi@giancarlobonansea.homeip.net "\
-#"
-#scp -r pi@raspberrypi1:~/clusterednode-config/* ./rpi1/
+ssh -p 32002 -T pi@giancarlobonansea.homeip.net "\
+uname -a > /home/pi/clusterednode-config/rpi1-uname.txt && \
+#pm2 list > /home/pi/clusterednode-config/rpi1-api-pm2-list.txt && \
+#pm2 prettylist > /home/pi/clusterednode-config/rpi1-pm2-prettylist.json && \
+sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi1-sysctl.conf && \
+sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi1-stunnel-redis-server.conf && \
+sudo cp /etc/stunnel/private.pem /home/pi/clusterednode-config/rpi1-stunnel-private.pem && \
+sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi1-default-stunnel && \
+sudo cp /etc/init.d/stunnel /home/pi/clusterednode-config/rpi1-initd-stunnel && \
+sudo cp /etc/redis/redis.conf /home/pi/clusterednode-config/rpi1-redis-redis.conf && \
+sudo cp /etc/redis/sentinel.conf /home/pi/clusterednode-config/rpi1-redis-sentinel.conf"
+scp -r pi@raspberrypi1:~/clusterednode-config/* ./rpi1/
 # RaspberryPi1
-#ssh -p 32003 -T pi@giancarlobonansea.homeip.net "\
-#"
-#scp -r pi@raspberrypi1:~/clusterednode-config/* ./rpi1/
+ssh -p 32003 -T pi@giancarlobonansea.homeip.net "\
+uname -a > /home/pi/clusterednode-config/rpi1-uname.txt && \
+#pm2 list > /home/pi/clusterednode-config/rpi1-api-pm2-list.txt && \
+#pm2 prettylist > /home/pi/clusterednode-config/rpi1-pm2-prettylist.json && \
+sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi1-sysctl.conf && \
+sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi1-stunnel-redis-server.conf && \
+sudo cp /etc/stunnel/private.pem /home/pi/clusterednode-config/rpi1-stunnel-private.pem && \
+sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi1-default-stunnel && \
+sudo cp /etc/init.d/stunnel /home/pi/clusterednode-config/rpi1-initd-stunnel && \
+sudo cp /etc/redis/redis.conf /home/pi/clusterednode-config/rpi1-redis-redis.conf && \
+sudo cp /etc/redis/sentinel.conf /home/pi/clusterednode-config/rpi1-redis-sentinel.conf"
+scp -r pi@raspberrypi1:~/clusterednode-config/* ./rpi1/
 # RaspberryPi2
 ssh -p 32004 -T pi@giancarlobonansea.homeip.net "\
 uname -a > /home/pi/clusterednode-config/rpi2-uname.txt && \
