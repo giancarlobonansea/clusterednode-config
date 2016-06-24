@@ -1,18 +1,35 @@
 #!/usr/bin/env bash
+# RaspberryPi0
+#ssh -p 32002 -T pi@giancarlobonansea.homeip.net "\
+#"
+#scp -r pi@raspberrypi1:~/clusterednode-config/* ./rpi1/
 # RaspberryPi1
-ssh -p 32003 -T pi@giancarlobonansea.homeip.net "\
-"
-scp -r pi@raspberrypi1:~/clusterednode-config/* ./rpi1/
+#ssh -p 32003 -T pi@giancarlobonansea.homeip.net "\
+#"
+#scp -r pi@raspberrypi1:~/clusterednode-config/* ./rpi1/
 # RaspberryPi2
 ssh -p 32004 -T pi@giancarlobonansea.homeip.net "\
-"
+uname -a > /home/pi/clusterednode-config/rpi2-uname.txt && \
+pm2 list > /home/pi/clusterednode-config/rpi2-api-pm2-list.txt && \
+pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi2-api-pm2-show.txt && \
+pm2 prettylist > /home/pi/clusterednode-config/rpi2-pm2-prettylist.json && \
+sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi2-sysctl.conf && \
+sudo cp /etc/stunnel/redis-client.conf /home/pi/clusterednode-config/rpi2-stunnel-redis-client.conf && \
+sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi2-default-stunnel"
 scp -r pi@raspberrypi2:~/clusterednode-config/* ./rpi2/
 # RaspberryPi3
 ssh -p 32005 -T pi@giancarlobonansea.homeip.net "\
-"
+uname -a > /home/pi/clusterednode-config/rpi3-uname.txt && \
+pm2 list > /home/pi/clusterednode-config/rpi3-api-pm2-list.txt && \
+pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi3-api-pm2-show.txt && \
+pm2 prettylist > /home/pi/clusterednode-config/rpi3-pm2-prettylist.json && \
+sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi3-sysctl.conf && \
+sudo cp /etc/stunnel/redis-client.conf /home/pi/clusterednode-config/rpi3-stunnel-redis-client.conf && \
+sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi3-default-stunnel"
 scp -r pi@raspberrypi3:~/clusterednode-config/* ./rpi3/
 # RaspberryPi4
 ssh -p 32006 -T pi@giancarlobonansea.homeip.net "\
+uname -a > /home/pi/clusterednode-config/rpi4-uname.txt && \
 sudo cp /etc/nginx/nginx.conf /home/pi/clusterednode-config/rpi4-nginx.conf && \
 sudo cp /etc/nginx/snippets/self-signed.conf /home/pi/clusterednode-config/rpi4-self-signed.conf && \
 sudo cp /etc/nginx/snippets/ssl-params.conf /home/pi/clusterednode-config/rpi4-ssl-params.conf && \
@@ -26,9 +43,21 @@ sudo cp /etc/ssl/private/nginx-selfsigned.key /home/pi/clusterednode-config/rpi4
 scp -r pi@raspberrypi4:~/clusterednode-config/* ./rpi4/
 # RaspberryPi5
 ssh -p 32007 -T pi@giancarlobonansea.homeip.net "\
-"
+uname -a > /home/pi/clusterednode-config/rpi5-uname.txt && \
+pm2 list > /home/pi/clusterednode-config/rpi5-api-pm2-list.txt && \
+pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi5-api-pm2-show.txt && \
+pm2 prettylist > /home/pi/clusterednode-config/rpi5-pm2-prettylist.json && \
+sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi5-sysctl.conf && \
+sudo cp /etc/stunnel/redis-client.conf /home/pi/clusterednode-config/rpi5-stunnel-redis-client.conf && \
+sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi5-default-stunnel"
 scp -r pi@raspberrypi5:~/clusterednode-config/* ./rpi5/
 # RaspberryPi6
 ssh -p 32008 -T pi@giancarlobonansea.homeip.net "\
-"
+uname -a > /home/pi/clusterednode-config/rpi6-uname.txt && \
+pm2 list > /home/pi/clusterednode-config/rpi6-api-pm2-list.txt && \
+pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi6-api-pm2-show.txt && \
+pm2 prettylist > /home/pi/clusterednode-config/rpi6-pm2-prettylist.json && \
+sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi6-sysctl.conf && \
+sudo cp /etc/stunnel/redis-client.conf /home/pi/clusterednode-config/rpi6-stunnel-redis-client.conf && \
+sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi6-default-stunnel"
 scp -r pi@raspberrypi6:~/clusterednode-config/* ./rpi6/

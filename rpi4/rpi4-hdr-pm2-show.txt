@@ -3,7 +3,7 @@
 │ status            │ online                                           │
 │ name              │ clusteredHDRnode                                 │
 │ restarts          │ 0                                                │
-│ uptime            │ 3h                                               │
+│ uptime            │ 29m                                              │
 │ script path       │ /home/pi/clusterednode-hdrhist/current/hdrsrv.js │
 │ script args       │ N/A                                              │
 │ error log path    │ /home/pi/.pm2/logs/clusteredHDRnode-error-3.log  │
@@ -17,26 +17,26 @@
 │ node.js version   │ 6.2.1                                            │
 │ watch & reload    │ ✔                                                │
 │ unstable restarts │ 0                                                │
-│ created at        │ 2016-06-22T11:41:29.303Z                         │
+│ created at        │ 2016-06-23T19:38:54.022Z                         │
 └───────────────────┴──────────────────────────────────────────────────┘
  Revision control metadata 
 ┌──────────────────┬────────────────────────────────────────────────────────────┐
 │ revision control │ git                                                        │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-hdrhist.git │
 │ repository root  │ /home/pi/clusterednode-hdrhist/current                     │
-│ last update      │ 2016-06-22T20:16:47.219Z                                   │
-│ revision         │ ad811828a5ad4fe429a851f3a92e7a59a4f3e508                   │
-│ comment          │ Updated README.md                                          │
+│ last update      │ 2016-06-24T14:06:10.170Z                                   │
+│ revision         │ c9f953069a4e98e86cd4f852b4f8368ff65eeb06                   │
+│ comment          │ Update HDR histogram parameters for smoother curve         │
 │ branch           │ master                                                     │
 └──────────────────┴────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬─────────┐
-│ Loop delay       │ 0.37ms  │
-│ pmx:http:latency │ 39.53ms │
-│ HTTP             │ 0req/s  │
-│ Network Upload   │ 0 MB/s  │
-│ Network Download │ 0 MB/s  │
-└──────────────────┴─────────┘
+┌──────────────────┬────────┐
+│ Loop delay       │ 0.2ms  │
+│ pmx:http:latency │ 0ms    │
+│ HTTP             │ 0req/s │
+│ Network Upload   │ 0 MB/s │
+│ Network Download │ 0 MB/s │
+└──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredHDRnode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredHDRnode
