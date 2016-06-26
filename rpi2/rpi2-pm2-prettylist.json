@@ -145,7 +145,7 @@
           }
         },
         'Total Processes': {
-          value: 119,
+          value: 116,
           agg_type: 'avg',
           alert: {}
         },
@@ -155,7 +155,7 @@
           alert: {}
         },
         'Free memory': {
-          value: '76.0%',
+          value: '74.0%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -195,7 +195,7 @@
           alert: {}
         },
         'CPU usage': {
-          value: '27.27%',
+          value: '33.33%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -275,8 +275,8 @@
     },
     pm_id: 0,
     monit: {
-      memory: 30486528,
-      cpu: 2
+      memory: 31571968,
+      cpu: 0
     }
   },
   {
@@ -431,7 +431,7 @@
     },
     pm_id: 1,
     monit: {
-      memory: 50409472,
+      memory: 50606080,
       cpu: 0
     }
   },
@@ -567,7 +567,7 @@
           alert: {}
         },
         HTTP: {
-          value: '0.11req/s',
+          value: '0req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -610,7 +610,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:20:06.832Z',
+        update_time: '2016-06-26T11:25:07.612Z',
         comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
         unstaged: false,
         branch: 'master',
@@ -641,7 +641,7 @@
     },
     pm_id: 2,
     monit: {
-      memory: 34131968,
+      memory: 34508800,
       cpu: 0
     }
   },
@@ -777,7 +777,7 @@
           alert: {}
         },
         HTTP: {
-          value: '0.12req/s',
+          value: '0req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -820,7 +820,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:20:07.062Z',
+        update_time: '2016-06-26T11:25:07.852Z',
         comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
         unstaged: false,
         branch: 'master',
@@ -851,7 +851,7 @@
     },
     pm_id: 3,
     monit: {
-      memory: 36020224,
+      memory: 35606528,
       cpu: 0
     }
   },
@@ -987,7 +987,7 @@
           alert: {}
         },
         HTTP: {
-          value: '0.12req/s',
+          value: '0req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -1030,7 +1030,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:20:07.302Z',
+        update_time: '2016-06-26T11:25:08.122Z',
         comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
         unstaged: false,
         branch: 'master',
@@ -1061,7 +1061,7 @@
     },
     pm_id: 4,
     monit: {
-      memory: 36343808,
+      memory: 36564992,
       cpu: 0
     }
   },
@@ -1197,7 +1197,7 @@
           alert: {}
         },
         HTTP: {
-          value: '0.11req/s',
+          value: '0req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -1240,7 +1240,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:20:07.612Z',
+        update_time: '2016-06-26T11:25:08.412Z',
         comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
         unstaged: false,
         branch: 'master',
@@ -1271,7 +1271,7 @@
     },
     pm_id: 5,
     monit: {
-      memory: 34959360,
+      memory: 35229696,
       cpu: 0
     }
   }

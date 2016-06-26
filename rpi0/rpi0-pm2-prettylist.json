@@ -64,7 +64,7 @@
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '1.04ms',
+          value: '1.03ms',
           agg_type: 'avg',
           alert: {}
         }
@@ -97,7 +97,7 @@
     },
     pm_id: 0,
     monit: {
-      memory: 36474880,
+      memory: 37437440,
       cpu: 0
     }
   }

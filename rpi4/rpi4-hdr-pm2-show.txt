@@ -24,7 +24,7 @@
 │ revision control │ git                                                        │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-hdrhist.git │
 │ repository root  │ /home/pi/clusterednode-hdrhist/current                     │
-│ last update      │ 2016-06-26T11:20:07.243Z                                   │
+│ last update      │ 2016-06-26T11:25:38.593Z                                   │
 │ revision         │ c9f953069a4e98e86cd4f852b4f8368ff65eeb06                   │
 │ comment          │ Update HDR histogram parameters for smoother curve         │
 │ branch           │ master                                                     │
