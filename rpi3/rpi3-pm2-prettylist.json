@@ -145,17 +145,17 @@
           }
         },
         'Total Processes': {
-          value: 115,
+          value: 116,
           agg_type: 'avg',
           alert: {}
         },
         'Used memory': {
-          value: '0.2GB / 1.0GB',
+          value: '0.3GB / 1.0GB',
           agg_type: 'avg',
           alert: {}
         },
         'Free memory': {
-          value: '74.5%',
+          value: '71.7%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -195,7 +195,7 @@
           alert: {}
         },
         'CPU usage': {
-          value: '25.00%',
+          value: '30.28%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -275,8 +275,8 @@
     },
     pm_id: 0,
     monit: {
-      memory: 31145984,
-      cpu: 2
+      memory: 31715328,
+      cpu: 0
     }
   },
   {
@@ -431,7 +431,7 @@
     },
     pm_id: 1,
     monit: {
-      memory: 41558016,
+      memory: 41865216,
       cpu: 0
     }
   },
@@ -567,7 +567,7 @@
           alert: {}
         },
         HTTP: {
-          value: '0req/s',
+          value: '0.21req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -610,7 +610,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:25:14.304Z',
+        update_time: '2016-06-26T11:28:14.704Z',
         comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
         unstaged: false,
         branch: 'master',
@@ -641,7 +641,7 @@
     },
     pm_id: 2,
     monit: {
-      memory: 35307520,
+      memory: 35684352,
       cpu: 0
     }
   },
@@ -777,7 +777,7 @@
           alert: {}
         },
         HTTP: {
-          value: '0req/s',
+          value: '0.26req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -820,7 +820,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:25:14.544Z',
+        update_time: '2016-06-26T11:28:15.014Z',
         comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
         unstaged: false,
         branch: 'master',
@@ -851,7 +851,7 @@
     },
     pm_id: 3,
     monit: {
-      memory: 35041280,
+      memory: 35418112,
       cpu: 0
     }
   },
@@ -987,7 +987,7 @@
           alert: {}
         },
         HTTP: {
-          value: '0req/s',
+          value: '0.26req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -1030,7 +1030,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:25:14.784Z',
+        update_time: '2016-06-26T11:28:15.304Z',
         comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
         unstaged: false,
         branch: 'master',
@@ -1061,8 +1061,8 @@
     },
     pm_id: 4,
     monit: {
-      memory: 44306432,
-      cpu: 2
+      memory: 44654592,
+      cpu: 0
     }
   },
   {
@@ -1197,7 +1197,7 @@
           alert: {}
         },
         HTTP: {
-          value: '0req/s',
+          value: '0.26req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -1240,7 +1240,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:25:15.024Z',
+        update_time: '2016-06-26T11:28:15.574Z',
         comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
         unstaged: false,
         branch: 'master',
@@ -1272,7 +1272,7 @@
     pm_id: 5,
     monit: {
       memory: 42655744,
-      cpu: 0
+      cpu: 1
     }
   }
 ]

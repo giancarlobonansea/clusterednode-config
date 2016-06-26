@@ -97,7 +97,7 @@
     },
     pm_id: 0,
     monit: {
-      memory: 37437440,
+      memory: 36564992,
       cpu: 0
     }
   }

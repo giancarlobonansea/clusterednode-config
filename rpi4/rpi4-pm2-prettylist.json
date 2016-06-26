@@ -97,33 +97,37 @@
            agg_type: 'avg',
            alert: {}
          },
-          'Curr. Waiting': 
-           { value: '0',
+          'Curr. Waiting': {
+            value: '1',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10000, interval: 180, cmp: '>' } },
           'Curr. Writing': { value: '1', agg_type: 'avg', alert: {} },
           'Curr. Reading': { value: '0', agg_type: 'avg', alert: {} },
          'Req/Handled Conn.': {
-           value: '635.26',
+           value: '629.80',
            agg_type: 'avg',
            alert: {}
          },
          'Client Requests': {
-           value: '3170601',
+           value: '3171048',
            agg_type: 'avg',
            alert: {}
          },
          'Handled Conn.': {
-           value: '4991',
+           value: '5035',
            agg_type: 'avg',
            alert: {}
          },
          'Accepted Conn.': {
-           value: '4991',
+           value: '5035',
            agg_type: 'avg',
            alert: {}
          },
-          'Active Conn.': { value: '1', agg_type: 'avg', alert: {} },
+         'Active Conn.': {
+           value: '2',
+           agg_type: 'avg',
+           alert: {}
+         },
           'Nginx Version': { value: 'nginx/1.11.1', agg_type: 'avg', alert: {} } },
        axm_options: 
         { http: false,
@@ -289,7 +293,7 @@
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '>' } },
          'Total Processes': {
-           value: 114,
+           value: 123,
            agg_type: 'avg',
            alert: {}
          },
@@ -299,7 +303,7 @@
            alert: {}
          },
          'Free memory': {
-           value: '75.9%',
+           value: '76.0%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
          'TTY/SSH opened': {
@@ -317,7 +321,7 @@
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
           'Operating System': { value: 'Raspbian 8', agg_type: 'avg', alert: {} },
          'CPU usage': {
-           value: '25.00%',
+           value: '27.27%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 90, interval: 100, cmp: '>' } },
           'eth1 output': { value: '0.03MB/s', agg_type: 'avg', alert: {} },
@@ -375,8 +379,8 @@
      },
     pm_id: 1,
     monit: {
-      memory: 33026048,
-      cpu: 2
+      memory: 33611776,
+      cpu: 1
     }
   },
   {
@@ -606,11 +610,15 @@
            alert: {}
          },
          'pmx:http:latency': {
-           value: '32.59ms',
+           value: '32.44ms',
            agg_type: 'avg',
            alert: {}
          },
-          HTTP: { value: '0req/s', agg_type: 'avg', alert: {} },
+         HTTP: {
+           value: '0.05req/s',
+           agg_type: 'avg',
+           alert: {}
+         },
           'Network Upload': { value: '0 MB/s', agg_type: 'sum', alert: {} },
           'Network Download': { value: '0 MB/s', agg_type: 'sum', alert: {} } },
        axm_options: 
@@ -639,7 +647,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-hdrhist.git',
           revision: 'c9f953069a4e98e86cd4f852b4f8368ff65eeb06',
-          update_time: '2016-06-26T11:25:38.593Z',
+          update_time: '2016-06-26T11:28:39.443Z',
           comment: 'Update HDR histogram parameters for smoother curve',
           unstaged: false,
           branch: 'master',
@@ -658,7 +666,7 @@
        pm_id: 3 },
     pm_id: 3,
     monit: {
-      memory: 31391744,
+      memory: 30752768,
       cpu: 0
     }
   }

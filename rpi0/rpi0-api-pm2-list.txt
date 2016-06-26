@@ -1,6 +1,6 @@
 ┌──────────┬────┬─────────┬──────┬────────┬─────────┬────────┬─────────────┬──────────┐
 │ App name │ id │ mode    │ pid  │ status │ restart │ uptime │ memory      │ watching │
 ├──────────┼────┼─────────┼──────┼────────┼─────────┼────────┼─────────────┼──────────┤
-│ nosock   │ 0  │ cluster │ 4643 │ online │ 0       │ 5h     │ 35.652 MB   │ disabled │
+│ nosock   │ 0  │ cluster │ 4643 │ online │ 0       │ 5h     │ 35.730 MB   │ disabled │
 └──────────┴────┴─────────┴──────┴────────┴─────────┴────────┴─────────────┴──────────┘
  Use `pm2 show <id|name>` to get more details about an app

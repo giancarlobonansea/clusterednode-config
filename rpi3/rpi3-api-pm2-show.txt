@@ -24,19 +24,19 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:25:14.304Z                                                                                 │
+│ last update      │ 2016-06-26T11:28:14.704Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬────────┐
-│ Loop delay       │ 0.48ms │
-│ pmx:http:latency │ 5.1ms  │
-│ HTTP             │ 0req/s │
-│ Network Upload   │ 0 MB/s │
-│ Network Download │ 0 MB/s │
-└──────────────────┴────────┘
+┌──────────────────┬───────────────┐
+│ Loop delay       │ 0.48ms        │
+│ pmx:http:latency │ 5.1ms         │
+│ HTTP             │ 0.21req/s     │
+│ Network Upload   │ 0.001 MB/s    │
+│ Network Download │ 0.000084 MB/s │
+└──────────────────┴───────────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -66,19 +66,19 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:25:14.544Z                                                                                 │
+│ last update      │ 2016-06-26T11:28:15.014Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬────────┐
-│ Loop delay       │ 0.46ms │
-│ pmx:http:latency │ 5.24ms │
-│ HTTP             │ 0req/s │
-│ Network Upload   │ 0 MB/s │
-│ Network Download │ 0 MB/s │
-└──────────────────┴────────┘
+┌──────────────────┬───────────────┐
+│ Loop delay       │ 0.46ms        │
+│ pmx:http:latency │ 5.24ms        │
+│ HTTP             │ 0.26req/s     │
+│ Network Upload   │ 0.003 MB/s    │
+│ Network Download │ 0.000321 MB/s │
+└──────────────────┴───────────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -108,19 +108,19 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:25:14.784Z                                                                                 │
+│ last update      │ 2016-06-26T11:28:15.304Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬────────┐
-│ Loop delay       │ 0.45ms │
-│ pmx:http:latency │ 5.22ms │
-│ HTTP             │ 0req/s │
-│ Network Upload   │ 0 MB/s │
-│ Network Download │ 0 MB/s │
-└──────────────────┴────────┘
+┌──────────────────┬───────────────┐
+│ Loop delay       │ 0.45ms        │
+│ pmx:http:latency │ 5.22ms        │
+│ HTTP             │ 0.16req/s     │
+│ Network Upload   │ 0.002 MB/s    │
+│ Network Download │ 0.000163 MB/s │
+└──────────────────┴───────────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -150,19 +150,19 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:25:15.024Z                                                                                 │
+│ last update      │ 2016-06-26T11:28:15.574Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬────────┐
-│ Loop delay       │ 0.44ms │
-│ pmx:http:latency │ 5.22ms │
-│ HTTP             │ 0req/s │
-│ Network Upload   │ 0 MB/s │
-│ Network Download │ 0 MB/s │
-└──────────────────┴────────┘
+┌──────────────────┬───────────────┐
+│ Loop delay       │ 0.44ms        │
+│ pmx:http:latency │ 5.22ms        │
+│ HTTP             │ 0.18req/s     │
+│ Network Upload   │ 0.002 MB/s    │
+│ Network Download │ 0.000163 MB/s │
+└──────────────────┴───────────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
