@@ -6,7 +6,6 @@ pm2 list > /home/pi/clusterednode-config/rpi0-api-pm2-list.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi0-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi0-sysctl.conf && \
 sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi0-stunnel-redis-server.conf && \
-sudo cp /etc/stunnel/private.pem /home/pi/clusterednode-config/rpi0-stunnel-private.pem && \
 sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi0-default-stunnel && \
 sudo cp /etc/init.d/stunnel /home/pi/clusterednode-config/rpi0-initd-stunnel && \
 sudo cp /etc/redis/6379.conf /home/pi/clusterednode-config/rpi0-redis-6379.conf && \
@@ -19,7 +18,6 @@ ssh -p 32003 -T pi@giancarlobonansea.homeip.net "\
 uname -a > /home/pi/clusterednode-config/rpi1-uname.txt && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi1-sysctl.conf && \
 sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi1-stunnel-redis-server.conf && \
-sudo cp /etc/stunnel/private.pem /home/pi/clusterednode-config/rpi1-stunnel-private.pem && \
 sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi1-default-stunnel && \
 sudo cp /etc/init.d/stunnel /home/pi/clusterednode-config/rpi1-initd-stunnel && \
 sudo cp /etc/redis/6379.conf /home/pi/clusterednode-config/rpi1-redis-6379.conf && \

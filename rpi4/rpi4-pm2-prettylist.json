@@ -104,22 +104,22 @@
           'Curr. Writing': { value: '1', agg_type: 'avg', alert: {} },
           'Curr. Reading': { value: '0', agg_type: 'avg', alert: {} },
          'Req/Handled Conn.': {
-           value: '653.57',
+           value: '645.46',
            agg_type: 'avg',
            alert: {}
          },
          'Client Requests': {
-           value: '3170461',
+           value: '3170522',
            agg_type: 'avg',
            alert: {}
          },
          'Handled Conn.': {
-           value: '4851',
+           value: '4912',
            agg_type: 'avg',
            alert: {}
          },
          'Accepted Conn.': {
-           value: '4851',
+           value: '4912',
            agg_type: 'avg',
            alert: {}
          },
@@ -289,7 +289,7 @@
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '>' } },
          'Total Processes': {
-           value: 115,
+           value: 117,
            agg_type: 'avg',
            alert: {}
          },
@@ -299,11 +299,11 @@
            alert: {}
          },
          'Free memory': {
-           value: '76.0%',
+           value: '75.6%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
-          'TTY/SSH opened': {
-            value: '0\n',
+         'TTY/SSH opened': {
+           value: '0\n',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 15, interval: 180, cmp: '>' } },
          'Used space': {
@@ -322,7 +322,7 @@
              alert: { mode: 'threshold-avg', value: 90, interval: 100, cmp: '>' } },
           'eth1 output': { value: '0.03MB/s', agg_type: 'avg', alert: {} },
          'eth1 input': {
-           value: '0.01MB/s',
+           value: '0.00MB/s',
            agg_type: 'avg',
            alert: {}
          }
@@ -375,8 +375,8 @@
      },
     pm_id: 1,
     monit: {
-      memory: 31666176,
-      cpu: 2
+      memory: 31895552,
+      cpu: 5
     }
   },
   {
@@ -508,7 +508,7 @@
      },
     pm_id: 2,
     monit: {
-      memory: 32161792,
+      memory: 31563776,
       cpu: 0
     }
   },
@@ -639,7 +639,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-hdrhist.git',
           revision: 'c9f953069a4e98e86cd4f852b4f8368ff65eeb06',
-          update_time: '2016-06-26T11:16:06.383Z',
+          update_time: '2016-06-26T11:20:07.243Z',
           comment: 'Update HDR histogram parameters for smoother curve',
           unstaged: false,
           branch: 'master',
@@ -658,7 +658,7 @@
        pm_id: 3 },
     pm_id: 3,
     monit: {
-      memory: 31096832,
+      memory: 30916608,
       cpu: 0
     }
   }

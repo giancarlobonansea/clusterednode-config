@@ -24,19 +24,19 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:16:39.847Z                                                                                 │
+│ last update      │ 2016-06-26T11:20:40.627Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬──────────┐
-│ Loop delay       │ 0.43ms   │
-│ pmx:http:latency │ 5.11ms   │
-│ HTTP             │ 4.1req/s │
-│ Network Upload   │ 0 MB/s   │
-│ Network Download │ 0 MB/s   │
-└──────────────────┴──────────┘
+┌──────────────────┬───────────┐
+│ Loop delay       │ 0.43ms    │
+│ pmx:http:latency │ 5.11ms    │
+│ HTTP             │ 0.07req/s │
+│ Network Upload   │ 0 MB/s    │
+│ Network Download │ 0 MB/s    │
+└──────────────────┴───────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -66,16 +66,16 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:16:40.287Z                                                                                 │
+│ last update      │ 2016-06-26T11:20:40.927Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬───────────┐
-│ Loop delay       │ 0.7ms     │
+│ Loop delay       │ 0.69ms    │
 │ pmx:http:latency │ 5.16ms    │
-│ HTTP             │ 4.02req/s │
+│ HTTP             │ 0.07req/s │
 │ Network Upload   │ 0 MB/s    │
 │ Network Download │ 0 MB/s    │
 └──────────────────┴───────────┘
@@ -108,7 +108,7 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:16:10.247Z                                                                                 │
+│ last update      │ 2016-06-26T11:20:41.457Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
@@ -117,7 +117,7 @@
 ┌──────────────────┬───────────┐
 │ Loop delay       │ 0.41ms    │
 │ pmx:http:latency │ 4.98ms    │
-│ HTTP             │ 3.98req/s │
+│ HTTP             │ 0.07req/s │
 │ Network Upload   │ 0 MB/s    │
 │ Network Download │ 0 MB/s    │
 └──────────────────┴───────────┘
@@ -150,16 +150,16 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:16:10.587Z                                                                                 │
+│ last update      │ 2016-06-26T11:20:41.797Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬───────────┐
-│ Loop delay       │ 0.66ms    │
+│ Loop delay       │ 0.42ms    │
 │ pmx:http:latency │ 5.16ms    │
-│ HTTP             │ 4.23req/s │
+│ HTTP             │ 0.07req/s │
 │ Network Upload   │ 0 MB/s    │
 │ Network Download │ 0 MB/s    │
 └──────────────────┴───────────┘

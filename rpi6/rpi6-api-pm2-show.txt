@@ -24,16 +24,16 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:16:47.012Z                                                                                 │
+│ last update      │ 2016-06-26T11:20:47.683Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬───────────┐
-│ Loop delay       │ 0.7ms     │
+│ Loop delay       │ 0.45ms    │
 │ pmx:http:latency │ 5.11ms    │
-│ HTTP             │ 3.54req/s │
+│ HTTP             │ 0.06req/s │
 │ Network Upload   │ 0 MB/s    │
 │ Network Download │ 0 MB/s    │
 └──────────────────┴───────────┘
@@ -66,16 +66,16 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:16:47.362Z                                                                                 │
+│ last update      │ 2016-06-26T11:20:48.023Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬───────────┐
-│ Loop delay       │ 0.72ms    │
+│ Loop delay       │ 0.44ms    │
 │ pmx:http:latency │ 5.17ms    │
-│ HTTP             │ 3.53req/s │
+│ HTTP             │ 0.06req/s │
 │ Network Upload   │ 0 MB/s    │
 │ Network Download │ 0 MB/s    │
 └──────────────────┴───────────┘
@@ -108,16 +108,16 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:16:47.652Z                                                                                 │
+│ last update      │ 2016-06-26T11:20:48.323Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬───────────┐
-│ Loop delay       │ 0.43ms    │
+│ Loop delay       │ 0.42ms    │
 │ pmx:http:latency │ 5.19ms    │
-│ HTTP             │ 3.47req/s │
+│ HTTP             │ 0.06req/s │
 │ Network Upload   │ 0 MB/s    │
 │ Network Download │ 0 MB/s    │
 └──────────────────┴───────────┘
@@ -150,7 +150,7 @@
 │ revision control │ git                                                                                                      │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
 │ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:16:48.022Z                                                                                 │
+│ last update      │ 2016-06-26T11:20:48.623Z                                                                                 │
 │ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
 │ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
 │ branch           │ master                                                                                                   │
@@ -159,7 +159,7 @@
 ┌──────────────────┬───────────┐
 │ Loop delay       │ 0.41ms    │
 │ pmx:http:latency │ 5.2ms     │
-│ HTTP             │ 3.38req/s │
+│ HTTP             │ 0.06req/s │
 │ Network Upload   │ 0 MB/s    │
 │ Network Download │ 0 MB/s    │
 └──────────────────┴───────────┘
