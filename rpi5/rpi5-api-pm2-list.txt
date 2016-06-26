@@ -2,16 +2,16 @@
 ┌──────────────────┬────┬─────────┬─────┬────────┬─────────┬────────┬─────────────┬──────────┐
 │ App name         │ id │ mode    │ pid │ status │ restart │ uptime │ memory      │ watching │
 ├──────────────────┼────┼─────────┼─────┼────────┼─────────┼────────┼─────────────┼──────────┤
-│ clusteredAPInode │ 2  │ cluster │ 711 │ online │ 0       │ 29m    │ 33.535 MB   │  enabled │
-│ clusteredAPInode │ 3  │ cluster │ 727 │ online │ 0       │ 29m    │ 33.559 MB   │  enabled │
-│ clusteredAPInode │ 4  │ cluster │ 749 │ online │ 0       │ 29m    │ 34.055 MB   │  enabled │
-│ clusteredAPInode │ 5  │ cluster │ 787 │ online │ 0       │ 29m    │ 34.484 MB   │  enabled │
+│ clusteredAPInode │ 2  │ cluster │ 713 │ online │ 0       │ 13h    │ 33.910 MB   │  enabled │
+│ clusteredAPInode │ 3  │ cluster │ 729 │ online │ 0       │ 13h    │ 33.586 MB   │  enabled │
+│ clusteredAPInode │ 4  │ cluster │ 762 │ online │ 0       │ 13h    │ 33.703 MB   │  enabled │
+│ clusteredAPInode │ 5  │ cluster │ 800 │ online │ 0       │ 13h    │ 33.004 MB   │  enabled │
 └──────────────────┴────┴─────────┴─────┴────────┴─────────┴────────┴─────────────┴──────────┘
  Module activated
 ┌──────────────────┬─────────┬────────────┬────────┬─────────┬─────┬─────────────┐
 │ Module           │ version │ target PID │ status │ restart │ cpu │ memory      │
 ├──────────────────┼─────────┼────────────┼────────┼─────────┼─────┼─────────────┤
-│ pm2-server-monit │ 1.1.0   │ 695        │ online │ 0       │ 0%  │ 29.258 MB   │
-│ pm2-logrotate    │ 1.3.1   │ 705        │ online │ 0       │ 0%  │ 27.832 MB   │
+│ pm2-server-monit │ 1.1.0   │ 697        │ online │ 0       │ 0%  │ 28.148 MB   │
+│ pm2-logrotate    │ 1.3.1   │ 707        │ online │ 0       │ 0%  │ 37.664 MB   │
 └──────────────────┴─────────┴────────────┴────────┴─────────┴─────┴─────────────┘
  Use `pm2 show <id|name>` to get more details about an app

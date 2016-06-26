@@ -13,7 +13,7 @@ sudo cp /etc/redis/6379.conf /home/pi/clusterednode-config/rpi0-redis-6379.conf 
 sudo cp /etc/redis/6378.conf /home/pi/clusterednode-config/rpi0-redis-6378.conf && \
 sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi0-redis-6377.conf && \
 sudo cp /etc/redis/sentinel.conf /home/pi/clusterednode-config/rpi0-redis-sentinel.conf"
-scp -r pi@raspberrypi1:~/clusterednode-config/* ./rpi1/
+scp -r pi@raspberrypi0:~/clusterednode-config/* ./rpi0/
 # RaspberryPi1
 ssh -p 32003 -T pi@giancarlobonansea.homeip.net "\
 uname -a > /home/pi/clusterednode-config/rpi1-uname.txt && \

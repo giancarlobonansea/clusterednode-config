@@ -1,6 +1,6 @@
 [
   {
-    pid: 857,
+    pid: 856,
     name: 'pm2-nginx',
     pm2_env: 
      { name: 'pm2-nginx',
@@ -31,7 +31,7 @@
           MAIL: '/var/mail/pi',
           USER: 'pi',
           SHELL: '/bin/bash',
-          XDG_SESSION_ID: 'c1',
+          XDG_SESSION_ID: 'c2',
           PM2_HOME: '/home/pi/.pm2',
           pm_cwd: '/home/pi/.pm2/node_modules/pm2-nginx',
           'pm2-nginx': '{"protocol":"http","hostname":"giancarlobonansea.homeip.net","port":"33332","statusPath":"/nginx_status","refresh_rate":"4000"}',
@@ -80,7 +80,7 @@
        MAIL: '/var/mail/pi',
        USER: 'pi',
        SHELL: '/bin/bash',
-       XDG_SESSION_ID: 'c1',
+       XDG_SESSION_ID: 'c2',
        PM2_HOME: '/home/pi/.pm2',
        'pm2-nginx': '{"protocol":"http","hostname":"giancarlobonansea.homeip.net","port":"33332","statusPath":"/nginx_status","refresh_rate":"4000"}',
        refresh_rate: '4000',
@@ -89,11 +89,11 @@
        hostname: 'giancarlobonansea.homeip.net',
        protocol: 'http',
        status: 'online',
-       pm_uptime: 1466775428919,
+       pm_uptime: 1466890838497,
        axm_actions: [ { action_name: 'Show Configuration', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '1.55ms',
+           value: '0.59ms',
            agg_type: 'avg',
            alert: {}
          },
@@ -104,22 +104,22 @@
           'Curr. Writing': { value: '1', agg_type: 'avg', alert: {} },
           'Curr. Reading': { value: '0', agg_type: 'avg', alert: {} },
          'Req/Handled Conn.': {
-           value: '1.06',
+           value: '653.57',
            agg_type: 'avg',
            alert: {}
          },
          'Client Requests': {
-           value: '466',
+           value: '3170461',
            agg_type: 'avg',
            alert: {}
          },
          'Handled Conn.': {
-           value: '441',
+           value: '4851',
            agg_type: 'avg',
            alert: {}
          },
          'Accepted Conn.': {
-           value: '441',
+           value: '4851',
            agg_type: 'avg',
            alert: {}
          },
@@ -168,26 +168,27 @@
                    'Curr. Writing',
                    'Curr. Waiting' ] },
              el: { probes: true, actions: true } },
-          pid: 532,
+          pid: 534,
           isModule: true,
           description: 'PM2 Nginx Module',
           username: '',
           password: '' },
        axm_dynamic: {},
-       created_at: 1466775428919,
+       created_at: 1466890838497,
        pm_id: 0,
        restart_time: 0,
        unstable_restarts: 0,
        versioning: null,
-       node_version: '6.2.1' },
+       node_version: '6.2.2'
+     },
     pm_id: 0,
     monit: {
-      memory: 2260992,
+      memory: 0,
       cpu: 0
     }
   },
   {
-    pid: 867,
+    pid: 866,
     name: 'pm2-server-monit',
     pm2_env: 
      { name: 'pm2-server-monit',
@@ -218,7 +219,7 @@
           MAIL: '/var/mail/pi',
           USER: 'pi',
           SHELL: '/bin/bash',
-          XDG_SESSION_ID: 'c1',
+          XDG_SESSION_ID: 'c2',
           PM2_HOME: '/home/pi/.pm2',
           pm_cwd: '/home/pi/.pm2/node_modules/pm2-server-monit',
           'pm2-server-monit': '{}',
@@ -262,11 +263,11 @@
        MAIL: '/var/mail/pi',
        USER: 'pi',
        SHELL: '/bin/bash',
-       XDG_SESSION_ID: 'c1',
+       XDG_SESSION_ID: 'c2',
        PM2_HOME: '/home/pi/.pm2',
        'pm2-server-monit': '{}',
        status: 'online',
-       pm_uptime: 1466775429309,
+       pm_uptime: 1466890838893,
        axm_actions: 
         [ { action_name: 'top cpu consuming', opts: null, arity: 1 },
           { action_name: 'top mem consuming', opts: null, arity: 1 },
@@ -279,7 +280,7 @@
           { action_name: 'open files', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '0.72ms',
+           value: '0.48ms',
            agg_type: 'avg',
            alert: {}
          },
@@ -288,7 +289,7 @@
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '>' } },
          'Total Processes': {
-           value: 119,
+           value: 115,
            agg_type: 'avg',
            alert: {}
          },
@@ -297,12 +298,12 @@
            agg_type: 'avg',
            alert: {}
          },
-          'Free memory': {
-            value: '79.7%',
+         'Free memory': {
+           value: '76.0%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
-          'TTY/SSH opened': 
-           { value: '1\n',
+          'TTY/SSH opened': {
+            value: '0\n',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 15, interval: 180, cmp: '>' } },
          'Used space': {
@@ -310,17 +311,22 @@
            agg_type: 'avg',
            alert: {}
          },
-          'Avail. Disk': {
-            value: '71.5%',
+         'Avail. Disk': {
+           value: '71.5%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
           'Operating System': { value: 'Raspbian 8', agg_type: 'avg', alert: {} },
-          'CPU usage': {
-            value: '38.61%',
+         'CPU usage': {
+           value: '25.00%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 90, interval: 100, cmp: '>' } },
           'eth1 output': { value: '0.03MB/s', agg_type: 'avg', alert: {} },
-          'eth1 input': { value: '0.00MB/s', agg_type: 'avg', alert: {} } },
+         'eth1 input': {
+           value: '0.01MB/s',
+           agg_type: 'avg',
+           alert: {}
+         }
+       },
        axm_options: 
         { http: false,
           http_latency: 200,
@@ -360,20 +366,21 @@
           isModule: true,
           description: 'Rack to monitor a server' },
        axm_dynamic: {},
-       created_at: 1466775429309,
+       created_at: 1466890838894,
        pm_id: 1,
        restart_time: 0,
        unstable_restarts: 0,
        versioning: null,
-       node_version: '6.2.1' },
+       node_version: '6.2.2'
+     },
     pm_id: 1,
     monit: {
-      memory: 29253632,
-      cpu: 1
+      memory: 31666176,
+      cpu: 2
     }
   },
   {
-    pid: 873,
+    pid: 872,
     name: 'pm2-logrotate',
     pm2_env: 
      { name: 'pm2-logrotate',
@@ -403,7 +410,7 @@
           MAIL: '/var/mail/pi',
           USER: 'pi',
           SHELL: '/bin/bash',
-          XDG_SESSION_ID: 'c1',
+          XDG_SESSION_ID: 'c2',
           PM2_HOME: '/home/pi/.pm2',
           pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
           'pm2-logrotate': '{}',
@@ -446,15 +453,15 @@
        MAIL: '/var/mail/pi',
        USER: 'pi',
        SHELL: '/bin/bash',
-       XDG_SESSION_ID: 'c1',
+       XDG_SESSION_ID: 'c2',
        PM2_HOME: '/home/pi/.pm2',
        'pm2-logrotate': '{}',
        status: 'online',
-       pm_uptime: 1466775429616,
+       pm_uptime: 1466890839194,
        axm_actions: [ { action_name: 'list files', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '1.92ms',
+           value: '0.59ms',
            agg_type: 'avg',
            alert: {}
          }
@@ -492,20 +499,21 @@
           interval_unit: 'DD',
           interval: '1' },
        axm_dynamic: {},
-       created_at: 1466775429616,
+       created_at: 1466890839194,
        pm_id: 2,
        restart_time: 0,
        unstable_restarts: 0,
        versioning: null,
-       node_version: '6.2.1' },
+       node_version: '6.2.2'
+     },
     pm_id: 2,
     monit: {
-      memory: 30314496,
+      memory: 32161792,
       cpu: 0
     }
   },
   {
-    pid: 879,
+    pid: 878,
     name: 'clusteredHDRnode',
     pm2_env: 
      { name: 'clusteredHDRnode',
@@ -589,16 +597,16 @@
        _: '/usr/bin/pm2',
        PM2_JSON_PROCESSING: 'true',
        status: 'online',
-       pm_uptime: 1466775429911,
+       pm_uptime: 1466890839538,
        axm_actions: [],
        axm_monitor: {
          'Loop delay': {
-           value: '0.2ms',
+           value: '0.36ms',
            agg_type: 'avg',
            alert: {}
          },
          'pmx:http:latency': {
-           value: '0ms',
+           value: '32.59ms',
            agg_type: 'avg',
            alert: {}
          },
@@ -631,7 +639,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-hdrhist.git',
           revision: 'c9f953069a4e98e86cd4f852b4f8368ff65eeb06',
-          update_time: '2016-06-24T14:06:10.170Z',
+          update_time: '2016-06-26T11:16:06.383Z',
           comment: 'Update HDR histogram parameters for smoother curve',
           unstaged: false,
           branch: 'master',
@@ -642,7 +650,7 @@
           next_rev: null,
           prev_rev: '49eb1dfda70b6717698b7ae02ed39776ab481ec1',
           repo_path: '/home/pi/clusterednode-hdrhist/current' },
-       node_version: '6.2.1',
+       node_version: '6.2.2',
        exit_code: 0,
        script: 'hdrsrv.js',
        NODEPORT: 8012,
@@ -650,7 +658,7 @@
        pm_id: 3 },
     pm_id: 3,
     monit: {
-      memory: 28971008,
+      memory: 31096832,
       cpu: 0
     }
   }
