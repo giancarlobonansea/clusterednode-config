@@ -130,7 +130,7 @@
       ],
       axm_monitor: {
         'Loop delay': {
-          value: '0.48ms',
+          value: '0.47ms',
           agg_type: 'avg',
           alert: {}
         },
@@ -145,7 +145,7 @@
           }
         },
         'Total Processes': {
-          value: 116,
+          value: 113,
           agg_type: 'avg',
           alert: {}
         },
@@ -155,7 +155,7 @@
           alert: {}
         },
         'Free memory': {
-          value: '71.7%',
+          value: '71.8%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -180,7 +180,7 @@
           alert: {}
         },
         'Avail. Disk': {
-          value: '70.1%',
+          value: '69.8%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -195,7 +195,7 @@
           alert: {}
         },
         'CPU usage': {
-          value: '30.28%',
+          value: '32.50%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -275,8 +275,8 @@
     },
     pm_id: 0,
     monit: {
-      memory: 31715328,
-      cpu: 0
+      memory: 28545024,
+      cpu: 1
     }
   },
   {
@@ -368,7 +368,7 @@
       ],
       axm_monitor: {
         'Loop delay': {
-          value: '0.61ms',
+          value: '0.57ms',
           agg_type: 'avg',
           alert: {}
         }
@@ -431,12 +431,12 @@
     },
     pm_id: 1,
     monit: {
-      memory: 41865216,
-      cpu: 0
+      memory: 40955904,
+      cpu: 1
     }
   },
   {
-    pid: 642,
+    pid: 29284,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -452,9 +452,9 @@
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c78',
+        XDG_SESSION_ID: 'c33',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.18 55724 22',
+        SSH_CLIENT: '192.168.69.18 54783 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -464,7 +464,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.18 55724 192.168.69.243 22',
+        SSH_CONNECTION: '192.168.69.18 54783 192.168.69.243 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -511,17 +511,17 @@
       pm_exec_path: '/home/pi/cluster/current/nodeworker2.js',
       pm_cwd: '/home/pi/cluster/current',
       exec_interpreter: 'node',
-      pm_out_log_path: '/home/pi/.pm2/logs/clusteredAPInode-out-2.log',
-      pm_err_log_path: '/home/pi/.pm2/logs/clusteredAPInode-error-2.log',
-      pm_pid_path: '/home/pi/.pm2/pids/clusteredAPInode-2.pid',
+      pm_out_log_path: '/home/pi/.pm2/logs/clusteredAPInode-out.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/clusteredAPInode-error.log',
+      pm_pid_path: '/home/pi/.pm2/pids/clusteredAPInode.pid',
       NODE_APP_INSTANCE: 0,
       vizion_running: false,
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c78',
+      XDG_SESSION_ID: 'c33',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.18 55724 22',
+      SSH_CLIENT: '192.168.69.18 54783 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -531,13 +531,13 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.18 55724 192.168.69.243 22',
+      SSH_CONNECTION: '192.168.69.18 54783 192.168.69.243 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1466892619245,
+      pm_uptime: 1466979369706,
       axm_actions: [
         {
           action_name: 'km:heapdump',
@@ -557,17 +557,17 @@
       ],
       axm_monitor: {
         'Loop delay': {
-          value: '0.48ms',
+          value: '0.62ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '5.1ms',
+          value: '9.37ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '0.21req/s',
+          value: '0.5req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -602,16 +602,16 @@
         heapdump: true
       },
       axm_dynamic: {},
-      created_at: 1466881259987,
-      restart_time: 0,
+      created_at: 1466979369702,
+      restart_time: 14,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:28:14.704Z',
-        comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
+        revision: 'c1bb25228214ec6368fb3a96cbbc575d77a0d377',
+        update_time: '2016-06-26T23:59:08.814Z',
+        comment: 'New notifications thru pub/sub',
         unstaged: false,
         branch: 'master',
         remotes: [
@@ -621,7 +621,7 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: 'ec188328f5d4a78911ba618aea214eb313790d97',
+        prev_rev: '607f10c284a88c8f769cc5892b7be844775a9b84',
         repo_path: '/home/pi/cluster/current'
       },
       node_version: '6.2.2',
@@ -641,12 +641,12 @@
     },
     pm_id: 2,
     monit: {
-      memory: 35684352,
+      memory: 42020864,
       cpu: 0
     }
   },
   {
-    pid: 654,
+    pid: 29323,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -662,9 +662,9 @@
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c78',
+        XDG_SESSION_ID: 'c33',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.18 55724 22',
+        SSH_CLIENT: '192.168.69.18 54783 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -674,7 +674,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.18 55724 192.168.69.243 22',
+        SSH_CONNECTION: '192.168.69.18 54783 192.168.69.243 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -721,17 +721,17 @@
       pm_exec_path: '/home/pi/cluster/current/nodeworker2.js',
       pm_cwd: '/home/pi/cluster/current',
       exec_interpreter: 'node',
-      pm_out_log_path: '/home/pi/.pm2/logs/clusteredAPInode-out-3.log',
-      pm_err_log_path: '/home/pi/.pm2/logs/clusteredAPInode-error-3.log',
-      pm_pid_path: '/home/pi/.pm2/pids/clusteredAPInode-3.pid',
+      pm_out_log_path: '/home/pi/.pm2/logs/clusteredAPInode-out.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/clusteredAPInode-error.log',
+      pm_pid_path: '/home/pi/.pm2/pids/clusteredAPInode.pid',
       NODE_APP_INSTANCE: 1,
       vizion_running: false,
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c78',
+      XDG_SESSION_ID: 'c33',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.18 55724 22',
+      SSH_CLIENT: '192.168.69.18 54783 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -741,13 +741,13 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.18 55724 192.168.69.243 22',
+      SSH_CONNECTION: '192.168.69.18 54783 192.168.69.243 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1466892619957,
+      pm_uptime: 1466979373973,
       axm_actions: [
         {
           action_name: 'km:heapdump',
@@ -767,17 +767,17 @@
       ],
       axm_monitor: {
         'Loop delay': {
-          value: '0.46ms',
+          value: '0.65ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '5.24ms',
+          value: '9.84ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '0.26req/s',
+          value: '0.52req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -812,16 +812,16 @@
         heapdump: true
       },
       axm_dynamic: {},
-      created_at: 1466881264288,
-      restart_time: 0,
+      created_at: 1466979373971,
+      restart_time: 14,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:28:15.014Z',
-        comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
+        revision: 'c1bb25228214ec6368fb3a96cbbc575d77a0d377',
+        update_time: '2016-06-26T23:59:09.144Z',
+        comment: 'New notifications thru pub/sub',
         unstaged: false,
         branch: 'master',
         remotes: [
@@ -831,7 +831,7 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: 'ec188328f5d4a78911ba618aea214eb313790d97',
+        prev_rev: '607f10c284a88c8f769cc5892b7be844775a9b84',
         repo_path: '/home/pi/cluster/current'
       },
       node_version: '6.2.2',
@@ -851,12 +851,12 @@
     },
     pm_id: 3,
     monit: {
-      memory: 35418112,
+      memory: 41144320,
       cpu: 0
     }
   },
   {
-    pid: 690,
+    pid: 29358,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -872,9 +872,9 @@
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c78',
+        XDG_SESSION_ID: 'c33',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.18 55724 22',
+        SSH_CLIENT: '192.168.69.18 54783 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -884,7 +884,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.18 55724 192.168.69.243 22',
+        SSH_CONNECTION: '192.168.69.18 54783 192.168.69.243 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -931,17 +931,17 @@
       pm_exec_path: '/home/pi/cluster/current/nodeworker2.js',
       pm_cwd: '/home/pi/cluster/current',
       exec_interpreter: 'node',
-      pm_out_log_path: '/home/pi/.pm2/logs/clusteredAPInode-out-4.log',
-      pm_err_log_path: '/home/pi/.pm2/logs/clusteredAPInode-error-4.log',
-      pm_pid_path: '/home/pi/.pm2/pids/clusteredAPInode-4.pid',
+      pm_out_log_path: '/home/pi/.pm2/logs/clusteredAPInode-out.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/clusteredAPInode-error.log',
+      pm_pid_path: '/home/pi/.pm2/pids/clusteredAPInode.pid',
       NODE_APP_INSTANCE: 2,
       vizion_running: false,
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c78',
+      XDG_SESSION_ID: 'c33',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.18 55724 22',
+      SSH_CLIENT: '192.168.69.18 54783 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -951,13 +951,13 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.18 55724 192.168.69.243 22',
+      SSH_CONNECTION: '192.168.69.18 54783 192.168.69.243 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1466892620898,
+      pm_uptime: 1466979378216,
       axm_actions: [
         {
           action_name: 'km:heapdump',
@@ -977,17 +977,17 @@
       ],
       axm_monitor: {
         'Loop delay': {
-          value: '0.45ms',
+          value: '0.64ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '5.22ms',
+          value: '9.93ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '0.26req/s',
+          value: '0.49req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -1022,16 +1022,16 @@
         heapdump: true
       },
       axm_dynamic: {},
-      created_at: 1466881268523,
-      restart_time: 0,
+      created_at: 1466979378214,
+      restart_time: 13,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:28:15.304Z',
-        comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
+        revision: 'c1bb25228214ec6368fb3a96cbbc575d77a0d377',
+        update_time: '2016-06-26T23:59:09.394Z',
+        comment: 'New notifications thru pub/sub',
         unstaged: false,
         branch: 'master',
         remotes: [
@@ -1041,7 +1041,7 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: 'ec188328f5d4a78911ba618aea214eb313790d97',
+        prev_rev: '607f10c284a88c8f769cc5892b7be844775a9b84',
         repo_path: '/home/pi/cluster/current'
       },
       node_version: '6.2.2',
@@ -1061,12 +1061,12 @@
     },
     pm_id: 4,
     monit: {
-      memory: 44654592,
+      memory: 41709568,
       cpu: 0
     }
   },
   {
-    pid: 728,
+    pid: 29397,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -1082,9 +1082,9 @@
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c78',
+        XDG_SESSION_ID: 'c33',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.18 55724 22',
+        SSH_CLIENT: '192.168.69.18 54783 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -1094,7 +1094,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.18 55724 192.168.69.243 22',
+        SSH_CONNECTION: '192.168.69.18 54783 192.168.69.243 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -1141,17 +1141,17 @@
       pm_exec_path: '/home/pi/cluster/current/nodeworker2.js',
       pm_cwd: '/home/pi/cluster/current',
       exec_interpreter: 'node',
-      pm_out_log_path: '/home/pi/.pm2/logs/clusteredAPInode-out-5.log',
-      pm_err_log_path: '/home/pi/.pm2/logs/clusteredAPInode-error-5.log',
-      pm_pid_path: '/home/pi/.pm2/pids/clusteredAPInode-5.pid',
+      pm_out_log_path: '/home/pi/.pm2/logs/clusteredAPInode-out.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/clusteredAPInode-error.log',
+      pm_pid_path: '/home/pi/.pm2/pids/clusteredAPInode.pid',
       NODE_APP_INSTANCE: 3,
       vizion_running: false,
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c78',
+      XDG_SESSION_ID: 'c33',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.18 55724 22',
+      SSH_CLIENT: '192.168.69.18 54783 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -1161,13 +1161,13 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.18 55724 192.168.69.243 22',
+      SSH_CONNECTION: '192.168.69.18 54783 192.168.69.243 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1466892622002,
+      pm_uptime: 1466979382456,
       axm_actions: [
         {
           action_name: 'km:heapdump',
@@ -1187,17 +1187,17 @@
       ],
       axm_monitor: {
         'Loop delay': {
-          value: '0.44ms',
+          value: '0.65ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '5.22ms',
+          value: '9.98ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '0.26req/s',
+          value: '0.48req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -1232,16 +1232,16 @@
         heapdump: true
       },
       axm_dynamic: {},
-      created_at: 1466881272739,
-      restart_time: 0,
+      created_at: 1466979382455,
+      restart_time: 12,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '375ca3b6fc0e74e422a7d90b80f31c79a971850a',
-        update_time: '2016-06-26T11:28:15.574Z',
-        comment: 'Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX',
+        revision: 'c1bb25228214ec6368fb3a96cbbc575d77a0d377',
+        update_time: '2016-06-26T23:59:09.644Z',
+        comment: 'New notifications thru pub/sub',
         unstaged: false,
         branch: 'master',
         remotes: [
@@ -1251,7 +1251,7 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: 'ec188328f5d4a78911ba618aea214eb313790d97',
+        prev_rev: '607f10c284a88c8f769cc5892b7be844775a9b84',
         repo_path: '/home/pi/cluster/current'
       },
       node_version: '6.2.2',
@@ -1271,8 +1271,8 @@
     },
     pm_id: 5,
     monit: {
-      memory: 42655744,
-      cpu: 1
+      memory: 40976384,
+      cpu: 0
     }
   }
 ]

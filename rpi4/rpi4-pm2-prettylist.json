@@ -93,33 +93,33 @@
        axm_actions: [ { action_name: 'Show Configuration', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '0.59ms',
+           value: '0.57ms',
            agg_type: 'avg',
            alert: {}
          },
-          'Curr. Waiting': {
-            value: '1',
+         'Curr. Waiting': {
+           value: '1',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10000, interval: 180, cmp: '>' } },
           'Curr. Writing': { value: '1', agg_type: 'avg', alert: {} },
           'Curr. Reading': { value: '0', agg_type: 'avg', alert: {} },
          'Req/Handled Conn.': {
-           value: '629.80',
+           value: '87.76',
            agg_type: 'avg',
            alert: {}
          },
          'Client Requests': {
-           value: '3171048',
+           value: '5968',
            agg_type: 'avg',
            alert: {}
          },
          'Handled Conn.': {
-           value: '5035',
+           value: '68',
            agg_type: 'avg',
            alert: {}
          },
          'Accepted Conn.': {
-           value: '5035',
+           value: '68',
            agg_type: 'avg',
            alert: {}
          },
@@ -284,16 +284,16 @@
           { action_name: 'open files', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '0.48ms',
+           value: '0.47ms',
            agg_type: 'avg',
            alert: {}
          },
-          'Zombie processes': 
-           { value: 0,
+          'Zombie processes': {
+            value: 1,
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '>' } },
          'Total Processes': {
-           value: 123,
+           value: 117,
            agg_type: 'avg',
            alert: {}
          },
@@ -303,7 +303,7 @@
            alert: {}
          },
          'Free memory': {
-           value: '76.0%',
+           value: '76.1%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
          'TTY/SSH opened': {
@@ -321,7 +321,7 @@
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
           'Operating System': { value: 'Raspbian 8', agg_type: 'avg', alert: {} },
          'CPU usage': {
-           value: '27.27%',
+           value: '56.14%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 90, interval: 100, cmp: '>' } },
           'eth1 output': { value: '0.03MB/s', agg_type: 'avg', alert: {} },
@@ -379,8 +379,8 @@
      },
     pm_id: 1,
     monit: {
-      memory: 33611776,
-      cpu: 1
+      memory: 35774464,
+      cpu: 2
     }
   },
   {
@@ -465,7 +465,7 @@
        axm_actions: [ { action_name: 'list files', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '0.59ms',
+           value: '0.57ms',
            agg_type: 'avg',
            alert: {}
          }
@@ -512,7 +512,7 @@
      },
     pm_id: 2,
     monit: {
-      memory: 31531008,
+      memory: 31719424,
       cpu: 0
     }
   },
@@ -610,12 +610,12 @@
            alert: {}
          },
          'pmx:http:latency': {
-           value: '32.44ms',
+           value: '30.6ms',
            agg_type: 'avg',
            alert: {}
          },
          HTTP: {
-           value: '0.05req/s',
+           value: '0.01req/s',
            agg_type: 'avg',
            alert: {}
          },
@@ -647,7 +647,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-hdrhist.git',
           revision: 'c9f953069a4e98e86cd4f852b4f8368ff65eeb06',
-          update_time: '2016-06-26T11:28:39.443Z',
+          update_time: '2016-06-26T23:59:37.045Z',
           comment: 'Update HDR histogram parameters for smoother curve',
           unstaged: false,
           branch: 'master',
@@ -666,8 +666,8 @@
        pm_id: 3 },
     pm_id: 3,
     monit: {
-      memory: 30752768,
-      cpu: 0
+      memory: 30580736,
+      cpu: 1
     }
   }
 ]

@@ -1,39 +1,39 @@
  Describing process with id 2 - name clusteredAPInode 
-┌───────────────────┬─────────────────────────────────────────────────┐
-│ status            │ online                                          │
-│ name              │ clusteredAPInode                                │
-│ restarts          │ 0                                               │
-│ uptime            │ 13h                                             │
-│ script path       │ /home/pi/cluster/current/nodeworker2.js         │
-│ script args       │ N/A                                             │
-│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-2.log │
-│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out-2.log   │
-│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode-2.pid       │
-│ interpreter       │ node                                            │
-│ interpreter args  │ N/A                                             │
-│ script id         │ 2                                               │
-│ exec cwd          │ /home/pi/cluster/current                        │
-│ exec mode         │ cluster_mode                                    │
-│ node.js version   │ 6.2.2                                           │
-│ watch & reload    │ ✔                                               │
-│ unstable restarts │ 0                                               │
-│ created at        │ 2016-06-25T21:37:26.782Z                        │
-└───────────────────┴─────────────────────────────────────────────────┘
+┌───────────────────┬───────────────────────────────────────────────┐
+│ status            │ online                                        │
+│ name              │ clusteredAPInode                              │
+│ restarts          │ 11                                            │
+│ uptime            │ 101m                                          │
+│ script path       │ /home/pi/cluster/current/nodeworker2.js       │
+│ script args       │ N/A                                           │
+│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
+│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out.log   │
+│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode.pid       │
+│ interpreter       │ node                                          │
+│ interpreter args  │ N/A                                           │
+│ script id         │ 2                                             │
+│ exec cwd          │ /home/pi/cluster/current                      │
+│ exec mode         │ cluster_mode                                  │
+│ node.js version   │ 6.2.2                                         │
+│ watch & reload    │ ✔                                             │
+│ unstable restarts │ 0                                             │
+│ created at        │ 2016-06-26T22:17:52.640Z                      │
+└───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ revision control │ git                                                                                                      │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
-│ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:28:42.407Z                                                                                 │
-│ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
-│ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
-│ branch           │ master                                                                                                   │
-└──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────┬───────────────────────────────────────────────────────────┐
+│ revision control │ git                                                       │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
+│ repository root  │ /home/pi/cluster/current                                  │
+│ last update      │ 2016-06-26T23:59:21.162Z                                  │
+│ revision         │ c1bb25228214ec6368fb3a96cbbc575d77a0d377                  │
+│ comment          │ New notifications thru pub/sub                            │
+│ branch           │ master                                                    │
+└──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬───────────┐
-│ Loop delay       │ 0.67ms    │
-│ pmx:http:latency │ 5.11ms    │
-│ HTTP             │ 0.28req/s │
+│ Loop delay       │ 0.93ms    │
+│ pmx:http:latency │ 9.55ms    │
+│ HTTP             │ 0.36req/s │
 │ Network Upload   │ 0 MB/s    │
 │ Network Download │ 0 MB/s    │
 └──────────────────┴───────────┘
@@ -41,41 +41,41 @@
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
  Describing process with id 3 - name clusteredAPInode 
-┌───────────────────┬─────────────────────────────────────────────────┐
-│ status            │ online                                          │
-│ name              │ clusteredAPInode                                │
-│ restarts          │ 0                                               │
-│ uptime            │ 13h                                             │
-│ script path       │ /home/pi/cluster/current/nodeworker2.js         │
-│ script args       │ N/A                                             │
-│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-3.log │
-│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out-3.log   │
-│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode-3.pid       │
-│ interpreter       │ node                                            │
-│ interpreter args  │ N/A                                             │
-│ script id         │ 3                                               │
-│ exec cwd          │ /home/pi/cluster/current                        │
-│ exec mode         │ cluster_mode                                    │
-│ node.js version   │ 6.2.2                                           │
-│ watch & reload    │ ✔                                               │
-│ unstable restarts │ 0                                               │
-│ created at        │ 2016-06-25T21:37:31.106Z                        │
-└───────────────────┴─────────────────────────────────────────────────┘
+┌───────────────────┬───────────────────────────────────────────────┐
+│ status            │ online                                        │
+│ name              │ clusteredAPInode                              │
+│ restarts          │ 11                                            │
+│ uptime            │ 101m                                          │
+│ script path       │ /home/pi/cluster/current/nodeworker2.js       │
+│ script args       │ N/A                                           │
+│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
+│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out.log   │
+│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode.pid       │
+│ interpreter       │ node                                          │
+│ interpreter args  │ N/A                                           │
+│ script id         │ 3                                             │
+│ exec cwd          │ /home/pi/cluster/current                      │
+│ exec mode         │ cluster_mode                                  │
+│ node.js version   │ 6.2.2                                         │
+│ watch & reload    │ ✔                                             │
+│ unstable restarts │ 0                                             │
+│ created at        │ 2016-06-26T22:17:56.996Z                      │
+└───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ revision control │ git                                                                                                      │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
-│ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:28:42.647Z                                                                                 │
-│ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
-│ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
-│ branch           │ master                                                                                                   │
-└──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────┬───────────────────────────────────────────────────────────┐
+│ revision control │ git                                                       │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
+│ repository root  │ /home/pi/cluster/current                                  │
+│ last update      │ 2016-06-26T23:59:21.412Z                                  │
+│ revision         │ c1bb25228214ec6368fb3a96cbbc575d77a0d377                  │
+│ comment          │ New notifications thru pub/sub                            │
+│ branch           │ master                                                    │
+└──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬───────────┐
-│ Loop delay       │ 0.69ms    │
-│ pmx:http:latency │ 5.16ms    │
-│ HTTP             │ 0.29req/s │
+│ Loop delay       │ 0.88ms    │
+│ pmx:http:latency │ 9.84ms    │
+│ HTTP             │ 0.37req/s │
 │ Network Upload   │ 0 MB/s    │
 │ Network Download │ 0 MB/s    │
 └──────────────────┴───────────┘
@@ -83,41 +83,41 @@
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
  Describing process with id 4 - name clusteredAPInode 
-┌───────────────────┬─────────────────────────────────────────────────┐
-│ status            │ online                                          │
-│ name              │ clusteredAPInode                                │
-│ restarts          │ 0                                               │
-│ uptime            │ 13h                                             │
-│ script path       │ /home/pi/cluster/current/nodeworker2.js         │
-│ script args       │ N/A                                             │
-│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-4.log │
-│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out-4.log   │
-│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode-4.pid       │
-│ interpreter       │ node                                            │
-│ interpreter args  │ N/A                                             │
-│ script id         │ 4                                               │
-│ exec cwd          │ /home/pi/cluster/current                        │
-│ exec mode         │ cluster_mode                                    │
-│ node.js version   │ 6.2.2                                           │
-│ watch & reload    │ ✔                                               │
-│ unstable restarts │ 0                                               │
-│ created at        │ 2016-06-25T21:37:35.314Z                        │
-└───────────────────┴─────────────────────────────────────────────────┘
+┌───────────────────┬───────────────────────────────────────────────┐
+│ status            │ online                                        │
+│ name              │ clusteredAPInode                              │
+│ restarts          │ 10                                            │
+│ uptime            │ 101m                                          │
+│ script path       │ /home/pi/cluster/current/nodeworker2.js       │
+│ script args       │ N/A                                           │
+│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
+│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out.log   │
+│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode.pid       │
+│ interpreter       │ node                                          │
+│ interpreter args  │ N/A                                           │
+│ script id         │ 4                                             │
+│ exec cwd          │ /home/pi/cluster/current                      │
+│ exec mode         │ cluster_mode                                  │
+│ node.js version   │ 6.2.2                                         │
+│ watch & reload    │ ✔                                             │
+│ unstable restarts │ 0                                             │
+│ created at        │ 2016-06-26T22:18:01.427Z                      │
+└───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ revision control │ git                                                                                                      │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
-│ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:28:42.877Z                                                                                 │
-│ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
-│ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
-│ branch           │ master                                                                                                   │
-└──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────┬───────────────────────────────────────────────────────────┐
+│ revision control │ git                                                       │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
+│ repository root  │ /home/pi/cluster/current                                  │
+│ last update      │ 2016-06-26T23:59:21.732Z                                  │
+│ revision         │ c1bb25228214ec6368fb3a96cbbc575d77a0d377                  │
+│ comment          │ New notifications thru pub/sub                            │
+│ branch           │ master                                                    │
+└──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬───────────┐
-│ Loop delay       │ 0.41ms    │
-│ pmx:http:latency │ 4.98ms    │
-│ HTTP             │ 0.28req/s │
+│ Loop delay       │ 0.56ms    │
+│ pmx:http:latency │ 10.02ms   │
+│ HTTP             │ 0.36req/s │
 │ Network Upload   │ 0 MB/s    │
 │ Network Download │ 0 MB/s    │
 └──────────────────┴───────────┘
@@ -125,44 +125,44 @@
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
  Describing process with id 5 - name clusteredAPInode 
-┌───────────────────┬─────────────────────────────────────────────────┐
-│ status            │ online                                          │
-│ name              │ clusteredAPInode                                │
-│ restarts          │ 0                                               │
-│ uptime            │ 13h                                             │
-│ script path       │ /home/pi/cluster/current/nodeworker2.js         │
-│ script args       │ N/A                                             │
-│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-5.log │
-│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out-5.log   │
-│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode-5.pid       │
-│ interpreter       │ node                                            │
-│ interpreter args  │ N/A                                             │
-│ script id         │ 5                                               │
-│ exec cwd          │ /home/pi/cluster/current                        │
-│ exec mode         │ cluster_mode                                    │
-│ node.js version   │ 6.2.2                                           │
-│ watch & reload    │ ✔                                               │
-│ unstable restarts │ 0                                               │
-│ created at        │ 2016-06-25T21:37:39.532Z                        │
-└───────────────────┴─────────────────────────────────────────────────┘
+┌───────────────────┬───────────────────────────────────────────────┐
+│ status            │ online                                        │
+│ name              │ clusteredAPInode                              │
+│ restarts          │ 10                                            │
+│ uptime            │ 101m                                          │
+│ script path       │ /home/pi/cluster/current/nodeworker2.js       │
+│ script args       │ N/A                                           │
+│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
+│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out.log   │
+│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode.pid       │
+│ interpreter       │ node                                          │
+│ interpreter args  │ N/A                                           │
+│ script id         │ 5                                             │
+│ exec cwd          │ /home/pi/cluster/current                      │
+│ exec mode         │ cluster_mode                                  │
+│ node.js version   │ 6.2.2                                         │
+│ watch & reload    │ ✔                                             │
+│ unstable restarts │ 0                                             │
+│ created at        │ 2016-06-26T22:18:05.866Z                      │
+└───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ revision control │ git                                                                                                      │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                │
-│ repository root  │ /home/pi/cluster/current                                                                                 │
-│ last update      │ 2016-06-26T11:28:43.157Z                                                                                 │
-│ revision         │ 375ca3b6fc0e74e422a7d90b80f31c79a971850a                                                                 │
-│ comment          │ Improved performance on number conversion (float/integer) by using bitwise operation instead of parseXXX │
-│ branch           │ master                                                                                                   │
-└──────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────┬───────────────────────────────────────────────────────────┐
+│ revision control │ git                                                       │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
+│ repository root  │ /home/pi/cluster/current                                  │
+│ last update      │ 2016-06-26T23:59:22.082Z                                  │
+│ revision         │ c1bb25228214ec6368fb3a96cbbc575d77a0d377                  │
+│ comment          │ New notifications thru pub/sub                            │
+│ branch           │ master                                                    │
+└──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────┐
-│ Loop delay       │ 0.42ms    │
-│ pmx:http:latency │ 5.16ms    │
-│ HTTP             │ 0.28req/s │
-│ Network Upload   │ 0 MB/s    │
-│ Network Download │ 0 MB/s    │
-└──────────────────┴───────────┘
+┌──────────────────┬───────────────┐
+│ Loop delay       │ 0.53ms        │
+│ pmx:http:latency │ 9.31ms        │
+│ HTTP             │ 0.38req/s     │
+│ Network Upload   │ 0.000007 MB/s │
+│ Network Download │ 0.000003 MB/s │
+└──────────────────┴───────────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
