@@ -4,6 +4,8 @@ echo "Exporting raspberrypi0 config files..."
 ssh -p 32002 -T pi@giancarlobonansea.homeip.net "\
 uname -a > /home/pi/clusterednode-config/rpi0-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi0-api-pm2-list.txt && \
+pm2 show clusteredPUBSUBnode > /home/pi/clusterednode-config/rpi0-pubsub-pm2-show.txt && \
+pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi0-logrotate-pm2-show.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi0-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi0-sysctl.conf && \
 sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi0-stunnel-redis-server.conf && \
@@ -18,6 +20,8 @@ scp -r pi@raspberrypi0:~/clusterednode-config/* ./rpi0/
 echo "Exporting raspberrypi1 config files..."
 ssh -p 32003 -T pi@giancarlobonansea.homeip.net "\
 uname -a > /home/pi/clusterednode-config/rpi1-uname.txt && \
+pm2 list > /home/pi/clusterednode-config/rpi1-api-pm2-list.txt && \
+pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi1-logrotate-pm2-show.txt && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi1-sysctl.conf && \
 sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi1-stunnel-redis-server.conf && \
 sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi1-default-stunnel && \
@@ -33,6 +37,7 @@ ssh -p 32004 -T pi@giancarlobonansea.homeip.net "\
 uname -a > /home/pi/clusterednode-config/rpi2-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi2-api-pm2-list.txt && \
 pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi2-api-pm2-show.txt && \
+pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi2-logrotate-pm2-show.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi2-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi2-sysctl.conf && \
 sudo cp /etc/stunnel/redis-client.conf /home/pi/clusterednode-config/rpi2-stunnel-redis-client.conf && \
@@ -44,6 +49,7 @@ ssh -p 32005 -T pi@giancarlobonansea.homeip.net "\
 uname -a > /home/pi/clusterednode-config/rpi3-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi3-api-pm2-list.txt && \
 pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi3-api-pm2-show.txt && \
+pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi3-logrotate-pm2-show.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi3-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi3-sysctl.conf && \
 sudo cp /etc/stunnel/redis-client.conf /home/pi/clusterednode-config/rpi3-stunnel-redis-client.conf && \
@@ -58,6 +64,7 @@ sudo cp /etc/nginx/snippets/self-signed.conf /home/pi/clusterednode-config/rpi4-
 sudo cp /etc/nginx/snippets/ssl-params.conf /home/pi/clusterednode-config/rpi4-ssl-params.conf && \
 pm2 list > /home/pi/clusterednode-config/rpi4-hdr-pm2-list.txt && \
 pm2 show clusteredHDRnode > /home/pi/clusterednode-config/rpi4-hdr-pm2-show.txt && \
+pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi4-logrotate-pm2-show.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi4-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi4-sysctl.conf && \
 sudo cp /etc/ssl/certs/dhparam.pem /home/pi/clusterednode-config/rpi4-dhparam.pem && \
@@ -70,6 +77,7 @@ ssh -p 32007 -T pi@giancarlobonansea.homeip.net "\
 uname -a > /home/pi/clusterednode-config/rpi5-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi5-api-pm2-list.txt && \
 pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi5-api-pm2-show.txt && \
+pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi5-logrotate-pm2-show.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi5-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi5-sysctl.conf && \
 sudo cp /etc/stunnel/redis-client.conf /home/pi/clusterednode-config/rpi5-stunnel-redis-client.conf && \
@@ -81,6 +89,7 @@ ssh -p 32008 -T pi@giancarlobonansea.homeip.net "\
 uname -a > /home/pi/clusterednode-config/rpi6-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi6-api-pm2-list.txt && \
 pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi6-api-pm2-show.txt && \
+pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi6-logrotate-pm2-show.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi6-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi6-sysctl.conf && \
 sudo cp /etc/stunnel/redis-client.conf /home/pi/clusterednode-config/rpi6-stunnel-redis-client.conf && \
