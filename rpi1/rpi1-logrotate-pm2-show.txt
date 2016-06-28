@@ -1,0 +1,36 @@
+ Describing process with id 0 - name pm2-logrotate 
+┌───────────────────┬─────────────────────────────────────────────────┐
+│ status            │ online                                          │
+│ name              │ pm2-logrotate                                   │
+│ restarts          │ 4                                               │
+│ uptime            │ 7m                                              │
+│ script path       │ /home/pi/.pm2/node_modules/pm2-logrotate/app.js │
+│ script args       │ N/A                                             │
+│ error log path    │ /home/pi/.pm2/logs/pm2-logrotate-error.log      │
+│ out log path      │ /home/pi/.pm2/logs/pm2-logrotate-out.log        │
+│ pid path          │ /home/pi/.pm2/pids/pm2-logrotate.pid            │
+│ interpreter       │ node                                            │
+│ interpreter args  │ N/A                                             │
+│ script id         │ 0                                               │
+│ exec cwd          │ /home/pi/.pm2/node_modules/pm2-logrotate        │
+│ exec mode         │ fork_mode                                       │
+│ node.js version   │ 6.2.2                                           │
+│ watch & reload    │ ✘                                               │
+│ unstable restarts │ 0                                               │
+│ created at        │ 2016-06-28T11:04:31.382Z                        │
+└───────────────────┴─────────────────────────────────────────────────┘
+Process configuration
+┌───────────────┬─────┐
+│ interval      │ 1   │
+│ interval_unit │ DD  │
+│ max_size      │ 10M │
+│ retain        │ 6   │
+│ max-size      │ 10M │
+└───────────────┴─────┘
+ Code metrics value 
+┌────────────┬────────┐
+│ Loop delay │ 42.4ms │
+└────────────┴────────┘
+ Add your own code metrics: http://bit.ly/code-metrics
+ Use `pm2 logs pm2-logrotate (--lines 1000)` to display logs
+ Use `pm2 monit` to monitor CPU and Memory usage pm2-logrotate

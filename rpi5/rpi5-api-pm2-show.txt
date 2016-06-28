@@ -2,8 +2,8 @@
 ┌───────────────────┬───────────────────────────────────────────────┐
 │ status            │ online                                        │
 │ name              │ clusteredAPInode                              │
-│ restarts          │ 11                                            │
-│ uptime            │ 101m                                          │
+│ restarts          │ 6                                             │
+│ uptime            │ 10h                                           │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js       │
 │ script args       │ N/A                                           │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
@@ -17,26 +17,26 @@
 │ node.js version   │ 6.2.2                                         │
 │ watch & reload    │ ✔                                             │
 │ unstable restarts │ 0                                             │
-│ created at        │ 2016-06-26T22:17:52.640Z                      │
+│ created at        │ 2016-06-28T00:31:52.451Z                      │
 └───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
 ┌──────────────────┬───────────────────────────────────────────────────────────┐
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-06-26T23:59:21.162Z                                  │
-│ revision         │ c1bb25228214ec6368fb3a96cbbc575d77a0d377                  │
+│ last update      │ 2016-06-28T11:12:23.261Z                                  │
+│ revision         │ 394e02b8afa05e016612f0a9a0e1953632af2cf5                  │
 │ comment          │ New notifications thru pub/sub                            │
 │ branch           │ master                                                    │
 └──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────┐
-│ Loop delay       │ 0.93ms    │
-│ pmx:http:latency │ 9.55ms    │
-│ HTTP             │ 0.36req/s │
-│ Network Upload   │ 0 MB/s    │
-│ Network Download │ 0 MB/s    │
-└──────────────────┴───────────┘
+┌──────────────────┬────────┐
+│ Loop delay       │ 2.37ms │
+│ pmx:http:latency │ 11.3ms │
+│ HTTP             │ 0req/s │
+│ Network Upload   │ 0 MB/s │
+│ Network Download │ 0 MB/s │
+└──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -44,8 +44,8 @@
 ┌───────────────────┬───────────────────────────────────────────────┐
 │ status            │ online                                        │
 │ name              │ clusteredAPInode                              │
-│ restarts          │ 11                                            │
-│ uptime            │ 101m                                          │
+│ restarts          │ 6                                             │
+│ uptime            │ 10h                                           │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js       │
 │ script args       │ N/A                                           │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
@@ -59,26 +59,26 @@
 │ node.js version   │ 6.2.2                                         │
 │ watch & reload    │ ✔                                             │
 │ unstable restarts │ 0                                             │
-│ created at        │ 2016-06-26T22:17:56.996Z                      │
+│ created at        │ 2016-06-28T00:31:56.745Z                      │
 └───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
 ┌──────────────────┬───────────────────────────────────────────────────────────┐
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-06-26T23:59:21.412Z                                  │
-│ revision         │ c1bb25228214ec6368fb3a96cbbc575d77a0d377                  │
+│ last update      │ 2016-06-28T11:12:23.661Z                                  │
+│ revision         │ 394e02b8afa05e016612f0a9a0e1953632af2cf5                  │
 │ comment          │ New notifications thru pub/sub                            │
 │ branch           │ master                                                    │
 └──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────┐
-│ Loop delay       │ 0.88ms    │
-│ pmx:http:latency │ 9.84ms    │
-│ HTTP             │ 0.37req/s │
-│ Network Upload   │ 0 MB/s    │
-│ Network Download │ 0 MB/s    │
-└──────────────────┴───────────┘
+┌──────────────────┬─────────┐
+│ Loop delay       │ 3.25ms  │
+│ pmx:http:latency │ 11.51ms │
+│ HTTP             │ 0req/s  │
+│ Network Upload   │ 0 MB/s  │
+│ Network Download │ 0 MB/s  │
+└──────────────────┴─────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -86,8 +86,8 @@
 ┌───────────────────┬───────────────────────────────────────────────┐
 │ status            │ online                                        │
 │ name              │ clusteredAPInode                              │
-│ restarts          │ 10                                            │
-│ uptime            │ 101m                                          │
+│ restarts          │ 6                                             │
+│ uptime            │ 10h                                           │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js       │
 │ script args       │ N/A                                           │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
@@ -101,26 +101,26 @@
 │ node.js version   │ 6.2.2                                         │
 │ watch & reload    │ ✔                                             │
 │ unstable restarts │ 0                                             │
-│ created at        │ 2016-06-26T22:18:01.427Z                      │
+│ created at        │ 2016-06-28T00:32:01.103Z                      │
 └───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
 ┌──────────────────┬───────────────────────────────────────────────────────────┐
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-06-26T23:59:21.732Z                                  │
-│ revision         │ c1bb25228214ec6368fb3a96cbbc575d77a0d377                  │
+│ last update      │ 2016-06-28T11:12:24.111Z                                  │
+│ revision         │ 394e02b8afa05e016612f0a9a0e1953632af2cf5                  │
 │ comment          │ New notifications thru pub/sub                            │
 │ branch           │ master                                                    │
 └──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────┐
-│ Loop delay       │ 0.56ms    │
-│ pmx:http:latency │ 10.02ms   │
-│ HTTP             │ 0.36req/s │
-│ Network Upload   │ 0 MB/s    │
-│ Network Download │ 0 MB/s    │
-└──────────────────┴───────────┘
+┌──────────────────┬─────────┐
+│ Loop delay       │ 2.54ms  │
+│ pmx:http:latency │ 11.63ms │
+│ HTTP             │ 0req/s  │
+│ Network Upload   │ 0 MB/s  │
+│ Network Download │ 0 MB/s  │
+└──────────────────┴─────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -128,8 +128,8 @@
 ┌───────────────────┬───────────────────────────────────────────────┐
 │ status            │ online                                        │
 │ name              │ clusteredAPInode                              │
-│ restarts          │ 10                                            │
-│ uptime            │ 101m                                          │
+│ restarts          │ 6                                             │
+│ uptime            │ 10h                                           │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js       │
 │ script args       │ N/A                                           │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
@@ -143,26 +143,26 @@
 │ node.js version   │ 6.2.2                                         │
 │ watch & reload    │ ✔                                             │
 │ unstable restarts │ 0                                             │
-│ created at        │ 2016-06-26T22:18:05.866Z                      │
+│ created at        │ 2016-06-28T00:32:05.325Z                      │
 └───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
 ┌──────────────────┬───────────────────────────────────────────────────────────┐
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-06-26T23:59:22.082Z                                  │
-│ revision         │ c1bb25228214ec6368fb3a96cbbc575d77a0d377                  │
+│ last update      │ 2016-06-28T11:12:24.531Z                                  │
+│ revision         │ 394e02b8afa05e016612f0a9a0e1953632af2cf5                  │
 │ comment          │ New notifications thru pub/sub                            │
 │ branch           │ master                                                    │
 └──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────────┐
-│ Loop delay       │ 0.53ms        │
-│ pmx:http:latency │ 9.31ms        │
-│ HTTP             │ 0.38req/s     │
-│ Network Upload   │ 0.000007 MB/s │
-│ Network Download │ 0.000003 MB/s │
-└──────────────────┴───────────────┘
+┌──────────────────┬─────────┐
+│ Loop delay       │ 2.54ms  │
+│ pmx:http:latency │ 11.89ms │
+│ HTTP             │ 0req/s  │
+│ Network Upload   │ 0 MB/s  │
+│ Network Download │ 0 MB/s  │
+└──────────────────┴─────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode

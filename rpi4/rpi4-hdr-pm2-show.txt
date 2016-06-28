@@ -3,7 +3,7 @@
 │ status            │ online                                           │
 │ name              │ clusteredHDRnode                                 │
 │ restarts          │ 0                                                │
-│ uptime            │ 26h                                              │
+│ uptime            │ 17h                                              │
 │ script path       │ /home/pi/clusterednode-hdrhist/current/hdrsrv.js │
 │ script args       │ N/A                                              │
 │ error log path    │ /home/pi/.pm2/logs/clusteredHDRnode-error-3.log  │
@@ -24,19 +24,19 @@
 │ revision control │ git                                                        │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-hdrhist.git │
 │ repository root  │ /home/pi/clusterednode-hdrhist/current                     │
-│ last update      │ 2016-06-26T23:59:06.905Z                                   │
+│ last update      │ 2016-06-28T11:11:56.449Z                                   │
 │ revision         │ c9f953069a4e98e86cd4f852b4f8368ff65eeb06                   │
 │ comment          │ Update HDR histogram parameters for smoother curve         │
 │ branch           │ master                                                     │
 └──────────────────┴────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────┐
-│ Loop delay       │ 0.36ms    │
-│ pmx:http:latency │ 30.6ms    │
-│ HTTP             │ 0.01req/s │
-│ Network Upload   │ 0 MB/s    │
-│ Network Download │ 0 MB/s    │
-└──────────────────┴───────────┘
+┌──────────────────┬─────────┐
+│ Loop delay       │ 0.39ms  │
+│ pmx:http:latency │ 28.58ms │
+│ HTTP             │ 0req/s  │
+│ Network Upload   │ 0 MB/s  │
+│ Network Download │ 0 MB/s  │
+└──────────────────┴─────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredHDRnode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredHDRnode

@@ -1,0 +1,38 @@
+ Describing process with id 0 - name clusteredPUBSUBnode 
+┌───────────────────┬──────────────────────────────────────────────────┐
+│ status            │ online                                           │
+│ name              │ clusteredPUBSUBnode                              │
+│ restarts          │ 23                                               │
+│ uptime            │ 10h                                              │
+│ script path       │ /home/pi/cluster/current/nosock.js               │
+│ script args       │ N/A                                              │
+│ error log path    │ /home/pi/.pm2/logs/clusteredPUBSUBnode-error.log │
+│ out log path      │ /home/pi/.pm2/logs/clusteredPUBSUBnode-out.log   │
+│ pid path          │ /home/pi/.pm2/pids/clusteredPUBSUBnode.pid       │
+│ interpreter       │ node                                             │
+│ interpreter args  │ N/A                                              │
+│ script id         │ 0                                                │
+│ exec cwd          │ /home/pi/cluster/current                         │
+│ exec mode         │ cluster_mode                                     │
+│ node.js version   │ 6.2.2                                            │
+│ watch & reload    │ ✔                                                │
+│ unstable restarts │ 0                                                │
+│ created at        │ 2016-06-28T00:59:40.412Z                         │
+└───────────────────┴──────────────────────────────────────────────────┘
+ Revision control metadata 
+┌──────────────────┬───────────────────────────────────────────────────────────┐
+│ revision control │ git                                                       │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-pubsub.git │
+│ repository root  │ /home/pi/cluster/current                                  │
+│ last update      │ 2016-06-28T11:10:30.421Z                                  │
+│ revision         │ e0517d89f7cf7f99d7b340c25369b33081abe675                  │
+│ comment          │ New notifications thru pub/sub                            │
+│ branch           │ master                                                    │
+└──────────────────┴───────────────────────────────────────────────────────────┘
+ Code metrics value 
+┌────────────┬─────────┐
+│ Loop delay │ 22.29ms │
+└────────────┴─────────┘
+ Add your own code metrics: http://bit.ly/code-metrics
+ Use `pm2 logs clusteredPUBSUBnode (--lines 1000)` to display logs
+ Use `pm2 monit` to monitor CPU and Memory usage clusteredPUBSUBnode
