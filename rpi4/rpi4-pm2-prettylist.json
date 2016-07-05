@@ -93,7 +93,7 @@
        axm_actions: [ { action_name: 'Show Configuration', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '0.56ms',
+           value: '0.57ms',
            agg_type: 'avg',
            alert: {}
          },
@@ -102,28 +102,28 @@
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10000, interval: 180, cmp: '>' } },
          'Curr. Writing': {
-           value: '4',
+           value: '5',
            agg_type: 'avg',
            alert: {}
          },
           'Curr. Reading': { value: '0', agg_type: 'avg', alert: {} },
          'Req/Handled Conn.': {
-           value: '609.22',
+           value: '602.99',
            agg_type: 'avg',
            alert: {}
          },
          'Client Requests': {
-           value: '9656125',
+           value: '9857047',
            agg_type: 'avg',
            alert: {}
          },
          'Handled Conn.': {
-           value: '15850',
+           value: '16347',
            agg_type: 'avg',
            alert: {}
          },
          'Accepted Conn.': {
-           value: '15850',
+           value: '16347',
            agg_type: 'avg',
            alert: {}
          },
@@ -325,16 +325,16 @@
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
           'Operating System': { value: 'Raspbian 8', agg_type: 'avg', alert: {} },
          'CPU usage': {
-           value: '27.50%',
+           value: '36.36%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 90, interval: 100, cmp: '>' } },
          'eth1 output': {
-           value: '0.22MB/s',
+           value: '0.25MB/s',
            agg_type: 'avg',
            alert: {}
          },
          'eth1 input': {
-           value: '0.09MB/s',
+           value: '0.11MB/s',
            agg_type: 'avg',
            alert: {}
          }
@@ -387,8 +387,8 @@
      },
     pm_id: 1,
     monit: {
-      memory: 27598848,
-      cpu: 4
+      memory: 33624064,
+      cpu: 0
     }
   },
   {
@@ -533,7 +533,7 @@
      },
     pm_id: 2,
     monit: {
-      memory: 34775040,
+      memory: 35164160,
       cpu: 0
     }
   },
@@ -633,7 +633,7 @@
            alert: {}
          },
          'pmx:http:latency': {
-           value: '33.4ms',
+           value: '33.54ms',
            agg_type: 'avg',
            alert: {}
          },
@@ -670,7 +670,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-hdrhist.git',
           revision: '76b9aa73c8383f6cb0c312e9432c9cf16c096020',
-          update_time: '2016-07-05T18:39:05.230Z',
+          update_time: '2016-07-05T19:12:14.070Z',
           comment: 'Simpler implementation - operation chosen by client or stress tool',
           unstaged: true,
           branch: 'master',
@@ -690,7 +690,7 @@
        pm_id: 3 },
     pm_id: 3,
     monit: {
-      memory: 33976320,
+      memory: 34299904,
       cpu: 0
     }
   }

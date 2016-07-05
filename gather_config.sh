@@ -96,7 +96,6 @@ rm /home/pi/clusterednode-config/* && \
 uname -a > /home/pi/clusterednode-config/rpi7-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi7-api-pm2-list.txt && \
 pm2 show clusteredPUBSUBnode > /home/pi/clusterednode-config/rpi7-pubsub-pm2-show.txt && \
-pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi7-logrotate-pm2-show.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi7-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi7-sysctl.conf && \
 sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi7-stunnel-redis-server.conf && \
@@ -104,8 +103,7 @@ sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi7-default-stunnel 
 sudo cp /etc/init.d/stunnel /home/pi/clusterednode-config/rpi7-initd-stunnel && \
 sudo cp /etc/redis/6379.conf /home/pi/clusterednode-config/rpi7-redis-6379.conf && \
 sudo cp /etc/redis/6378.conf /home/pi/clusterednode-config/rpi7-redis-6378.conf && \
-sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi7-redis-6377.conf && \
-sudo cp /etc/redis/sentinel.conf /home/pi/clusterednode-config/rpi7-redis-sentinel.conf"
+sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi7-redis-6377.conf"
 scp -r pi@raspberrypi7:~/clusterednode-config/* ./rpi7/
 # RaspberryPi8
 echo "Exporting raspberrypi8 config files..."
@@ -113,7 +111,6 @@ ssh -p 32011 -T pi@giancarlobonansea.homeip.net "\
 rm /home/pi/clusterednode-config/* && \
 uname -a > /home/pi/clusterednode-config/rpi8-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi8-api-pm2-list.txt && \
-pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi8-logrotate-pm2-show.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi8-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi8-sysctl.conf && \
 sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi8-stunnel-redis-server.conf && \
@@ -121,6 +118,5 @@ sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi8-default-stunnel 
 sudo cp /etc/init.d/stunnel /home/pi/clusterednode-config/rpi8-initd-stunnel && \
 sudo cp /etc/redis/6379.conf /home/pi/clusterednode-config/rpi8-redis-6379.conf && \
 sudo cp /etc/redis/6378.conf /home/pi/clusterednode-config/rpi8-redis-6378.conf && \
-sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi8-redis-6377.conf && \
-sudo cp /etc/redis/sentinel.conf /home/pi/clusterednode-config/rpi8-redis-sentinel.conf"
+sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi8-redis-6377.conf"
 scp -r pi@raspberrypi8:~/clusterednode-config/* ./rpi8/

@@ -145,7 +145,7 @@
           }
         },
         'Total Processes': {
-          value: 113,
+          value: 115,
           agg_type: 'avg',
           alert: {}
         },
@@ -155,7 +155,7 @@
           alert: {}
         },
         'Free memory': {
-          value: '74.9%',
+          value: '73.7%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -195,7 +195,7 @@
           alert: {}
         },
         'CPU usage': {
-          value: '27.27%',
+          value: '25.00%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -205,12 +205,12 @@
           }
         },
         'eth1 output': {
-          value: '0.06MB/s',
+          value: '0.07MB/s',
           agg_type: 'avg',
           alert: {}
         },
         'eth1 input': {
-          value: '0.02MB/s',
+          value: '0.04MB/s',
           agg_type: 'avg',
           alert: {}
         }
@@ -275,8 +275,8 @@
     },
     pm_id: 0,
     monit: {
-      memory: 27348992,
-      cpu: 0
+      memory: 33542144,
+      cpu: 2
     }
   },
   {
@@ -441,7 +441,7 @@
     },
     pm_id: 1,
     monit: {
-      memory: 48074752,
+      memory: 48549888,
       cpu: 0
     }
   },
@@ -552,27 +552,27 @@
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.45ms',
+          value: '0.44ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '7.01ms',
+          value: '7.53ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.88req/s',
+          value: '1.89req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0.000501 MB/s',
+          value: '0.001 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0.000005 MB/s',
+          value: '0.001 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -604,7 +604,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:38:34.679Z',
+        update_time: '2016-07-05T19:11:39.618Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -636,8 +636,8 @@
     },
     pm_id: 2,
     monit: {
-      memory: 35065856,
-      cpu: 0
+      memory: 37326848,
+      cpu: 4
     }
   },
   {
@@ -747,17 +747,17 @@
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.48ms',
+          value: '0.46ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '7.12ms',
+          value: '7.57ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.9req/s',
+          value: '1.89req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -767,7 +767,7 @@
           alert: {}
         },
         'Network Download': {
-          value: '0.000197 MB/s',
+          value: '0.000172 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -799,7 +799,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:38:34.949Z',
+        update_time: '2016-07-05T19:11:39.888Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -831,8 +831,8 @@
     },
     pm_id: 3,
     monit: {
-      memory: 40497152,
-      cpu: 3
+      memory: 42733568,
+      cpu: 1
     }
   },
   {
@@ -942,17 +942,17 @@
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.49ms',
+          value: '0.47ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '6.91ms',
+          value: '7.41ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.91req/s',
+          value: '1.88req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -962,7 +962,7 @@
           alert: {}
         },
         'Network Download': {
-          value: '0.000091 MB/s',
+          value: '0.000116 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -994,7 +994,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:38:35.289Z',
+        update_time: '2016-07-05T19:11:40.238Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -1026,8 +1026,8 @@
     },
     pm_id: 4,
     monit: {
-      memory: 38658048,
-      cpu: 0
+      memory: 42315776,
+      cpu: 4
     }
   },
   {
@@ -1137,17 +1137,17 @@
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.44ms',
+          value: '0.43ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '6.83ms',
+          value: '7.3ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.9req/s',
+          value: '1.88req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -1157,7 +1157,7 @@
           alert: {}
         },
         'Network Download': {
-          value: '0.000116 MB/s',
+          value: '0.000792 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -1189,7 +1189,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:38:35.559Z',
+        update_time: '2016-07-05T19:11:40.628Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -1221,8 +1221,8 @@
     },
     pm_id: 5,
     monit: {
-      memory: 34783232,
-      cpu: 22
+      memory: 43163648,
+      cpu: 2
     }
   }
 ]

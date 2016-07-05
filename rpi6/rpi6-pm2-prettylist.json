@@ -128,7 +128,7 @@
       ],
       axm_monitor: {
         'Loop delay': {
-          value: '9.29ms',
+          value: '9.3ms',
           agg_type: 'avg',
           alert: {}
         },
@@ -143,17 +143,17 @@
           }
         },
         'Total Processes': {
-          value: 113,
+          value: 116,
           agg_type: 'avg',
           alert: {}
         },
         'Used memory': {
-          value: '0.2GB / 1.0GB',
+          value: '0.3GB / 1.0GB',
           agg_type: 'avg',
           alert: {}
         },
         'Free memory': {
-          value: '75.2%',
+          value: '72.7%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -163,7 +163,7 @@
           }
         },
         'TTY/SSH opened': {
-          value: '0\n',
+          value: '1\n',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -193,7 +193,7 @@
           alert: {}
         },
         'CPU usage': {
-          value: '34.55%',
+          value: '32.05%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -208,7 +208,7 @@
           alert: {}
         },
         'eth1 input': {
-          value: '0.02MB/s',
+          value: '0.03MB/s',
           agg_type: 'avg',
           alert: {}
         }
@@ -273,8 +273,8 @@
     },
     pm_id: 0,
     monit: {
-      memory: 29986816,
-      cpu: 3
+      memory: 36118528,
+      cpu: 6
     }
   },
   {
@@ -437,7 +437,7 @@
     },
     pm_id: 1,
     monit: {
-      memory: 48340992,
+      memory: 48726016,
       cpu: 0
     }
   },
@@ -547,27 +547,27 @@
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.7ms',
+          value: '0.69ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '6.95ms',
+          value: '7.45ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.92req/s',
+          value: '1.88req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0.000503 MB/s',
+          value: '0.001 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0.000005 MB/s',
+          value: '0.000091 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -599,7 +599,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:39:42.488Z',
+        update_time: '2016-07-05T19:12:17.282Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -630,8 +630,8 @@
     },
     pm_id: 2,
     monit: {
-      memory: 38256640,
-      cpu: 0
+      memory: 41037824,
+      cpu: 3
     }
   },
   {
@@ -740,27 +740,27 @@
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.4ms',
+          value: '0.68ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '6.97ms',
+          value: '7.47ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.91req/s',
+          value: '1.87req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0.001 MB/s',
+          value: '0.002 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0.000116 MB/s',
+          value: '0.000904 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -792,7 +792,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:39:42.808Z',
+        update_time: '2016-07-05T19:12:17.572Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -823,8 +823,8 @@
     },
     pm_id: 3,
     monit: {
-      memory: 35966976,
-      cpu: 9
+      memory: 37699584,
+      cpu: 3
     }
   },
   {
@@ -933,27 +933,27 @@
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.7ms',
+          value: '0.69ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '7.1ms',
+          value: '7.69ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.91req/s',
+          value: '1.88req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0.002 MB/s',
+          value: '0.001 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0.001 MB/s',
+          value: '0.00001 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -985,7 +985,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:39:43.178Z',
+        update_time: '2016-07-05T19:12:17.912Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -1016,7 +1016,7 @@
     },
     pm_id: 4,
     monit: {
-      memory: 41947136,
+      memory: 35942400,
       cpu: 0
     }
   },
@@ -1131,12 +1131,12 @@
           alert: {}
         },
         'pmx:http:latency': {
-          value: '6.91ms',
+          value: '7.39ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.91req/s',
+          value: '1.88req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -1146,7 +1146,7 @@
           alert: {}
         },
         'Network Download': {
-          value: '0.00071 MB/s',
+          value: '0.00001 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -1178,7 +1178,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:39:43.608Z',
+        update_time: '2016-07-05T19:12:18.212Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -1209,8 +1209,8 @@
     },
     pm_id: 5,
     monit: {
-      memory: 35934208,
-      cpu: 3
+      memory: 36622336,
+      cpu: 10
     }
   }
 ]

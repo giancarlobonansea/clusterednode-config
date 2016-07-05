@@ -1,0 +1,4 @@
+┌──────────┬────┬──────┬─────┬────────┬─────────┬────────┬────────┬──────────┐
+│ App name │ id │ mode │ pid │ status │ restart │ uptime │ memory │ watching │
+└──────────┴────┴──────┴─────┴────────┴─────────┴────────┴────────┴──────────┘
+ Use `pm2 show <id|name>` to get more details about an app
