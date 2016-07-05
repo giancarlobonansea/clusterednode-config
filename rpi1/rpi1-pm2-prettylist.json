@@ -1,0 +1,162 @@
+[
+  {
+    pid: 535,
+    name: 'pm2-logrotate',
+    pm2_env: {
+      name: 'pm2-logrotate',
+      vizion: true,
+      pmx: true,
+      automation: true,
+      autorestart: true,
+      treekill: true,
+      exec_mode: 'fork_mode',
+      cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
+      pmx_module: true,
+      node_args: [],
+      pm_exec_path: '/home/pi/.pm2/node_modules/pm2-logrotate/app.js',
+      env: {
+        PM2_JSON_PROCESSING: 'true',
+        PM2_INTERACTOR_PROCESSING: 'true',
+        _: '/usr/local/lib/node_modules/pm2/bin/pm2',
+        LOGNAME: 'pi',
+        HOME: '/home/pi',
+        SHLVL: '1',
+        NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+        LANG: 'en_GB.UTF-8',
+        PWD: '/home/pi/.pm2/node_modules/pm2-logrotate',
+        PATH: '/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+        MAIL: '/var/mail/pi',
+        USER: 'pi',
+        SHELL: '/bin/bash',
+        PM2_HOME: '/home/pi/.pm2',
+        pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
+        'pm2-logrotate': '{"max-size":"10M","interval":"1","interval_unit":"DD","retain":"6"}',
+        retain: '6',
+        interval_unit: 'DD',
+        interval: '1',
+        'max-size': '10M',
+        name: 'pm2-logrotate',
+        vizion: true,
+        pmx: true,
+        automation: true,
+        autorestart: true,
+        treekill: true,
+        exec_mode: 'fork_mode',
+        cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
+        pmx_module: true,
+        node_args: [],
+        pm_exec_path: '/home/pi/.pm2/node_modules/pm2-logrotate/app.js',
+        exec_interpreter: 'node',
+        instances: 1,
+        pm_out_log_path: '/home/pi/.pm2/logs/pm2-logrotate-out.log',
+        pm_err_log_path: '/home/pi/.pm2/logs/pm2-logrotate-error.log',
+        pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate.pid'
+      },
+      pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
+      exec_interpreter: 'node',
+      instances: 1,
+      pm_out_log_path: '/home/pi/.pm2/logs/pm2-logrotate-out-0.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/pm2-logrotate-error-0.log',
+      pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate-0.pid',
+      NODE_APP_INSTANCE: 0,
+      vizion_running: false,
+      PM2_JSON_PROCESSING: 'true',
+      PM2_INTERACTOR_PROCESSING: 'true',
+      _: '/usr/local/lib/node_modules/pm2/bin/pm2',
+      LOGNAME: 'pi',
+      HOME: '/home/pi',
+      SHLVL: '1',
+      NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+      LANG: 'en_GB.UTF-8',
+      PWD: '/home/pi/.pm2/node_modules/pm2-logrotate',
+      PATH: '/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+      MAIL: '/var/mail/pi',
+      USER: 'pi',
+      SHELL: '/bin/bash',
+      PM2_HOME: '/home/pi/.pm2',
+      'pm2-logrotate': '{"max-size":"10M","interval":"1","interval_unit":"DD","retain":"6"}',
+      retain: '6',
+      interval_unit: 'DD',
+      interval: '1',
+      'max-size': '10M',
+      status: 'online',
+      pm_uptime: 1467682011627,
+      axm_actions: [
+        {
+          action_name: 'list files',
+          opts: null,
+          arity: 1
+        }
+      ],
+      axm_monitor: {
+        'Loop delay': {
+          value: '0.68ms',
+          agg_type: 'avg',
+          alert: {}
+        }
+      },
+      axm_options: {
+        http: false,
+        http_latency: 200,
+        http_code: 500,
+        ignore_routes: [],
+        profiling: true,
+        errors: true,
+        alert_enabled: true,
+        custom_probes: true,
+        network: false,
+        ports: false,
+        module_conf: {
+          interval: 1,
+          interval_unit: 'DD',
+          max_size: '10M',
+          retain: 6,
+          'max-size': '10M'
+        },
+        module_name: 'pm2-logrotate',
+        module_version: '1.3.1',
+        pmx_version: '0.6.2',
+        retain: 6,
+        interval_unit: 'DD',
+        interval: 1,
+        'max-size': '10M',
+        error: true,
+        widget: {
+          type: 'generic',
+          logo: 'http://web.townsendsecurity.com/Portals/15891/images/logging.png',
+          theme: [
+            '#111111',
+            '#1B2228',
+            '#31C2F1',
+            '#807C7C'
+          ],
+          block: {
+            issues: false,
+            cpu: false,
+            mem: false,
+            actions: true
+          },
+          el: {
+            probes: false,
+            actions: false
+          }
+        },
+        isModule: true,
+        description: 'Module to rotate logs of every pm2 application',
+        max_size: '10M'
+      },
+      axm_dynamic: {},
+      created_at: 1467682011628,
+      pm_id: 0,
+      restart_time: 0,
+      unstable_restarts: 0,
+      versioning: null,
+      node_version: '6.2.2'
+    },
+    pm_id: 0,
+    monit: {
+      memory: 29609984,
+      cpu: 0
+    }
+  }
+]
