@@ -145,7 +145,7 @@
           }
         },
         'Total Processes': {
-          value: 118,
+          value: 113,
           agg_type: 'avg',
           alert: {}
         },
@@ -155,7 +155,7 @@
           alert: {}
         },
         'Free memory': {
-          value: '74.0%',
+          value: '74.9%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -195,7 +195,7 @@
           alert: {}
         },
         'CPU usage': {
-          value: '34.09%',
+          value: '27.27%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -210,7 +210,7 @@
           alert: {}
         },
         'eth1 input': {
-          value: '0.03MB/s',
+          value: '0.02MB/s',
           agg_type: 'avg',
           alert: {}
         }
@@ -275,7 +275,7 @@
     },
     pm_id: 0,
     monit: {
-      memory: 34627584,
+      memory: 27348992,
       cpu: 0
     }
   },
@@ -315,8 +315,8 @@
         pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
         'pm2-logrotate': '{"max-size":"10M","interval":"1","interval_unit":"DD","retain":"6"}',
         retain: '6',
-        interval_unit: 'DD',
-          interval: '1',
+          interval_unit: 'DD',
+        interval: '1',
         'max-size': '10M',
         name: 'pm2-logrotate',
         vizion: true,
@@ -402,7 +402,7 @@
         module_name: 'pm2-logrotate',
         module_version: '1.3.1',
         pmx_version: '0.6.2',
-        retain: 6,
+          retain: 6,
           interval_unit: 'DD',
           interval: 1,
         'max-size': '10M',
@@ -441,7 +441,7 @@
     },
     pm_id: 1,
     monit: {
-      memory: 48058368,
+      memory: 48074752,
       cpu: 0
     }
   },
@@ -557,22 +557,22 @@
           alert: {}
         },
         'pmx:http:latency': {
-          value: '6.8ms',
+          value: '7.01ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '2.46req/s',
+          value: '1.88req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0.000484 MB/s',
+          value: '0.000501 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0.000081 MB/s',
+          value: '0.000005 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -604,7 +604,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:29:33.270Z',
+        update_time: '2016-07-05T18:38:34.679Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -636,7 +636,7 @@
     },
     pm_id: 2,
     monit: {
-      memory: 34664448,
+      memory: 35065856,
       cpu: 0
     }
   },
@@ -752,12 +752,12 @@
           alert: {}
         },
         'pmx:http:latency': {
-          value: '6.92ms',
+          value: '7.12ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '2.45req/s',
+          value: '1.9req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -767,7 +767,7 @@
           alert: {}
         },
         'Network Download': {
-          value: '0.000785 MB/s',
+          value: '0.000197 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -799,7 +799,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:29:33.550Z',
+        update_time: '2016-07-05T18:38:34.949Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -831,8 +831,8 @@
     },
     pm_id: 3,
     monit: {
-      memory: 38158336,
-      cpu: 5
+      memory: 40497152,
+      cpu: 3
     }
   },
   {
@@ -942,17 +942,17 @@
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.48ms',
+          value: '0.49ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '6.74ms',
+          value: '6.91ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '2.46req/s',
+          value: '1.91req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -962,7 +962,7 @@
           alert: {}
         },
         'Network Download': {
-          value: '0.000193 MB/s',
+          value: '0.000091 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -994,7 +994,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:29:33.890Z',
+        update_time: '2016-07-05T18:38:35.289Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -1026,7 +1026,7 @@
     },
     pm_id: 4,
     monit: {
-      memory: 38350848,
+      memory: 38658048,
       cpu: 0
     }
   },
@@ -1137,17 +1137,17 @@
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.45ms',
+          value: '0.44ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '6.64ms',
+          value: '6.83ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '2.46req/s',
+          value: '1.9req/s',
           agg_type: 'avg',
           alert: {}
         },
@@ -1157,7 +1157,7 @@
           alert: {}
         },
         'Network Download': {
-          value: '0.000793 MB/s',
+          value: '0.000116 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -1189,7 +1189,7 @@
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
         revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T18:29:34.170Z',
+        update_time: '2016-07-05T18:38:35.559Z',
         comment: 'V8 deoptimization prevention updates',
         unstaged: true,
         branch: 'master',
@@ -1221,8 +1221,8 @@
     },
     pm_id: 5,
     monit: {
-      memory: 42151936,
-      cpu: 5
+      memory: 34783232,
+      cpu: 22
     }
   }
 ]

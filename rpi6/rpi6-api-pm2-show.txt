@@ -24,19 +24,19 @@
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-05T18:30:41.027Z                                  │
+│ last update      │ 2016-07-05T18:39:42.488Z                                  │
 │ revision         │ 6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3                  │
 │ comment          │ V8 deoptimization prevention updates                      │
 │ branch           │ master                                                    │
 └──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────────┐
-│ Loop delay       │ 0.39ms        │
-│ pmx:http:latency │ 6.77ms        │
-│ HTTP             │ 2.4req/s      │
-│ Network Upload   │ 0.001 MB/s    │
-│ Network Download │ 0.000091 MB/s │
-└──────────────────┴───────────────┘
+┌──────────────────┬────────────┐
+│ Loop delay       │ 0.7ms      │
+│ pmx:http:latency │ 6.95ms     │
+│ HTTP             │ 1.96req/s  │
+│ Network Upload   │ 0.002 MB/s │
+│ Network Download │ 0.001 MB/s │
+└──────────────────┴────────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -66,7 +66,7 @@
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-05T18:30:41.297Z                                  │
+│ last update      │ 2016-07-05T18:39:42.808Z                                  │
 │ revision         │ 6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3                  │
 │ comment          │ V8 deoptimization prevention updates                      │
 │ branch           │ master                                                    │
@@ -74,10 +74,10 @@
  Code metrics value 
 ┌──────────────────┬───────────────┐
 │ Loop delay       │ 0.7ms         │
-│ pmx:http:latency │ 6.8ms         │
-│ HTTP             │ 2.39req/s     │
-│ Network Upload   │ 0.001 MB/s    │
-│ Network Download │ 0.000193 MB/s │
+│ pmx:http:latency │ 6.97ms        │
+│ HTTP             │ 1.94req/s     │
+│ Network Upload   │ 0.000503 MB/s │
+│ Network Download │ 0.000005 MB/s │
 └──────────────────┴───────────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
@@ -108,7 +108,7 @@
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-05T18:30:41.567Z                                  │
+│ last update      │ 2016-07-05T18:39:43.178Z                                  │
 │ revision         │ 6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3                  │
 │ comment          │ V8 deoptimization prevention updates                      │
 │ branch           │ master                                                    │
@@ -116,10 +116,10 @@
  Code metrics value 
 ┌──────────────────┬───────────────┐
 │ Loop delay       │ 0.7ms         │
-│ pmx:http:latency │ 6.89ms        │
-│ HTTP             │ 2.4req/s      │
+│ pmx:http:latency │ 7.1ms         │
+│ HTTP             │ 1.94req/s     │
 │ Network Upload   │ 0.001 MB/s    │
-│ Network Download │ 0.000817 MB/s │
+│ Network Download │ 0.000807 MB/s │
 └──────────────────┴───────────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
@@ -150,19 +150,19 @@
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-05T18:30:41.897Z                                  │
+│ last update      │ 2016-07-05T18:39:43.608Z                                  │
 │ revision         │ 6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3                  │
 │ comment          │ V8 deoptimization prevention updates                      │
 │ branch           │ master                                                    │
 └──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────────┐
-│ Loop delay       │ 0.72ms        │
-│ pmx:http:latency │ 6.77ms        │
-│ HTTP             │ 2.41req/s     │
-│ Network Upload   │ 0.002 MB/s    │
-│ Network Download │ 0.000309 MB/s │
-└──────────────────┴───────────────┘
+┌──────────────────┬──────────────┐
+│ Loop delay       │ 0.71ms       │
+│ pmx:http:latency │ 6.91ms       │
+│ HTTP             │ 1.94req/s    │
+│ Network Upload   │ 0.001 MB/s   │
+│ Network Download │ 0.00001 MB/s │
+└──────────────────┴──────────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode

@@ -2,6 +2,7 @@
 # RaspberryPi0
 echo "Exporting raspberrypi0 config files..."
 #ssh -p 32002 -T pi@giancarlobonansea.homeip.net "\
+#rm /home/pi/clusterednode-config/* && \
 #uname -a > /home/pi/clusterednode-config/rpi0-uname.txt && \
 #pm2 list > /home/pi/clusterednode-config/rpi0-api-pm2-list.txt && \
 #pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi0-logrotate-pm2-show.txt && \
@@ -49,6 +50,7 @@ echo "Exporting raspberrypi4 config files..."
 ssh -p 32006 -T pi@giancarlobonansea.homeip.net "\
 rm /home/pi/clusterednode-config/* && \
 uname -a > /home/pi/clusterednode-config/rpi4-uname.txt && \
+sudo cp /etc/fstab /home/pi/clusterednode-config/rpi4-fstab.txt && \
 sudo cp /etc/nginx/nginx.conf /home/pi/clusterednode-config/rpi4-nginx.conf && \
 sudo cp /etc/nginx/snippets/self-signed.conf /home/pi/clusterednode-config/rpi4-self-signed.conf && \
 sudo cp /etc/nginx/snippets/ssl-params.conf /home/pi/clusterednode-config/rpi4-ssl-params.conf && \

@@ -29,7 +29,7 @@ Process configuration
 └───────────────┴─────┘
  Code metrics value 
 ┌────────────┬────────┐
-│ Loop delay │ 0.68ms │
+│ Loop delay │ 0.67ms │
 └────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs pm2-logrotate (--lines 1000)` to display logs

@@ -102,28 +102,28 @@
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10000, interval: 180, cmp: '>' } },
          'Curr. Writing': {
-           value: '5',
+           value: '4',
            agg_type: 'avg',
            alert: {}
          },
           'Curr. Reading': { value: '0', agg_type: 'avg', alert: {} },
          'Req/Handled Conn.': {
-           value: '611.04',
+           value: '609.22',
            agg_type: 'avg',
            alert: {}
          },
          'Client Requests': {
-           value: '9601948',
+           value: '9656125',
            agg_type: 'avg',
            alert: {}
          },
          'Handled Conn.': {
-           value: '15714',
+           value: '15850',
            agg_type: 'avg',
            alert: {}
          },
          'Accepted Conn.': {
-           value: '15714',
+           value: '15850',
            agg_type: 'avg',
            alert: {}
          },
@@ -297,7 +297,7 @@
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '>' } },
          'Total Processes': {
-           value: 122,
+           value: 117,
            agg_type: 'avg',
            alert: {}
          },
@@ -307,7 +307,7 @@
            alert: {}
          },
          'Free memory': {
-           value: '72.0%',
+           value: '72.5%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
          'TTY/SSH opened': {
@@ -325,16 +325,16 @@
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
           'Operating System': { value: 'Raspbian 8', agg_type: 'avg', alert: {} },
          'CPU usage': {
-           value: '76.48%',
+           value: '27.50%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 90, interval: 100, cmp: '>' } },
          'eth1 output': {
-           value: '0.27MB/s',
+           value: '0.22MB/s',
            agg_type: 'avg',
            alert: {}
          },
          'eth1 input': {
-           value: '0.12MB/s',
+           value: '0.09MB/s',
            agg_type: 'avg',
            alert: {}
          }
@@ -387,7 +387,7 @@
      },
     pm_id: 1,
     monit: {
-      memory: 33693696,
+      memory: 27598848,
       cpu: 4
     }
   },
@@ -533,7 +533,7 @@
      },
     pm_id: 2,
     monit: {
-      memory: 34414592,
+      memory: 34775040,
       cpu: 0
     }
   },
@@ -670,7 +670,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-hdrhist.git',
           revision: '76b9aa73c8383f6cb0c312e9432c9cf16c096020',
-          update_time: '2016-07-05T18:30:02.930Z',
+          update_time: '2016-07-05T18:39:05.230Z',
           comment: 'Simpler implementation - operation chosen by client or stress tool',
           unstaged: true,
           branch: 'master',
@@ -690,7 +690,7 @@
        pm_id: 3 },
     pm_id: 3,
     monit: {
-      memory: 32976896,
+      memory: 33976320,
       cpu: 0
     }
   }
