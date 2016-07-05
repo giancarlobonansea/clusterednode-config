@@ -15,28 +15,28 @@
 │ exec cwd          │ /home/pi/clusterednode-hdrhist/current           │
 │ exec mode         │ cluster_mode                                     │
 │ node.js version   │ 6.2.2                                            │
-│ watch & reload    │ ✔                                                │
+│ watch & reload    │ ✘                                                │
 │ unstable restarts │ 0                                                │
-│ created at        │ 2016-06-23T19:38:54.022Z                         │
+│ created at        │ 2016-07-04T18:03:19.999Z                         │
 └───────────────────┴──────────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬────────────────────────────────────────────────────────────┐
-│ revision control │ git                                                        │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-hdrhist.git │
-│ repository root  │ /home/pi/clusterednode-hdrhist/current                     │
-│ last update      │ 2016-06-28T11:11:56.449Z                                   │
-│ revision         │ c9f953069a4e98e86cd4f852b4f8368ff65eeb06                   │
-│ comment          │ Update HDR histogram parameters for smoother curve         │
-│ branch           │ master                                                     │
-└──────────────────┴────────────────────────────────────────────────────────────┘
+┌──────────────────┬────────────────────────────────────────────────────────────────────┐
+│ revision control │ git                                                                │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-hdrhist.git         │
+│ repository root  │ /home/pi/clusterednode-hdrhist/current                             │
+│ last update      │ 2016-07-05T18:30:02.930Z                                           │
+│ revision         │ 76b9aa73c8383f6cb0c312e9432c9cf16c096020                           │
+│ comment          │ Simpler implementation - operation chosen by client or stress tool │
+│ branch           │ master                                                             │
+└──────────────────┴────────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬─────────┐
-│ Loop delay       │ 0.39ms  │
-│ pmx:http:latency │ 28.58ms │
-│ HTTP             │ 0req/s  │
-│ Network Upload   │ 0 MB/s  │
-│ Network Download │ 0 MB/s  │
-└──────────────────┴─────────┘
+┌──────────────────┬────────┐
+│ Loop delay       │ 0.34ms │
+│ pmx:http:latency │ 33.4ms │
+│ HTTP             │ 0req/s │
+│ Network Upload   │ 0 MB/s │
+│ Network Download │ 0 MB/s │
+└──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredHDRnode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredHDRnode

@@ -1,1 +1,1 @@
-Linux raspberrypi4 4.4.13-v7+ #894 SMP Mon Jun 13 13:13:27 BST 2016 armv7l GNU/Linux
+Linux raspberrypi4 4.4.14-v7+ #895 SMP Sun Jun 26 13:59:02 BST 2016 armv7l GNU/Linux

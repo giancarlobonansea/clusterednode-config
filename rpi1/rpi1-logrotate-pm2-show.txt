@@ -2,13 +2,13 @@
 ┌───────────────────┬─────────────────────────────────────────────────┐
 │ status            │ online                                          │
 │ name              │ pm2-logrotate                                   │
-│ restarts          │ 4                                               │
-│ uptime            │ 7m                                              │
+│ restarts          │ 0                                               │
+│ uptime            │ 17h                                             │
 │ script path       │ /home/pi/.pm2/node_modules/pm2-logrotate/app.js │
 │ script args       │ N/A                                             │
-│ error log path    │ /home/pi/.pm2/logs/pm2-logrotate-error.log      │
-│ out log path      │ /home/pi/.pm2/logs/pm2-logrotate-out.log        │
-│ pid path          │ /home/pi/.pm2/pids/pm2-logrotate.pid            │
+│ error log path    │ /home/pi/.pm2/logs/pm2-logrotate-error-0.log    │
+│ out log path      │ /home/pi/.pm2/logs/pm2-logrotate-out-0.log      │
+│ pid path          │ /home/pi/.pm2/pids/pm2-logrotate-0.pid          │
 │ interpreter       │ node                                            │
 │ interpreter args  │ N/A                                             │
 │ script id         │ 0                                               │
@@ -17,7 +17,7 @@
 │ node.js version   │ 6.2.2                                           │
 │ watch & reload    │ ✘                                               │
 │ unstable restarts │ 0                                               │
-│ created at        │ 2016-06-28T11:04:31.382Z                        │
+│ created at        │ 2016-07-05T01:26:51.628Z                        │
 └───────────────────┴─────────────────────────────────────────────────┘
 Process configuration
 ┌───────────────┬─────┐
@@ -29,7 +29,7 @@ Process configuration
 └───────────────┴─────┘
  Code metrics value 
 ┌────────────┬────────┐
-│ Loop delay │ 42.4ms │
+│ Loop delay │ 0.68ms │
 └────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs pm2-logrotate (--lines 1000)` to display logs

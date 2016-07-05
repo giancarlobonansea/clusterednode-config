@@ -1,6 +1,6 @@
 [
   {
-    pid: 624,
+    pid: 664,
     name: 'pm2-server-monit',
     pm2_env: {
       name: 'pm2-server-monit',
@@ -31,7 +31,7 @@
         MAIL: '/var/mail/pi',
         USER: 'pi',
         SHELL: '/bin/bash',
-        XDG_SESSION_ID: 'c2',
+        XDG_SESSION_ID: 'c1',
         PM2_HOME: '/home/pi/.pm2',
         pm_cwd: '/home/pi/.pm2/node_modules/pm2-server-monit',
         'pm2-server-monit': '{}',
@@ -76,11 +76,11 @@
       MAIL: '/var/mail/pi',
       USER: 'pi',
       SHELL: '/bin/bash',
-      XDG_SESSION_ID: 'c2',
+      XDG_SESSION_ID: 'c1',
       PM2_HOME: '/home/pi/.pm2',
       'pm2-server-monit': '{}',
       status: 'online',
-      pm_uptime: 1467048237702,
+      pm_uptime: 1467681986178,
       axm_actions: [
         {
           action_name: 'top cpu consuming',
@@ -130,7 +130,7 @@
       ],
       axm_monitor: {
         'Loop delay': {
-          value: '0.54ms',
+          value: '0.47ms',
           agg_type: 'avg',
           alert: {}
         },
@@ -145,7 +145,7 @@
           }
         },
         'Total Processes': {
-          value: 117,
+          value: 113,
           agg_type: 'avg',
           alert: {}
         },
@@ -155,7 +155,7 @@
           alert: {}
         },
         'Free memory': {
-          value: '74.7%',
+          value: '75.9%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -165,7 +165,7 @@
           }
         },
         'TTY/SSH opened': {
-          value: '1\n',
+          value: '0\n',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -180,7 +180,7 @@
           alert: {}
         },
         'Avail. Disk': {
-          value: '73.9%',
+          value: '73.5%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -195,7 +195,7 @@
           alert: {}
         },
         'CPU usage': {
-          value: '27.27%',
+          value: '43.18%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -205,12 +205,12 @@
           }
         },
         'eth1 output': {
-          value: '0.04MB/s',
+          value: '0.07MB/s',
           agg_type: 'avg',
           alert: {}
         },
         'eth1 input': {
-          value: '0.00MB/s',
+          value: '0.04MB/s',
           agg_type: 'avg',
           alert: {}
         }
@@ -266,7 +266,7 @@
         description: 'Rack to monitor a server'
       },
       axm_dynamic: {},
-      created_at: 1467048237703,
+      created_at: 1467681986179,
       pm_id: 0,
       restart_time: 0,
       unstable_restarts: 0,
@@ -275,12 +275,12 @@
     },
     pm_id: 0,
     monit: {
-      memory: 33927168,
-      cpu: 8
+      memory: 31088640,
+      cpu: 0
     }
   },
   {
-    pid: 10660,
+    pid: 674,
     name: 'pm2-logrotate',
     pm2_env: {
       name: 'pm2-logrotate',
@@ -297,7 +297,7 @@
       env: {
         PM2_JSON_PROCESSING: 'true',
         PM2_INTERACTOR_PROCESSING: 'true',
-        _: '/usr/bin/pm2',
+        _: '/usr/lib/node_modules/pm2/bin/pm2',
         XDG_RUNTIME_DIR: '/run/user/1000',
         LOGNAME: 'pi',
         HOME: '/home/pi',
@@ -305,15 +305,19 @@
         NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
         TZ: 'America/Sao_Paulo',
         LANG: 'en_GB.UTF-8',
-        PWD: '/home/pi',
-        PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/local/heroku/bin',
+        PWD: '/home/pi/.pm2/node_modules/pm2-logrotate',
+        PATH: '/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
         MAIL: '/var/mail/pi',
         USER: 'pi',
         SHELL: '/bin/bash',
-        XDG_SESSION_ID: 'c25',
+        XDG_SESSION_ID: 'c1',
         PM2_HOME: '/home/pi/.pm2',
         pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
         'pm2-logrotate': '{"max-size":"10M","interval":"1","interval_unit":"DD","retain":"6"}',
+        retain: '6',
+        interval_unit: 'DD',
+          interval: '1',
+        'max-size': '10M',
         name: 'pm2-logrotate',
         vizion: true,
         pmx: true,
@@ -329,30 +333,19 @@
         instances: 1,
         pm_out_log_path: '/home/pi/.pm2/logs/pm2-logrotate-out.log',
         pm_err_log_path: '/home/pi/.pm2/logs/pm2-logrotate-error.log',
-        pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate.pid',
-        PM2_PROGRAMMATIC: 'true',
-        SSH_CONNECTION: '192.168.69.18 51680 192.168.69.243 22',
-        LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
-        SSH_TTY: '/dev/pts/0',
-        SSH_CLIENT: '192.168.69.18 51680 22',
-        TERM: 'xterm-256color',
-        COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
-        'max-size': '10M',
-          interval: '1',
-          interval_unit: 'DD',
-        retain: '6'
+        pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate.pid'
       },
       pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
       exec_interpreter: 'node',
       instances: 1,
-      pm_out_log_path: '/home/pi/.pm2/logs/pm2-logrotate-out.log',
-      pm_err_log_path: '/home/pi/.pm2/logs/pm2-logrotate-error.log',
-      pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate.pid',
+      pm_out_log_path: '/home/pi/.pm2/logs/pm2-logrotate-out-1.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/pm2-logrotate-error-1.log',
+      pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate-1.pid',
       NODE_APP_INSTANCE: 0,
       vizion_running: false,
       PM2_JSON_PROCESSING: 'true',
       PM2_INTERACTOR_PROCESSING: 'true',
-      _: '/usr/bin/pm2',
+      _: '/usr/lib/node_modules/pm2/bin/pm2',
       XDG_RUNTIME_DIR: '/run/user/1000',
       LOGNAME: 'pi',
       HOME: '/home/pi',
@@ -360,16 +353,20 @@
       NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
       TZ: 'America/Sao_Paulo',
       LANG: 'en_GB.UTF-8',
-      PWD: '/home/pi',
-      PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/local/heroku/bin',
+      PWD: '/home/pi/.pm2/node_modules/pm2-logrotate',
+      PATH: '/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
       MAIL: '/var/mail/pi',
       USER: 'pi',
       SHELL: '/bin/bash',
-      XDG_SESSION_ID: 'c25',
+      XDG_SESSION_ID: 'c1',
       PM2_HOME: '/home/pi/.pm2',
       'pm2-logrotate': '{"max-size":"10M","interval":"1","interval_unit":"DD","retain":"6"}',
+      retain: '6',
+      interval_unit: 'DD',
+      interval: '1',
+      'max-size': '10M',
       status: 'online',
-      pm_uptime: 1467111192915,
+      pm_uptime: 1467681986576,
       axm_actions: [
         {
           action_name: 'list files',
@@ -379,7 +376,7 @@
       ],
       axm_monitor: {
         'Loop delay': {
-          value: '1.56ms',
+          value: '0.59ms',
           agg_type: 'avg',
           alert: {}
         }
@@ -406,8 +403,8 @@
         module_version: '1.3.1',
         pmx_version: '0.6.2',
         retain: 6,
-        interval_unit: 'DD',
-        interval: 1,
+          interval_unit: 'DD',
+          interval: 1,
         'max-size': '10M',
         error: true,
         widget: {
@@ -435,33 +432,21 @@
         max_size: '10M'
       },
       axm_dynamic: {},
-      created_at: 1467111192806,
+      created_at: 1467681986576,
       pm_id: 1,
-      restart_time: 4,
+      restart_time: 0,
       unstable_restarts: 0,
       versioning: null,
-      node_version: '6.2.2',
-      exit_code: 0,
-      PM2_PROGRAMMATIC: 'true',
-      SSH_CONNECTION: '192.168.69.18 51680 192.168.69.243 22',
-      LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
-      SSH_TTY: '/dev/pts/0',
-      SSH_CLIENT: '192.168.69.18 51680 22',
-      TERM: 'xterm-256color',
-      COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
-      'max-size': '10M',
-      interval: '1',
-      interval_unit: 'DD',
-      retain: '6'
+      node_version: '6.2.2'
     },
     pm_id: 1,
     monit: {
-      memory: 29720576,
-      cpu: 2
+      memory: 32403456,
+      cpu: 0
     }
   },
   {
-    pid: 3716,
+    pid: 20921,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -471,15 +456,15 @@
       automation: true,
       autorestart: true,
       treekill: true,
-      watch: 'nodeworker2.js',
+      watch: false,
       env: {
         NODE_ENV: 'production',
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c24',
+        XDG_SESSION_ID: 'c8',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.18 64110 22',
+        SSH_CLIENT: '192.168.69.15 60942 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -489,7 +474,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.18 64110 192.168.69.243 22',
+        SSH_CONNECTION: '192.168.69.15 60942 192.168.69.243 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -502,7 +487,7 @@
         automation: true,
         autorestart: true,
         treekill: true,
-        watch: 'nodeworker2.js',
+        watch: false,
         max_restarts: 10,
         exec_mode: 'cluster_mode',
         env_production: {
@@ -524,7 +509,8 @@
         TERM: 'xterm-256color',
         COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
         REDIS_SSLTUNNEL: '[{"port":6379,"host":"127.0.0.1"},{"port":6378,"host":"127.0.0.1"},{"port":6377,"host":"127.0.0.1"},{"port":6376,"host":"127.0.0.1"},{"port":6375,"host":"127.0.0.1"},{"port":6374,"host":"127.0.0.1"}]',
-        REDIS_HASHSIZE: 16384
+        REDIS_HASHSIZE: 16384,
+        source_map_support: true
       },
       max_restarts: 10,
       exec_mode: 'cluster_mode',
@@ -544,9 +530,9 @@
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c24',
+      XDG_SESSION_ID: 'c8',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.18 64110 22',
+      SSH_CLIENT: '192.168.69.15 60942 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -556,53 +542,37 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.18 64110 192.168.69.243 22',
+      SSH_CONNECTION: '192.168.69.15 60942 192.168.69.243 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1467073808989,
-      axm_actions: [
-        {
-          action_name: 'km:heapdump',
-          opts: null,
-          arity: 1
-        },
-        {
-          action_name: 'km:cpu:profiling:start',
-          opts: null,
-          arity: 1
-        },
-        {
-          action_name: 'km:cpu:profiling:stop',
-          opts: null,
-          arity: 1
-        }
-      ],
+      pm_uptime: 1467731815624,
+      axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '2.19ms',
+          value: '0.46ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '10.99ms',
+          value: '6.64ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '0req/s',
+          value: '2.47req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0 MB/s',
+          value: '0.001 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0 MB/s',
+          value: '0.00001 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -620,24 +590,23 @@
         ports: false,
         module_conf: {},
         module_name: 'clusteredAPInode',
-        module_version: '1.0.4',
+        module_version: '1.0.5',
         pmx_version: '0.6.2',
         error: true,
-        latency: true,
-        heapdump: true
+        latency: true
       },
       axm_dynamic: {},
-      created_at: 1467073808982,
-      restart_time: 5,
+      created_at: 1467731815615,
+      restart_time: 1,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '394e02b8afa05e016612f0a9a0e1953632af2cf5',
-        update_time: '2016-06-28T11:11:41.223Z',
-        comment: 'New notifications thru pub/sub',
-        unstaged: false,
+        revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
+        update_time: '2016-07-05T18:29:55.279Z',
+        comment: 'V8 deoptimization prevention updates',
+        unstaged: true,
         branch: 'master',
         remotes: [
           'origin'
@@ -646,7 +615,7 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: '3742ec8189d927b8b4a873d1c768c56152b904e9',
+        prev_rev: '00949bdc28ef4cceadce560162df7f69afa8d87d',
         repo_path: '/home/pi/cluster/current'
       },
       node_version: '6.2.2',
@@ -661,17 +630,18 @@
       COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
       REDIS_SSLTUNNEL: '[{"port":6379,"host":"127.0.0.1"},{"port":6378,"host":"127.0.0.1"},{"port":6377,"host":"127.0.0.1"},{"port":6376,"host":"127.0.0.1"},{"port":6375,"host":"127.0.0.1"},{"port":6374,"host":"127.0.0.1"}]',
       REDIS_HASHSIZE: 16384,
+      source_map_support: true,
       instances: 4,
       pm_id: 2
     },
     pm_id: 2,
     monit: {
-      memory: 40427520,
-      cpu: 0
+      memory: 36556800,
+      cpu: 15
     }
   },
   {
-    pid: 3758,
+    pid: 21023,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -681,15 +651,15 @@
       automation: true,
       autorestart: true,
       treekill: true,
-      watch: 'nodeworker2.js',
+      watch: false,
       env: {
         NODE_ENV: 'production',
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c24',
+        XDG_SESSION_ID: 'c8',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.18 64110 22',
+        SSH_CLIENT: '192.168.69.15 60942 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -699,7 +669,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.18 64110 192.168.69.243 22',
+        SSH_CONNECTION: '192.168.69.15 60942 192.168.69.243 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -712,7 +682,7 @@
         automation: true,
         autorestart: true,
         treekill: true,
-        watch: 'nodeworker2.js',
+        watch: false,
         max_restarts: 10,
         exec_mode: 'cluster_mode',
         env_production: {
@@ -734,7 +704,8 @@
         TERM: 'xterm-256color',
         COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
         REDIS_SSLTUNNEL: '[{"port":6379,"host":"127.0.0.1"},{"port":6378,"host":"127.0.0.1"},{"port":6377,"host":"127.0.0.1"},{"port":6376,"host":"127.0.0.1"},{"port":6375,"host":"127.0.0.1"},{"port":6374,"host":"127.0.0.1"}]',
-        REDIS_HASHSIZE: 16384
+        REDIS_HASHSIZE: 16384,
+        source_map_support: true
       },
       max_restarts: 10,
       exec_mode: 'cluster_mode',
@@ -754,9 +725,9 @@
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c24',
+      XDG_SESSION_ID: 'c8',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.18 64110 22',
+      SSH_CLIENT: '192.168.69.15 60942 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -766,53 +737,37 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.18 64110 192.168.69.243 22',
+      SSH_CONNECTION: '192.168.69.15 60942 192.168.69.243 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1467073813261,
-      axm_actions: [
-        {
-          action_name: 'km:heapdump',
-          opts: null,
-          arity: 1
-        },
-        {
-          action_name: 'km:cpu:profiling:start',
-          opts: null,
-          arity: 1
-        },
-        {
-          action_name: 'km:cpu:profiling:stop',
-          opts: null,
-          arity: 1
-        }
-      ],
+      pm_uptime: 1467731819693,
+      axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '2.18ms',
+          value: '0.43ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '10.76ms',
+          value: '6.58ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '0req/s',
+          value: '2.46req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0 MB/s',
+          value: '0.001 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0 MB/s',
+          value: '0.000116 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -830,24 +785,23 @@
         ports: false,
         module_conf: {},
         module_name: 'clusteredAPInode',
-        module_version: '1.0.4',
+        module_version: '1.0.5',
         pmx_version: '0.6.2',
         error: true,
-        latency: true,
-        heapdump: true
+        latency: true
       },
       axm_dynamic: {},
-      created_at: 1467073813259,
-      restart_time: 5,
+      created_at: 1467731819689,
+      restart_time: 1,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '394e02b8afa05e016612f0a9a0e1953632af2cf5',
-        update_time: '2016-06-28T11:11:41.463Z',
-        comment: 'New notifications thru pub/sub',
-        unstaged: false,
+        revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
+        update_time: '2016-07-05T18:29:55.559Z',
+        comment: 'V8 deoptimization prevention updates',
+        unstaged: true,
         branch: 'master',
         remotes: [
           'origin'
@@ -856,7 +810,7 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: '3742ec8189d927b8b4a873d1c768c56152b904e9',
+        prev_rev: '00949bdc28ef4cceadce560162df7f69afa8d87d',
         repo_path: '/home/pi/cluster/current'
       },
       node_version: '6.2.2',
@@ -871,17 +825,18 @@
       COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
       REDIS_SSLTUNNEL: '[{"port":6379,"host":"127.0.0.1"},{"port":6378,"host":"127.0.0.1"},{"port":6377,"host":"127.0.0.1"},{"port":6376,"host":"127.0.0.1"},{"port":6375,"host":"127.0.0.1"},{"port":6374,"host":"127.0.0.1"}]',
       REDIS_HASHSIZE: 16384,
+      source_map_support: true,
       instances: 4,
       pm_id: 3
     },
     pm_id: 3,
     monit: {
-      memory: 39546880,
+      memory: 35676160,
       cpu: 0
     }
   },
   {
-    pid: 3795,
+    pid: 21073,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -891,15 +846,15 @@
       automation: true,
       autorestart: true,
       treekill: true,
-      watch: 'nodeworker2.js',
+      watch: false,
       env: {
         NODE_ENV: 'production',
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c24',
+        XDG_SESSION_ID: 'c8',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.18 64110 22',
+        SSH_CLIENT: '192.168.69.15 60942 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -909,7 +864,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.18 64110 192.168.69.243 22',
+        SSH_CONNECTION: '192.168.69.15 60942 192.168.69.243 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -922,7 +877,7 @@
         automation: true,
         autorestart: true,
         treekill: true,
-        watch: 'nodeworker2.js',
+        watch: false,
         max_restarts: 10,
         exec_mode: 'cluster_mode',
         env_production: {
@@ -944,7 +899,8 @@
         TERM: 'xterm-256color',
         COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
         REDIS_SSLTUNNEL: '[{"port":6379,"host":"127.0.0.1"},{"port":6378,"host":"127.0.0.1"},{"port":6377,"host":"127.0.0.1"},{"port":6376,"host":"127.0.0.1"},{"port":6375,"host":"127.0.0.1"},{"port":6374,"host":"127.0.0.1"}]',
-        REDIS_HASHSIZE: 16384
+        REDIS_HASHSIZE: 16384,
+        source_map_support: true
       },
       max_restarts: 10,
       exec_mode: 'cluster_mode',
@@ -964,9 +920,9 @@
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c24',
+      XDG_SESSION_ID: 'c8',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.18 64110 22',
+      SSH_CLIENT: '192.168.69.15 60942 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -976,53 +932,37 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.18 64110 192.168.69.243 22',
+      SSH_CONNECTION: '192.168.69.15 60942 192.168.69.243 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1467073817578,
-      axm_actions: [
-        {
-          action_name: 'km:heapdump',
-          opts: null,
-          arity: 1
-        },
-        {
-          action_name: 'km:cpu:profiling:start',
-          opts: null,
-          arity: 1
-        },
-        {
-          action_name: 'km:cpu:profiling:stop',
-          opts: null,
-          arity: 1
-        }
-      ],
+      pm_uptime: 1467731823704,
+      axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '2.08ms',
+          value: '0.44ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '10.21ms',
+          value: '6.72ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '0req/s',
+          value: '2.45req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0 MB/s',
+          value: '0.002 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0 MB/s',
+          value: '0.001 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -1040,24 +980,23 @@
         ports: false,
         module_conf: {},
         module_name: 'clusteredAPInode',
-        module_version: '1.0.4',
+        module_version: '1.0.5',
         pmx_version: '0.6.2',
         error: true,
-        latency: true,
-        heapdump: true
+        latency: true
       },
       axm_dynamic: {},
-      created_at: 1467073817576,
-      restart_time: 5,
+      created_at: 1467731823702,
+      restart_time: 1,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '394e02b8afa05e016612f0a9a0e1953632af2cf5',
-        update_time: '2016-06-28T11:11:41.703Z',
-        comment: 'New notifications thru pub/sub',
-        unstaged: false,
+        revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
+        update_time: '2016-07-05T18:29:55.859Z',
+        comment: 'V8 deoptimization prevention updates',
+        unstaged: true,
         branch: 'master',
         remotes: [
           'origin'
@@ -1066,7 +1005,7 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: '3742ec8189d927b8b4a873d1c768c56152b904e9',
+        prev_rev: '00949bdc28ef4cceadce560162df7f69afa8d87d',
         repo_path: '/home/pi/cluster/current'
       },
       node_version: '6.2.2',
@@ -1081,17 +1020,18 @@
       COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
       REDIS_SSLTUNNEL: '[{"port":6379,"host":"127.0.0.1"},{"port":6378,"host":"127.0.0.1"},{"port":6377,"host":"127.0.0.1"},{"port":6376,"host":"127.0.0.1"},{"port":6375,"host":"127.0.0.1"},{"port":6374,"host":"127.0.0.1"}]',
       REDIS_HASHSIZE: 16384,
+      source_map_support: true,
       instances: 4,
       pm_id: 4
     },
     pm_id: 4,
     monit: {
-      memory: 38731776,
+      memory: 36048896,
       cpu: 0
     }
   },
   {
-    pid: 3834,
+    pid: 21104,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -1101,15 +1041,15 @@
       automation: true,
       autorestart: true,
       treekill: true,
-      watch: 'nodeworker2.js',
+      watch: false,
       env: {
         NODE_ENV: 'production',
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c24',
+        XDG_SESSION_ID: 'c8',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.18 64110 22',
+        SSH_CLIENT: '192.168.69.15 60942 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -1119,7 +1059,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.18 64110 192.168.69.243 22',
+        SSH_CONNECTION: '192.168.69.15 60942 192.168.69.243 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -1132,7 +1072,7 @@
         automation: true,
         autorestart: true,
         treekill: true,
-        watch: 'nodeworker2.js',
+        watch: false,
         max_restarts: 10,
         exec_mode: 'cluster_mode',
         env_production: {
@@ -1154,7 +1094,8 @@
         TERM: 'xterm-256color',
         COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
         REDIS_SSLTUNNEL: '[{"port":6379,"host":"127.0.0.1"},{"port":6378,"host":"127.0.0.1"},{"port":6377,"host":"127.0.0.1"},{"port":6376,"host":"127.0.0.1"},{"port":6375,"host":"127.0.0.1"},{"port":6374,"host":"127.0.0.1"}]',
-        REDIS_HASHSIZE: 16384
+        REDIS_HASHSIZE: 16384,
+        source_map_support: true
       },
       max_restarts: 10,
       exec_mode: 'cluster_mode',
@@ -1174,9 +1115,9 @@
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c24',
+      XDG_SESSION_ID: 'c8',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.18 64110 22',
+      SSH_CLIENT: '192.168.69.15 60942 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -1186,53 +1127,37 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.18 64110 192.168.69.243 22',
+      SSH_CONNECTION: '192.168.69.15 60942 192.168.69.243 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1467073821858,
-      axm_actions: [
-        {
-          action_name: 'km:heapdump',
-          opts: null,
-          arity: 1
-        },
-        {
-          action_name: 'km:cpu:profiling:start',
-          opts: null,
-          arity: 1
-        },
-        {
-          action_name: 'km:cpu:profiling:stop',
-          opts: null,
-          arity: 1
-        }
-      ],
+      pm_uptime: 1467731827699,
+      axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '2.19ms',
+          value: '0.44ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '10.71ms',
+          value: '6.65ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '0req/s',
+          value: '2.45req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0 MB/s',
+          value: '0.002 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0 MB/s',
+          value: '0.000786 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -1250,24 +1175,23 @@
         ports: false,
         module_conf: {},
         module_name: 'clusteredAPInode',
-        module_version: '1.0.4',
+        module_version: '1.0.5',
         pmx_version: '0.6.2',
         error: true,
-        latency: true,
-        heapdump: true
+        latency: true
       },
       axm_dynamic: {},
-      created_at: 1467073821856,
-      restart_time: 6,
+      created_at: 1467731827697,
+      restart_time: 1,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '394e02b8afa05e016612f0a9a0e1953632af2cf5',
-        update_time: '2016-06-28T11:11:41.933Z',
-        comment: 'New notifications thru pub/sub',
-        unstaged: false,
+        revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
+        update_time: '2016-07-05T18:29:56.209Z',
+        comment: 'V8 deoptimization prevention updates',
+        unstaged: true,
         branch: 'master',
         remotes: [
           'origin'
@@ -1276,7 +1200,7 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: '3742ec8189d927b8b4a873d1c768c56152b904e9',
+        prev_rev: '00949bdc28ef4cceadce560162df7f69afa8d87d',
         repo_path: '/home/pi/cluster/current'
       },
       node_version: '6.2.2',
@@ -1291,12 +1215,13 @@
       COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
       REDIS_SSLTUNNEL: '[{"port":6379,"host":"127.0.0.1"},{"port":6378,"host":"127.0.0.1"},{"port":6377,"host":"127.0.0.1"},{"port":6376,"host":"127.0.0.1"},{"port":6375,"host":"127.0.0.1"},{"port":6374,"host":"127.0.0.1"}]',
       REDIS_HASHSIZE: 16384,
+      source_map_support: true,
       instances: 4,
       pm_id: 5
     },
     pm_id: 5,
     monit: {
-      memory: 40169472,
+      memory: 35905536,
       cpu: 0
     }
   }

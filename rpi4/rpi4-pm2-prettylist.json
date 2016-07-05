@@ -1,6 +1,6 @@
 [
   {
-    pid: 855,
+    pid: 1197,
     name: 'pm2-nginx',
     pm2_env: 
      { name: 'pm2-nginx',
@@ -89,11 +89,11 @@
        hostname: 'giancarlobonansea.homeip.net',
        protocol: 'http',
        status: 'online',
-       pm_uptime: 1467048244738,
+       pm_uptime: 1467681993033,
        axm_actions: [ { action_name: 'Show Configuration', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '0.59ms',
+           value: '0.56ms',
            agg_type: 'avg',
            alert: {}
          },
@@ -101,30 +101,34 @@
            value: '0',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10000, interval: 180, cmp: '>' } },
-          'Curr. Writing': { value: '1', agg_type: 'avg', alert: {} },
+         'Curr. Writing': {
+           value: '5',
+           agg_type: 'avg',
+           alert: {}
+         },
           'Curr. Reading': { value: '0', agg_type: 'avg', alert: {} },
          'Req/Handled Conn.': {
-           value: '1702.21',
+           value: '611.04',
            agg_type: 'avg',
            alert: {}
          },
          'Client Requests': {
-           value: '14424562',
+           value: '9601948',
            agg_type: 'avg',
            alert: {}
          },
          'Handled Conn.': {
-           value: '8474',
+           value: '15714',
            agg_type: 'avg',
            alert: {}
          },
          'Accepted Conn.': {
-           value: '8474',
+           value: '15714',
            agg_type: 'avg',
            alert: {}
          },
          'Active Conn.': {
-           value: '1',
+           value: '4',
            agg_type: 'avg',
            alert: {}
          },
@@ -172,13 +176,13 @@
                    'Curr. Writing',
                    'Curr. Waiting' ] },
              el: { probes: true, actions: true } },
-          pid: 534,
+          pid: 608,
           isModule: true,
           description: 'PM2 Nginx Module',
           username: '',
           password: '' },
        axm_dynamic: {},
-       created_at: 1467048244738,
+       created_at: 1467681993033,
        pm_id: 0,
        restart_time: 0,
        unstable_restarts: 0,
@@ -187,12 +191,12 @@
      },
     pm_id: 0,
     monit: {
-      memory: 0,
+      memory: 2326528,
       cpu: 0
     }
   },
   {
-    pid: 865,
+    pid: 1207,
     name: 'pm2-server-monit',
     pm2_env: 
      { name: 'pm2-server-monit',
@@ -271,7 +275,7 @@
        PM2_HOME: '/home/pi/.pm2',
        'pm2-server-monit': '{}',
        status: 'online',
-       pm_uptime: 1467048245136,
+       pm_uptime: 1467681993429,
        axm_actions: 
         [ { action_name: 'top cpu consuming', opts: null, arity: 1 },
           { action_name: 'top mem consuming', opts: null, arity: 1 },
@@ -284,7 +288,7 @@
           { action_name: 'open files', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '0.5ms',
+           value: '0.46ms',
            agg_type: 'avg',
            alert: {}
          },
@@ -293,40 +297,44 @@
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '>' } },
          'Total Processes': {
-           value: 119,
+           value: 122,
            agg_type: 'avg',
            alert: {}
          },
          'Used memory': {
-           value: '0.2GB / 1.0GB',
+           value: '0.3GB / 1.0GB',
            agg_type: 'avg',
            alert: {}
          },
          'Free memory': {
-           value: '76.3%',
+           value: '72.0%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
          'TTY/SSH opened': {
-           value: '1\n',
+           value: '0\n',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 15, interval: 180, cmp: '>' } },
          'Used space': {
-           value: '6.5GB / 29.1GB',
+           value: '6.6GB / 29.1GB',
            agg_type: 'avg',
            alert: {}
          },
          'Avail. Disk': {
-           value: '74.6%',
+           value: '74.2%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
           'Operating System': { value: 'Raspbian 8', agg_type: 'avg', alert: {} },
          'CPU usage': {
-           value: '32.05%',
+           value: '76.48%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 90, interval: 100, cmp: '>' } },
-          'eth1 output': { value: '0.03MB/s', agg_type: 'avg', alert: {} },
+         'eth1 output': {
+           value: '0.27MB/s',
+           agg_type: 'avg',
+           alert: {}
+         },
          'eth1 input': {
-           value: '0.00MB/s',
+           value: '0.12MB/s',
            agg_type: 'avg',
            alert: {}
          }
@@ -370,7 +378,7 @@
           isModule: true,
           description: 'Rack to monitor a server' },
        axm_dynamic: {},
-       created_at: 1467048245136,
+       created_at: 1467681993430,
        pm_id: 1,
        restart_time: 0,
        unstable_restarts: 0,
@@ -379,12 +387,12 @@
      },
     pm_id: 1,
     monit: {
-      memory: 28811264,
-      cpu: 3
+      memory: 33693696,
+      cpu: 4
     }
   },
   {
-    pid: 2516,
+    pid: 1213,
     name: 'pm2-logrotate',
     pm2_env: 
      { name: 'pm2-logrotate',
@@ -401,7 +409,7 @@
        env: 
         { PM2_JSON_PROCESSING: 'true',
           PM2_INTERACTOR_PROCESSING: 'true',
-          _: '/usr/bin/pm2',
+          _: '/usr/lib/node_modules/pm2/bin/pm2',
           XDG_RUNTIME_DIR: '/run/user/1000',
           LOGNAME: 'pi',
           HOME: '/home/pi',
@@ -409,15 +417,19 @@
           NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
           TZ: 'America/Sao_Paulo',
           LANG: 'en_GB.UTF-8',
-          PWD: '/home/pi',
-          PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/local/heroku/bin',
+          PWD: '/home/pi/.pm2/node_modules/pm2-logrotate',
+          PATH: '/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
           MAIL: '/var/mail/pi',
           USER: 'pi',
           SHELL: '/bin/bash',
-          XDG_SESSION_ID: 'c23',
+          XDG_SESSION_ID: 'c1',
           PM2_HOME: '/home/pi/.pm2',
           pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
           'pm2-logrotate': '{"max-size":"10M","interval":"1","interval_unit":"DD","retain":"6"}',
+          retain: '6',
+          interval_unit: 'DD',
+          interval: '1',
+          'max-size': '10M',
           name: 'pm2-logrotate',
           vizion: true,
           pmx: true,
@@ -433,29 +445,19 @@
           instances: 1,
           pm_out_log_path: '/home/pi/.pm2/logs/pm2-logrotate-out.log',
           pm_err_log_path: '/home/pi/.pm2/logs/pm2-logrotate-error.log',
-          pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate.pid',
-          PM2_PROGRAMMATIC: 'true',
-          SSH_CONNECTION: '192.168.69.18 51678 192.168.69.242 22',
-          LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
-          SSH_TTY: '/dev/pts/0',
-          SSH_CLIENT: '192.168.69.18 51678 22',
-          TERM: 'xterm-256color',
-          'max-size': '10M',
-          interval: '1',
-          interval_unit: 'DD',
-          retain: '6'
+          pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate.pid'
         },
        pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
        exec_interpreter: 'node',
        instances: 1,
-       pm_out_log_path: '/home/pi/.pm2/logs/pm2-logrotate-out.log',
-       pm_err_log_path: '/home/pi/.pm2/logs/pm2-logrotate-error.log',
-       pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate.pid',
+       pm_out_log_path: '/home/pi/.pm2/logs/pm2-logrotate-out-2.log',
+       pm_err_log_path: '/home/pi/.pm2/logs/pm2-logrotate-error-2.log',
+       pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate-2.pid',
        NODE_APP_INSTANCE: 0,
        vizion_running: false,
        PM2_JSON_PROCESSING: 'true',
        PM2_INTERACTOR_PROCESSING: 'true',
-       _: '/usr/bin/pm2',
+       _: '/usr/lib/node_modules/pm2/bin/pm2',
        XDG_RUNTIME_DIR: '/run/user/1000',
        LOGNAME: 'pi',
        HOME: '/home/pi',
@@ -463,20 +465,24 @@
        NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
        TZ: 'America/Sao_Paulo',
        LANG: 'en_GB.UTF-8',
-       PWD: '/home/pi',
-       PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/local/heroku/bin',
+       PWD: '/home/pi/.pm2/node_modules/pm2-logrotate',
+       PATH: '/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
        MAIL: '/var/mail/pi',
        USER: 'pi',
        SHELL: '/bin/bash',
-       XDG_SESSION_ID: 'c23',
+       XDG_SESSION_ID: 'c1',
        PM2_HOME: '/home/pi/.pm2',
        'pm2-logrotate': '{"max-size":"10M","interval":"1","interval_unit":"DD","retain":"6"}',
+       retain: '6',
+       interval_unit: 'DD',
+       interval: '1',
+       'max-size': '10M',
        status: 'online',
-       pm_uptime: 1467111196762,
+       pm_uptime: 1467681993719,
        axm_actions: [ { action_name: 'list files', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '1.59ms',
+           value: '0.58ms',
            agg_type: 'avg',
            alert: {}
          }
@@ -518,32 +524,21 @@
           max_size: '10M'
         },
        axm_dynamic: {},
-       created_at: 1467111196645,
+       created_at: 1467681993719,
        pm_id: 2,
-       restart_time: 4,
+       restart_time: 0,
        unstable_restarts: 0,
        versioning: null,
-       node_version: '6.2.2',
-       exit_code: 0,
-       PM2_PROGRAMMATIC: 'true',
-       SSH_CONNECTION: '192.168.69.18 51678 192.168.69.242 22',
-       LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
-       SSH_TTY: '/dev/pts/0',
-       SSH_CLIENT: '192.168.69.18 51678 22',
-       TERM: 'xterm-256color',
-       'max-size': '10M',
-       interval: '1',
-       interval_unit: 'DD',
-       retain: '6'
+       node_version: '6.2.2'
      },
     pm_id: 2,
     monit: {
-      memory: 29884416,
+      memory: 34414592,
       cpu: 0
     }
   },
   {
-    pid: 877,
+    pid: 1219,
     name: 'clusteredHDRnode',
     pm2_env: 
      { name: 'clusteredHDRnode',
@@ -553,14 +548,14 @@
        automation: true,
        autorestart: true,
        treekill: true,
-       watch: 'hdrsrv.js',
+       watch: false,
        env: 
         { NODE_ENV: 'production',
           clusteredHDRnode: '{}',
           pm_cwd: '/home/pi/clusterednode-hdrhist/current',
-          XDG_SESSION_ID: 'c93',
+          XDG_SESSION_ID: 'c49',
           SHELL: '/bin/bash',
-          SSH_CLIENT: '192.168.69.18 52255 22',
+          SSH_CLIENT: '192.168.69.15 63373 22',
           OLDPWD: '/home/pi',
           USER: 'pi',
           MAIL: '/var/mail/pi',
@@ -570,7 +565,7 @@
           SHLVL: '1',
           HOME: '/home/pi',
           LOGNAME: 'pi',
-          SSH_CONNECTION: '192.168.69.18 52255 192.168.69.242 22',
+          SSH_CONNECTION: '192.168.69.15 63373 192.168.69.242 22',
           LC_CTYPE: 'en_US.UTF-8',
           XDG_RUNTIME_DIR: '/run/user/1000',
           _: '/usr/bin/pm2',
@@ -583,7 +578,7 @@
           automation: true,
           autorestart: true,
           treekill: true,
-          watch: 'hdrsrv.js',
+          watch: false,
           max_restarts: 10,
           exec_mode: 'cluster_mode',
           env_production: { NODE_ENV: 'production' },
@@ -594,7 +589,9 @@
           pm_err_log_path: '/home/pi/.pm2/logs/clusteredHDRnode-error.log',
           pm_pid_path: '/home/pi/.pm2/pids/clusteredHDRnode.pid',
           script: 'hdrsrv.js',
-          NODEPORT: 8012 },
+          NODEPORT: 8012,
+          source_map_support: true
+        },
        max_restarts: 10,
        exec_mode: 'cluster_mode',
        env_production: { NODE_ENV: 'production' },
@@ -609,9 +606,9 @@
        vizion_running: false,
        NODE_ENV: 'production',
        clusteredHDRnode: '{}',
-       XDG_SESSION_ID: 'c93',
+       XDG_SESSION_ID: 'c49',
        SHELL: '/bin/bash',
-       SSH_CLIENT: '192.168.69.18 52255 22',
+       SSH_CLIENT: '192.168.69.15 63373 22',
        OLDPWD: '/home/pi',
        USER: 'pi',
        MAIL: '/var/mail/pi',
@@ -621,22 +618,22 @@
        SHLVL: '1',
        HOME: '/home/pi',
        LOGNAME: 'pi',
-       SSH_CONNECTION: '192.168.69.18 52255 192.168.69.242 22',
+       SSH_CONNECTION: '192.168.69.15 63373 192.168.69.242 22',
        LC_CTYPE: 'en_US.UTF-8',
        XDG_RUNTIME_DIR: '/run/user/1000',
        _: '/usr/bin/pm2',
        PM2_JSON_PROCESSING: 'true',
        status: 'online',
-       pm_uptime: 1467048245763,
+       pm_uptime: 1467681994053,
        axm_actions: [],
        axm_monitor: {
          'Loop delay': {
-           value: '0.39ms',
+           value: '0.34ms',
            agg_type: 'avg',
            alert: {}
          },
          'pmx:http:latency': {
-           value: '28.58ms',
+           value: '33.4ms',
            agg_type: 'avg',
            alert: {}
          },
@@ -660,39 +657,40 @@
           ports: false,
           module_conf: {},
           module_name: 'clusteredHDRnode',
-          module_version: '1.0.0',
+          module_version: '1.0.5',
           pmx_version: '0.6.2',
           error: true,
           latency: true },
        axm_dynamic: {},
-       created_at: 1466710734022,
+       created_at: 1467655399999,
        restart_time: 0,
        unstable_restarts: 0,
        _pm2_version: '1.1.3',
        versioning: 
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-hdrhist.git',
-          revision: 'c9f953069a4e98e86cd4f852b4f8368ff65eeb06',
-          update_time: '2016-06-28T11:11:56.449Z',
-          comment: 'Update HDR histogram parameters for smoother curve',
-          unstaged: false,
+          revision: '76b9aa73c8383f6cb0c312e9432c9cf16c096020',
+          update_time: '2016-07-05T18:30:02.930Z',
+          comment: 'Simpler implementation - operation chosen by client or stress tool',
+          unstaged: true,
           branch: 'master',
           remotes: [ 'origin' ],
           remote: 'origin',
           branch_exists_on_remote: true,
           ahead: false,
           next_rev: null,
-          prev_rev: '49eb1dfda70b6717698b7ae02ed39776ab481ec1',
+          prev_rev: '399dca0c1cea89f92c08f8f3015de3fd382ff1e7',
           repo_path: '/home/pi/clusterednode-hdrhist/current' },
        node_version: '6.2.2',
        exit_code: 0,
        script: 'hdrsrv.js',
        NODEPORT: 8012,
+       source_map_support: true,
        instances: 1,
        pm_id: 3 },
     pm_id: 3,
     monit: {
-      memory: 28327936,
+      memory: 32976896,
       cpu: 0
     }
   }

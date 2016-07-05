@@ -1,35 +1,21 @@
 #!/usr/bin/env bash
 # RaspberryPi0
 echo "Exporting raspberrypi0 config files..."
-ssh -p 32002 -T pi@giancarlobonansea.homeip.net "\
-uname -a > /home/pi/clusterednode-config/rpi0-uname.txt && \
-pm2 list > /home/pi/clusterednode-config/rpi0-api-pm2-list.txt && \
-pm2 show clusteredPUBSUBnode > /home/pi/clusterednode-config/rpi0-pubsub-pm2-show.txt && \
-pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi0-logrotate-pm2-show.txt && \
-pm2 prettylist > /home/pi/clusterednode-config/rpi0-pm2-prettylist.json && \
-sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi0-sysctl.conf && \
-sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi0-stunnel-redis-server.conf && \
-sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi0-default-stunnel && \
-sudo cp /etc/init.d/stunnel /home/pi/clusterednode-config/rpi0-initd-stunnel && \
-sudo cp /etc/redis/6379.conf /home/pi/clusterednode-config/rpi0-redis-6379.conf && \
-sudo cp /etc/redis/6378.conf /home/pi/clusterednode-config/rpi0-redis-6378.conf && \
-sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi0-redis-6377.conf && \
-sudo cp /etc/redis/sentinel.conf /home/pi/clusterednode-config/rpi0-redis-sentinel.conf"
-scp -r pi@raspberrypi0:~/clusterednode-config/* ./rpi0/
+#ssh -p 32002 -T pi@giancarlobonansea.homeip.net "\
+#uname -a > /home/pi/clusterednode-config/rpi0-uname.txt && \
+#pm2 list > /home/pi/clusterednode-config/rpi0-api-pm2-list.txt && \
+#pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi0-logrotate-pm2-show.txt && \
+#pm2 prettylist > /home/pi/clusterednode-config/rpi0-pm2-prettylist.json && \
+#sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi0-sysctl.conf"
+#scp -r pi@raspberrypi0:~/clusterednode-config/* ./rpi0/
 # RaspberryPi1
 echo "Exporting raspberrypi1 config files..."
 ssh -p 32003 -T pi@giancarlobonansea.homeip.net "\
 uname -a > /home/pi/clusterednode-config/rpi1-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi1-api-pm2-list.txt && \
 pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi1-logrotate-pm2-show.txt && \
-sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi1-sysctl.conf && \
-sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi1-stunnel-redis-server.conf && \
-sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi1-default-stunnel && \
-sudo cp /etc/init.d/stunnel /home/pi/clusterednode-config/rpi1-initd-stunnel && \
-sudo cp /etc/redis/6379.conf /home/pi/clusterednode-config/rpi1-redis-6379.conf && \
-sudo cp /etc/redis/6378.conf /home/pi/clusterednode-config/rpi1-redis-6378.conf && \
-sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi1-redis-6377.conf && \
-sudo cp /etc/redis/sentinel.conf /home/pi/clusterednode-config/rpi1-redis-sentinel.conf"
+pm2 prettylist > /home/pi/clusterednode-config/rpi1-pm2-prettylist.json && \
+sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi1-sysctl.conf"
 scp -r pi@raspberrypi1:~/clusterednode-config/* ./rpi1/
 # RaspberryPi2
 echo "Exporting raspberrypi2 config files..."
@@ -95,3 +81,36 @@ sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi6-sysctl.conf && \
 sudo cp /etc/stunnel/redis-client.conf /home/pi/clusterednode-config/rpi6-stunnel-redis-client.conf && \
 sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi6-default-stunnel"
 scp -r pi@raspberrypi6:~/clusterednode-config/* ./rpi6/
+# RaspberryPi7
+echo "Exporting raspberrypi7 config files..."
+ssh -p 32010 -T pi@giancarlobonansea.homeip.net "\
+uname -a > /home/pi/clusterednode-config/rpi7-uname.txt && \
+pm2 list > /home/pi/clusterednode-config/rpi7-api-pm2-list.txt && \
+pm2 show clusteredPUBSUBnode > /home/pi/clusterednode-config/rpi7-pubsub-pm2-show.txt && \
+pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi7-logrotate-pm2-show.txt && \
+pm2 prettylist > /home/pi/clusterednode-config/rpi7-pm2-prettylist.json && \
+sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi7-sysctl.conf && \
+sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi7-stunnel-redis-server.conf && \
+sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi7-default-stunnel && \
+sudo cp /etc/init.d/stunnel /home/pi/clusterednode-config/rpi7-initd-stunnel && \
+sudo cp /etc/redis/6379.conf /home/pi/clusterednode-config/rpi7-redis-6379.conf && \
+sudo cp /etc/redis/6378.conf /home/pi/clusterednode-config/rpi7-redis-6378.conf && \
+sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi7-redis-6377.conf && \
+sudo cp /etc/redis/sentinel.conf /home/pi/clusterednode-config/rpi7-redis-sentinel.conf"
+scp -r pi@raspberrypi7:~/clusterednode-config/* ./rpi7/
+# RaspberryPi8
+echo "Exporting raspberrypi8 config files..."
+ssh -p 32011 -T pi@giancarlobonansea.homeip.net "\
+uname -a > /home/pi/clusterednode-config/rpi8-uname.txt && \
+pm2 list > /home/pi/clusterednode-config/rpi8-api-pm2-list.txt && \
+pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi8-logrotate-pm2-show.txt && \
+pm2 prettylist > /home/pi/clusterednode-config/rpi8-pm2-prettylist.json && \
+sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi8-sysctl.conf && \
+sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi8-stunnel-redis-server.conf && \
+sudo cp /etc/default/stunnel /home/pi/clusterednode-config/rpi8-default-stunnel && \
+sudo cp /etc/init.d/stunnel /home/pi/clusterednode-config/rpi8-initd-stunnel && \
+sudo cp /etc/redis/6379.conf /home/pi/clusterednode-config/rpi8-redis-6379.conf && \
+sudo cp /etc/redis/6378.conf /home/pi/clusterednode-config/rpi8-redis-6378.conf && \
+sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi8-redis-6377.conf && \
+sudo cp /etc/redis/sentinel.conf /home/pi/clusterednode-config/rpi8-redis-sentinel.conf"
+scp -r pi@raspberrypi8:~/clusterednode-config/* ./rpi8/
