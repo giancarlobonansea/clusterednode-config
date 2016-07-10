@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # RaspberryPi0
 echo "Exporting raspberrypi0 config files..."
-#ssh -p 32002 -T pi@giancarlobonansea.homeip.net "\
-#rm /home/pi/clusterednode-config/* && \
-#uname -a > /home/pi/clusterednode-config/rpi0-uname.txt && \
-#pm2 list > /home/pi/clusterednode-config/rpi0-api-pm2-list.txt && \
-#pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi0-logrotate-pm2-show.txt && \
-#pm2 prettylist > /home/pi/clusterednode-config/rpi0-pm2-prettylist.json && \
-#sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi0-sysctl.conf"
-#scp -r pi@raspberrypi0:~/clusterednode-config/* ./rpi0/
+ssh -p 32002 -T pi@giancarlobonansea.homeip.net "\
+rm /home/pi/clusterednode-config/* && \
+uname -a > /home/pi/clusterednode-config/rpi0-uname.txt && \
+pm2 list > /home/pi/clusterednode-config/rpi0-api-pm2-list.txt && \
+pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi0-logrotate-pm2-show.txt && \
+pm2 prettylist > /home/pi/clusterednode-config/rpi0-pm2-prettylist.json && \
+sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi0-sysctl.conf"
+scp -r pi@raspberrypi0:~/clusterednode-config/* ./rpi0/
 # RaspberryPi1
 echo "Exporting raspberrypi1 config files..."
 ssh -p 32003 -T pi@giancarlobonansea.homeip.net "\

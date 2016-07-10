@@ -1,6 +1,6 @@
 [
   {
-    pid: 668,
+    pid: 667,
     name: 'pm2-server-monit',
     pm2_env: {
       name: 'pm2-server-monit',
@@ -31,7 +31,7 @@
         MAIL: '/var/mail/pi',
         USER: 'pi',
         SHELL: '/bin/bash',
-        XDG_SESSION_ID: 'c1',
+        XDG_SESSION_ID: 'c2',
         PM2_HOME: '/home/pi/.pm2',
         pm_cwd: '/home/pi/.pm2/node_modules/pm2-server-monit',
         'pm2-server-monit': '{}',
@@ -76,11 +76,11 @@
       MAIL: '/var/mail/pi',
       USER: 'pi',
       SHELL: '/bin/bash',
-      XDG_SESSION_ID: 'c1',
+      XDG_SESSION_ID: 'c2',
       PM2_HOME: '/home/pi/.pm2',
       'pm2-server-monit': '{}',
       status: 'online',
-      pm_uptime: 1467681995843,
+      pm_uptime: 1468007379522,
       axm_actions: [
         {
           action_name: 'top cpu consuming',
@@ -145,17 +145,17 @@
           }
         },
         'Total Processes': {
-          value: 115,
+          value: 114,
           agg_type: 'avg',
           alert: {}
         },
         'Used memory': {
-          value: '0.2GB / 1.0GB',
+          value: '0.3GB / 1.0GB',
           agg_type: 'avg',
           alert: {}
         },
         'Free memory': {
-          value: '73.7%',
+          value: '71.6%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -195,7 +195,7 @@
           alert: {}
         },
         'CPU usage': {
-          value: '25.00%',
+          value: '45.91%',
           agg_type: 'avg',
           alert: {
             mode: 'threshold-avg',
@@ -205,12 +205,12 @@
           }
         },
         'eth1 output': {
-          value: '0.07MB/s',
+          value: '0.05MB/s',
           agg_type: 'avg',
           alert: {}
         },
         'eth1 input': {
-          value: '0.04MB/s',
+          value: '0.00MB/s',
           agg_type: 'avg',
           alert: {}
         }
@@ -266,21 +266,21 @@
         description: 'Rack to monitor a server'
       },
       axm_dynamic: {},
-      created_at: 1467681995843,
+      created_at: 1468007379522,
       pm_id: 0,
       restart_time: 0,
       unstable_restarts: 0,
       versioning: null,
-      node_version: '6.2.2'
+      node_version: '6.3.0'
     },
     pm_id: 0,
     monit: {
-      memory: 33542144,
-      cpu: 2
+      memory: 29859840,
+      cpu: 9
     }
   },
   {
-    pid: 678,
+    pid: 677,
     name: 'pm2-logrotate',
     pm2_env: {
       name: 'pm2-logrotate',
@@ -310,7 +310,7 @@
         MAIL: '/var/mail/pi',
         USER: 'pi',
         SHELL: '/bin/bash',
-        XDG_SESSION_ID: 'c1',
+        XDG_SESSION_ID: 'c2',
         PM2_HOME: '/home/pi/.pm2',
         pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
         'pm2-logrotate': '{"max-size":"10M","interval":"1","interval_unit":"DD","retain":"6"}',
@@ -358,7 +358,7 @@
       MAIL: '/var/mail/pi',
       USER: 'pi',
       SHELL: '/bin/bash',
-      XDG_SESSION_ID: 'c1',
+      XDG_SESSION_ID: 'c2',
       PM2_HOME: '/home/pi/.pm2',
       'pm2-logrotate': '{"max-size":"10M","interval":"1","interval_unit":"DD","retain":"6"}',
       retain: '6',
@@ -366,7 +366,7 @@
       interval: '1',
       'max-size': '10M',
       status: 'online',
-      pm_uptime: 1467681996229,
+      pm_uptime: 1468007379921,
       axm_actions: [
         {
           action_name: 'list files',
@@ -376,7 +376,7 @@
       ],
       axm_monitor: {
         'Loop delay': {
-          value: '0.59ms',
+          value: '0.57ms',
           agg_type: 'avg',
           alert: {}
         }
@@ -432,21 +432,21 @@
         max_size: '10M'
       },
       axm_dynamic: {},
-      created_at: 1467681996229,
+      created_at: 1468007379921,
       pm_id: 1,
       restart_time: 0,
       unstable_restarts: 0,
       versioning: null,
-      node_version: '6.2.2'
+      node_version: '6.3.0'
     },
     pm_id: 1,
     monit: {
-      memory: 48549888,
+      memory: 33669120,
       cpu: 0
     }
   },
   {
-    pid: 20757,
+    pid: 13172,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -462,9 +462,9 @@
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c8',
+        XDG_SESSION_ID: 'c20',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.15 60936 22',
+        SSH_CLIENT: '192.168.69.18 51879 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -474,7 +474,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.15 60936 192.168.69.244 22',
+        SSH_CONNECTION: '192.168.69.18 51879 192.168.69.244 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -530,9 +530,9 @@
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c8',
+      XDG_SESSION_ID: 'c20',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.15 60936 22',
+      SSH_CLIENT: '192.168.69.18 51879 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -542,37 +542,37 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.15 60936 192.168.69.244 22',
+      SSH_CONNECTION: '192.168.69.18 51879 192.168.69.244 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1467731789056,
+      pm_uptime: 1468090396082,
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.44ms',
+          value: '0.41ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '7.53ms',
+          value: '6.27ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.89req/s',
+          value: '0req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0.001 MB/s',
+          value: '0 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0.001 MB/s',
+          value: '0 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -596,16 +596,16 @@
         latency: true
       },
       axm_dynamic: {},
-      created_at: 1467731789047,
-      restart_time: 1,
+      created_at: 1468090396075,
+      restart_time: 3,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T19:11:39.618Z',
-        comment: 'V8 deoptimization prevention updates',
+        revision: '60503705280a135f9a2e696949785ed76de5548f',
+        update_time: '2016-07-10T00:25:23.336Z',
+        comment: 'V8 optimization - targeting 2kb block - reducing JSON message size for optimal message transmission on V8 inline cache',
         unstaged: true,
         branch: 'master',
         remotes: [
@@ -615,10 +615,10 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: '00949bdc28ef4cceadce560162df7f69afa8d87d',
+        prev_rev: 'ceee4dced1eb11ff325ee2841603bc09b5810873',
         repo_path: '/home/pi/cluster/current'
       },
-      node_version: '6.2.2',
+      node_version: '6.3.0',
       exit_code: 0,
       script: 'nodeworker2.js',
       NODEPORT: 8010,
@@ -636,12 +636,12 @@
     },
     pm_id: 2,
     monit: {
-      memory: 37326848,
-      cpu: 4
+      memory: 44548096,
+      cpu: 0
     }
   },
   {
-    pid: 20789,
+    pid: 13204,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -657,9 +657,9 @@
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c8',
+        XDG_SESSION_ID: 'c20',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.15 60936 22',
+        SSH_CLIENT: '192.168.69.18 51879 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -669,7 +669,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.15 60936 192.168.69.244 22',
+        SSH_CONNECTION: '192.168.69.18 51879 192.168.69.244 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -725,9 +725,9 @@
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c8',
+      XDG_SESSION_ID: 'c20',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.15 60936 22',
+      SSH_CLIENT: '192.168.69.18 51879 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -737,37 +737,37 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.15 60936 192.168.69.244 22',
+      SSH_CONNECTION: '192.168.69.18 51879 192.168.69.244 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1467731793128,
+      pm_uptime: 1468090400179,
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.46ms',
+          value: '0.41ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '7.57ms',
+          value: '6.32ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.89req/s',
+          value: '0req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0.001 MB/s',
+          value: '0 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0.000172 MB/s',
+          value: '0 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -791,16 +791,16 @@
         latency: true
       },
       axm_dynamic: {},
-      created_at: 1467731793125,
-      restart_time: 1,
+      created_at: 1468090400177,
+      restart_time: 3,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T19:11:39.888Z',
-        comment: 'V8 deoptimization prevention updates',
+        revision: '60503705280a135f9a2e696949785ed76de5548f',
+        update_time: '2016-07-10T00:25:23.616Z',
+        comment: 'V8 optimization - targeting 2kb block - reducing JSON message size for optimal message transmission on V8 inline cache',
         unstaged: true,
         branch: 'master',
         remotes: [
@@ -810,10 +810,10 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: '00949bdc28ef4cceadce560162df7f69afa8d87d',
+        prev_rev: 'ceee4dced1eb11ff325ee2841603bc09b5810873',
         repo_path: '/home/pi/cluster/current'
       },
-      node_version: '6.2.2',
+      node_version: '6.3.0',
       exit_code: 0,
       script: 'nodeworker2.js',
       NODEPORT: 8010,
@@ -831,12 +831,12 @@
     },
     pm_id: 3,
     monit: {
-      memory: 42733568,
-      cpu: 1
+      memory: 38494208,
+      cpu: 0
     }
   },
   {
-    pid: 20890,
+    pid: 13242,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -852,9 +852,9 @@
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c8',
+        XDG_SESSION_ID: 'c20',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.15 60936 22',
+        SSH_CLIENT: '192.168.69.18 51879 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -864,7 +864,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.15 60936 192.168.69.244 22',
+        SSH_CONNECTION: '192.168.69.18 51879 192.168.69.244 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -920,9 +920,9 @@
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c8',
+      XDG_SESSION_ID: 'c20',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.15 60936 22',
+      SSH_CLIENT: '192.168.69.18 51879 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -932,37 +932,37 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.15 60936 192.168.69.244 22',
+      SSH_CONNECTION: '192.168.69.18 51879 192.168.69.244 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1467731797210,
+      pm_uptime: 1468090404162,
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.47ms',
+          value: '0.42ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '7.41ms',
+          value: '6.1ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.88req/s',
+          value: '0req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0.001 MB/s',
+          value: '0 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0.000116 MB/s',
+          value: '0 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -986,16 +986,16 @@
         latency: true
       },
       axm_dynamic: {},
-      created_at: 1467731797208,
-      restart_time: 1,
+      created_at: 1468090404160,
+      restart_time: 3,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T19:11:40.238Z',
-        comment: 'V8 deoptimization prevention updates',
+        revision: '60503705280a135f9a2e696949785ed76de5548f',
+        update_time: '2016-07-10T00:25:23.976Z',
+        comment: 'V8 optimization - targeting 2kb block - reducing JSON message size for optimal message transmission on V8 inline cache',
         unstaged: true,
         branch: 'master',
         remotes: [
@@ -1005,10 +1005,10 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: '00949bdc28ef4cceadce560162df7f69afa8d87d',
+        prev_rev: 'ceee4dced1eb11ff325ee2841603bc09b5810873',
         repo_path: '/home/pi/cluster/current'
       },
-      node_version: '6.2.2',
+      node_version: '6.3.0',
       exit_code: 0,
       script: 'nodeworker2.js',
       NODEPORT: 8010,
@@ -1026,12 +1026,12 @@
     },
     pm_id: 4,
     monit: {
-      memory: 42315776,
+      memory: 38539264,
       cpu: 4
     }
   },
   {
-    pid: 20932,
+    pid: 13274,
     name: 'clusteredAPInode',
     pm2_env: {
       name: 'clusteredAPInode',
@@ -1047,9 +1047,9 @@
         clusteredAPInode: '{}',
         pm_cwd: '/home/pi/cluster/current',
         TIMEOFFSET: 0,
-        XDG_SESSION_ID: 'c8',
+        XDG_SESSION_ID: 'c20',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.15 60936 22',
+        SSH_CLIENT: '192.168.69.18 51879 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -1059,7 +1059,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.15 60936 192.168.69.244 22',
+        SSH_CONNECTION: '192.168.69.18 51879 192.168.69.244 22',
         LC_CTYPE: 'en_US.UTF-8',
         XDG_RUNTIME_DIR: '/run/user/1000',
         _: '/usr/bin/pm2',
@@ -1115,9 +1115,9 @@
       NODE_ENV: 'production',
       clusteredAPInode: '{}',
       TIMEOFFSET: 0,
-      XDG_SESSION_ID: 'c8',
+      XDG_SESSION_ID: 'c20',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.15 60936 22',
+      SSH_CLIENT: '192.168.69.18 51879 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -1127,37 +1127,37 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.15 60936 192.168.69.244 22',
+      SSH_CONNECTION: '192.168.69.18 51879 192.168.69.244 22',
       LC_CTYPE: 'en_US.UTF-8',
       XDG_RUNTIME_DIR: '/run/user/1000',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1467731801224,
+      pm_uptime: 1468090408161,
       axm_actions: [],
       axm_monitor: {
         'Loop delay': {
-          value: '0.43ms',
+          value: '0.42ms',
           agg_type: 'avg',
           alert: {}
         },
         'pmx:http:latency': {
-          value: '7.3ms',
+          value: '5.79ms',
           agg_type: 'avg',
           alert: {}
         },
         HTTP: {
-          value: '1.88req/s',
+          value: '0req/s',
           agg_type: 'avg',
           alert: {}
         },
         'Network Upload': {
-          value: '0.001 MB/s',
+          value: '0 MB/s',
           agg_type: 'sum',
           alert: {}
         },
         'Network Download': {
-          value: '0.000792 MB/s',
+          value: '0 MB/s',
           agg_type: 'sum',
           alert: {}
         }
@@ -1181,16 +1181,16 @@
         latency: true
       },
       axm_dynamic: {},
-      created_at: 1467731801222,
-      restart_time: 1,
+      created_at: 1468090408159,
+      restart_time: 3,
       unstable_restarts: 0,
       _pm2_version: '1.1.3',
       versioning: {
         type: 'git',
         url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
-        revision: '6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3',
-        update_time: '2016-07-05T19:11:40.628Z',
-        comment: 'V8 deoptimization prevention updates',
+        revision: '60503705280a135f9a2e696949785ed76de5548f',
+        update_time: '2016-07-10T00:25:24.256Z',
+        comment: 'V8 optimization - targeting 2kb block - reducing JSON message size for optimal message transmission on V8 inline cache',
         unstaged: true,
         branch: 'master',
         remotes: [
@@ -1200,10 +1200,10 @@
         branch_exists_on_remote: true,
         ahead: false,
         next_rev: null,
-        prev_rev: '00949bdc28ef4cceadce560162df7f69afa8d87d',
+        prev_rev: 'ceee4dced1eb11ff325ee2841603bc09b5810873',
         repo_path: '/home/pi/cluster/current'
       },
-      node_version: '6.2.2',
+      node_version: '6.3.0',
       exit_code: 0,
       script: 'nodeworker2.js',
       NODEPORT: 8010,
@@ -1221,8 +1221,218 @@
     },
     pm_id: 5,
     monit: {
-      memory: 43163648,
-      cpu: 2
+      memory: 44965888,
+      cpu: 0
+    }
+  },
+  {
+    pid: 28443,
+    name: 'pm2-webshell',
+    pm2_env: {
+      name: 'pm2-webshell',
+      max_memory_restart: 104857600,
+      merge_logs: true,
+      vizion: true,
+      pmx: true,
+      automation: true,
+      autorestart: true,
+      treekill: true,
+      exec_mode: 'fork_mode',
+      cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+      pmx_module: true,
+      node_args: [],
+      pm_exec_path: '/home/pi/.pm2/node_modules/pm2-webshell/app.js',
+      env: {
+        PM2_JSON_PROCESSING: 'true',
+        _: '/usr/bin/pm2',
+        XDG_RUNTIME_DIR: '/run/user/1000',
+        SSH_CONNECTION: '192.168.69.18 52863 192.168.69.244 22',
+        LOGNAME: 'pi',
+        HOME: '/home/pi',
+        SHLVL: '1',
+        NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+        TZ: 'America/Sao_Paulo',
+        LANG: 'en_GB.UTF-8',
+        PWD: '/home/pi',
+        PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/local/heroku/bin',
+        MAIL: '/var/mail/pi',
+        LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+        USER: 'pi',
+        SSH_TTY: '/dev/pts/0',
+        SSH_CLIENT: '192.168.69.18 52863 22',
+        SHELL: '/bin/bash',
+        TERM: 'xterm-256color',
+        COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
+        XDG_SESSION_ID: 'c22',
+        pm_cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+        'pm2-webshell': '{"username":"pi","password":"raspberry","https":"true","port":"33334","ssl_cert":"/home/pi/nginx-selfsigned.crt","ssl_key":"/home/pi/nginx-selfsigned.key"}',
+        name: 'pm2-webshell',
+        max_memory_restart: 104857600,
+        merge_logs: true,
+        vizion: true,
+        pmx: true,
+        automation: true,
+        autorestart: true,
+        treekill: true,
+        exec_mode: 'fork_mode',
+        cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+        pmx_module: true,
+        node_args: [],
+        pm_exec_path: '/home/pi/.pm2/node_modules/pm2-webshell/app.js',
+        exec_interpreter: 'node',
+        instances: 1,
+        pm_out_log_path: '/home/pi/.pm2/logs/pm2-webshell-out.log',
+        pm_err_log_path: '/home/pi/.pm2/logs/pm2-webshell-error.log',
+        pm_pid_path: '/home/pi/.pm2/pids/pm2-webshell.pid',
+        PM2_PROGRAMMATIC: 'true',
+        username: 'pi',
+        password: 'raspberry',
+        https: 'true',
+        port: '33334',
+        ssl_cert: '/home/pi/nginx-selfsigned.crt',
+        ssl_key: '/home/pi/nginx-selfsigned.key'
+      },
+      pm_cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+      exec_interpreter: 'node',
+      instances: 1,
+      pm_out_log_path: '/home/pi/.pm2/logs/pm2-webshell-out.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/pm2-webshell-error.log',
+      pm_pid_path: '/home/pi/.pm2/pids/pm2-webshell.pid',
+      NODE_APP_INSTANCE: 0,
+      vizion_running: false,
+      PM2_JSON_PROCESSING: 'true',
+      _: '/usr/bin/pm2',
+      XDG_RUNTIME_DIR: '/run/user/1000',
+      SSH_CONNECTION: '192.168.69.18 52863 192.168.69.244 22',
+      LOGNAME: 'pi',
+      HOME: '/home/pi',
+      SHLVL: '1',
+      NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+      TZ: 'America/Sao_Paulo',
+      LANG: 'en_GB.UTF-8',
+      PWD: '/home/pi',
+      PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/local/heroku/bin',
+      MAIL: '/var/mail/pi',
+      LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+      USER: 'pi',
+      SSH_TTY: '/dev/pts/0',
+      SSH_CLIENT: '192.168.69.18 52863 22',
+      SHELL: '/bin/bash',
+      TERM: 'xterm-256color',
+      COMP_WORDBREAKS: ' \t\n"\'><;|&(:',
+      XDG_SESSION_ID: 'c22',
+      'pm2-webshell': '{"username":"pi","password":"raspberry","https":"true","port":"33334","ssl_cert":"/home/pi/nginx-selfsigned.crt","ssl_key":"/home/pi/nginx-selfsigned.key"}',
+      status: 'online',
+      pm_uptime: 1468094506867,
+      axm_actions: [],
+      axm_monitor: {
+        'Loop delay': {
+          value: '0.42ms',
+          agg_type: 'avg',
+          alert: {}
+        },
+        HTTPS: {
+          value: true,
+          agg_type: 'avg',
+          alert: {}
+        },
+        Bind: {
+          value: '0.0.0.0',
+          agg_type: 'avg',
+          alert: {}
+        },
+        Username: {
+          value: 'pi',
+          agg_type: 'avg',
+          alert: {}
+        },
+        Port: {
+          value: 33334,
+          agg_type: 'avg',
+          alert: {}
+        }
+      },
+      axm_options: {
+        http: false,
+        http_latency: 200,
+        http_code: 500,
+        ignore_routes: [],
+        profiling: true,
+        errors: true,
+        alert_enabled: true,
+        custom_probes: true,
+        network: false,
+        ports: false,
+        module_conf: {
+          port: 33334,
+          username: 'pi',
+          password: 'Password hidden',
+          https: true,
+          bind: '0.0.0.0',
+          ssl_key: '/home/pi/nginx-selfsigned.key',
+          ssl_cert: '/home/pi/nginx-selfsigned.crt'
+        },
+        module_name: 'pm2-webshell',
+        module_version: '1.24.0',
+        pmx_version: '0.5.9',
+        ssl_key: '/home/pi/nginx-selfsigned.key',
+        ssl_cert: '/home/pi/nginx-selfsigned.crt',
+        port: 33334,
+        https: true,
+        password: 'raspberry',
+        username: 'pi',
+        error: true,
+        widget: {
+          type: 'generic',
+          logo: 'http://www.creativetechs.com/iq/tip_images/TerminalApp-Icon.png',
+          theme: [
+            '#111111',
+            '#1B2228',
+            '#807C7C',
+            '#807C7C'
+          ],
+          block: {
+            actions: false,
+            issues: false,
+            meta: false,
+            cpu: false,
+            mem: false,
+            main_probes: [
+              'Username',
+              'Port',
+              'Bind',
+              'HTTPS'
+            ]
+          },
+          el: {
+            probes: false,
+            actions: false
+          }
+        },
+        isModule: true,
+        description: 'Expose a fully capable terminal in your browser ',
+        bind: '0.0.0.0'
+      },
+      axm_dynamic: {},
+      created_at: 1468094506237,
+      pm_id: 6,
+      restart_time: 18,
+      unstable_restarts: 0,
+      versioning: null,
+      node_version: '6.3.0',
+      exit_code: 255,
+      PM2_PROGRAMMATIC: 'true',
+      username: 'pi',
+      password: 'raspberry',
+      https: 'true',
+      port: '33334',
+      ssl_cert: '/home/pi/nginx-selfsigned.crt',
+      ssl_key: '/home/pi/nginx-selfsigned.key'
+    },
+    pm_id: 6,
+    monit: {
+      memory: 33767424,
+      cpu: 0
     }
   }
 ]

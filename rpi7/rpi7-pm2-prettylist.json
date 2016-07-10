@@ -1,6 +1,6 @@
 [
   {
-    pid: 740,
+    pid: 22672,
     name: 'clusteredPUBSUBnode',
     pm2_env: {
       name: 'clusteredPUBSUBnode',
@@ -10,15 +10,15 @@
       automation: true,
       autorestart: true,
       treekill: true,
-      watch: 'nosock.js',
+      watch: false,
       env: {
         NODE_ENV: 'production',
         clusteredPUBSUBnode: '{}',
         pm_cwd: '/home/pi/cluster/current',
-        NODEPORT_HTTPREDIS: 33331,
-        NODEIP: '192.168.69.238',
+          NODEPORT_HTTPREDIS: 33331,
+          NODEIP: '192.168.69.238',
         SHELL: '/bin/bash',
-        SSH_CLIENT: '192.168.69.4 49480 22',
+        SSH_CLIENT: '192.168.69.18 50809 22',
         OLDPWD: '/home/pi',
         USER: 'pi',
         MAIL: '/var/mail/pi',
@@ -28,7 +28,7 @@
         SHLVL: '1',
         HOME: '/home/pi',
         LOGNAME: 'pi',
-        SSH_CONNECTION: '192.168.69.4 49480 192.168.69.238 22',
+        SSH_CONNECTION: '192.168.69.18 50809 192.168.69.238 22',
         LC_CTYPE: 'en_US.UTF-8',
         _: '/usr/bin/pm2',
         PM2_JSON_PROCESSING: 'true',
@@ -40,7 +40,7 @@
         automation: true,
         autorestart: true,
         treekill: true,
-        watch: 'nosock.js',
+        watch: false,
         max_restarts: 10,
         exec_mode: 'cluster_mode',
         env_production: {
@@ -53,7 +53,9 @@
         exec_interpreter: 'node',
         pm_out_log_path: '/home/pi/.pm2/logs/clusteredPUBSUBnode-out.log',
         pm_err_log_path: '/home/pi/.pm2/logs/clusteredPUBSUBnode-error.log',
-        pm_pid_path: '/home/pi/.pm2/pids/clusteredPUBSUBnode.pid'
+        pm_pid_path: '/home/pi/.pm2/pids/clusteredPUBSUBnode.pid',
+        script: 'nosock.js',
+        source_map_support: true
       },
       max_restarts: 10,
       exec_mode: 'cluster_mode',
@@ -66,9 +68,9 @@
       pm_exec_path: '/home/pi/cluster/current/nosock.js',
       pm_cwd: '/home/pi/cluster/current',
       exec_interpreter: 'node',
-      pm_out_log_path: '/home/pi/.pm2/logs/clusteredPUBSUBnode-out-0.log',
-      pm_err_log_path: '/home/pi/.pm2/logs/clusteredPUBSUBnode-error-0.log',
-      pm_pid_path: '/home/pi/.pm2/pids/clusteredPUBSUBnode-0.pid',
+      pm_out_log_path: '/home/pi/.pm2/logs/clusteredPUBSUBnode-out.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/clusteredPUBSUBnode-error.log',
+      pm_pid_path: '/home/pi/.pm2/pids/clusteredPUBSUBnode.pid',
       NODE_APP_INSTANCE: 0,
       vizion_running: false,
       NODE_ENV: 'production',
@@ -76,7 +78,7 @@
       NODEPORT_HTTPREDIS: 33331,
       NODEIP: '192.168.69.238',
       SHELL: '/bin/bash',
-      SSH_CLIENT: '192.168.69.4 49480 22',
+      SSH_CLIENT: '192.168.69.18 50809 22',
       OLDPWD: '/home/pi',
       USER: 'pi',
       MAIL: '/var/mail/pi',
@@ -86,16 +88,323 @@
       SHLVL: '1',
       HOME: '/home/pi',
       LOGNAME: 'pi',
-      SSH_CONNECTION: '192.168.69.4 49480 192.168.69.238 22',
+      SSH_CONNECTION: '192.168.69.18 50809 192.168.69.238 22',
       LC_CTYPE: 'en_US.UTF-8',
       _: '/usr/bin/pm2',
       PM2_JSON_PROCESSING: 'true',
       status: 'online',
-      pm_uptime: 1467679742502,
-      axm_actions: [],
+      pm_uptime: 1468082195614,
+      axm_actions: [
+        {
+          action_name: 'km:heapdump',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'km:cpu:profiling:start',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'km:cpu:profiling:stop',
+          opts: null,
+          arity: 1
+        }
+      ],
       axm_monitor: {
         'Loop delay': {
-          value: '0.27ms',
+          value: '0.29ms',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'pmx:http:latency': {
+          value: '0ms',
+          agg_type: 'avg',
+          alert: {}
+        },
+        HTTP: {
+          value: '0req/s',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Network Upload': {
+          value: '0 MB/s',
+          agg_type: 'sum',
+          alert: {}
+        },
+        'Network Download': {
+          value: '0 MB/s',
+          agg_type: 'sum',
+          alert: {}
+        }
+      },
+      axm_options: {
+        http: true,
+        http_latency: 200,
+        http_code: 500,
+        ignore_routes: [],
+        profiling: true,
+        errors: true,
+        alert_enabled: true,
+        custom_probes: true,
+        network: true,
+        ports: false,
+        module_conf: {},
+        module_name: 'clusteredPUBSUBnode',
+        module_version: '1.0.5',
+        pmx_version: '0.6.2',
+        error: true,
+        latency: true,
+        heapdump: true
+      },
+      axm_dynamic: {},
+      created_at: 1468082195609,
+      restart_time: 2,
+      unstable_restarts: 0,
+      _pm2_version: '1.1.3',
+      versioning: {
+        type: 'git',
+        url: 'git@github.com:giancarlobonansea/clusterednode-pubsub.git',
+        revision: '2769c07f9d607d92b7b570f4f2748f0bdf3a280a',
+        update_time: '2016-07-10T00:26:14.957Z',
+        comment: 'V8 optimization - targeting 8kb block',
+        unstaged: true,
+        branch: 'master',
+        remotes: [
+          'origin'
+        ],
+        remote: 'origin',
+        branch_exists_on_remote: true,
+        ahead: false,
+        next_rev: null,
+        prev_rev: '53f3fb133223d3aba73e36901c8997abf40e311a',
+        repo_path: '/home/pi/cluster/current'
+      },
+      node_version: '6.3.0',
+      exit_code: 0,
+      instances: 1,
+      pm_id: 0,
+      script: 'nosock.js',
+      source_map_support: true
+    },
+    pm_id: 0,
+    monit: {
+      memory: 40972288,
+      cpu: 0
+    }
+  },
+  {
+    pid: 13906,
+    name: 'pm2-server-monit',
+    pm2_env: {
+      name: 'pm2-server-monit',
+      max_memory_restart: 157286400,
+      vizion: true,
+      pmx: true,
+      automation: true,
+      autorestart: true,
+      treekill: true,
+      exec_mode: 'fork_mode',
+      cwd: '/home/pi/.pm2/node_modules/pm2-server-monit',
+      pmx_module: true,
+      node_args: [],
+      pm_exec_path: '/home/pi/.pm2/node_modules/pm2-server-monit/app.js',
+      env: {
+        PM2_JSON_PROCESSING: 'true',
+        _: '/usr/bin/pm2',
+        SSH_CONNECTION: '192.168.69.18 49991 192.168.69.238 22',
+        LOGNAME: 'pi',
+        HOME: '/home/pi',
+        SHLVL: '1',
+        NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+        LANG: 'en_GB.UTF-8',
+        PWD: '/home/pi/.pm2/node_modules/pm2-server-monit',
+        PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games',
+        MAIL: '/var/mail/pi',
+        LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+        USER: 'pi',
+        SSH_TTY: '/dev/pts/0',
+        SSH_CLIENT: '192.168.69.18 49991 22',
+        SHELL: '/bin/bash',
+        TERM: 'xterm-256color',
+        pm_cwd: '/home/pi/.pm2/node_modules/pm2-server-monit',
+        'pm2-server-monit': '{}',
+        name: 'pm2-server-monit',
+        max_memory_restart: 157286400,
+        vizion: true,
+        pmx: true,
+        automation: true,
+        autorestart: true,
+        treekill: true,
+        exec_mode: 'fork_mode',
+        cwd: '/home/pi/.pm2/node_modules/pm2-server-monit',
+        pmx_module: true,
+        node_args: [],
+        pm_exec_path: '/home/pi/.pm2/node_modules/pm2-server-monit/app.js',
+        exec_interpreter: 'node',
+        instances: 1,
+        pm_out_log_path: '/home/pi/.pm2/logs/pm2-server-monit-out.log',
+        pm_err_log_path: '/home/pi/.pm2/logs/pm2-server-monit-error.log',
+        pm_pid_path: '/home/pi/.pm2/pids/pm2-server-monit.pid'
+      },
+      pm_cwd: '/home/pi/.pm2/node_modules/pm2-server-monit',
+      exec_interpreter: 'node',
+      instances: 1,
+      pm_out_log_path: '/home/pi/.pm2/logs/pm2-server-monit-out-1.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/pm2-server-monit-error-1.log',
+      pm_pid_path: '/home/pi/.pm2/pids/pm2-server-monit-1.pid',
+      NODE_APP_INSTANCE: 0,
+      vizion_running: false,
+      PM2_JSON_PROCESSING: 'true',
+      _: '/usr/bin/pm2',
+      SSH_CONNECTION: '192.168.69.18 49991 192.168.69.238 22',
+      LOGNAME: 'pi',
+      HOME: '/home/pi',
+      SHLVL: '1',
+      NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+      LANG: 'en_GB.UTF-8',
+      PWD: '/home/pi/.pm2/node_modules/pm2-server-monit',
+      PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games',
+      MAIL: '/var/mail/pi',
+      LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+      USER: 'pi',
+      SSH_TTY: '/dev/pts/0',
+      SSH_CLIENT: '192.168.69.18 49991 22',
+      SHELL: '/bin/bash',
+      TERM: 'xterm-256color',
+      'pm2-server-monit': '{}',
+      status: 'online',
+      pm_uptime: 1468079527803,
+      axm_actions: [
+        {
+          action_name: 'top cpu consuming',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'top mem consuming',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'vmstats',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'processes/users',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'disk usage',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'who',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'uptime',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'open ports',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'open files',
+          opts: null,
+          arity: 1
+        }
+      ],
+      axm_monitor: {
+        'Loop delay': {
+          value: '0.33ms',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Zombie processes': {
+          value: 0,
+          agg_type: 'avg',
+          alert: {
+            mode: 'threshold-avg',
+            value: 10,
+            interval: 180,
+            cmp: '>'
+          }
+        },
+        'Total Processes': {
+          value: 116,
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Used memory': {
+          value: '0.2GB / 1.0GB',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Free memory': {
+          value: '75.4%',
+          agg_type: 'avg',
+          alert: {
+            mode: 'threshold-avg',
+            value: 10,
+            interval: 180,
+            cmp: '<'
+          }
+        },
+        'TTY/SSH opened': {
+          value: '0\n',
+          agg_type: 'avg',
+          alert: {
+            mode: 'threshold-avg',
+            value: 15,
+            interval: 180,
+            cmp: '>'
+          }
+        },
+        'Used space': {
+          value: '1.5GB / 14.5GB',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Avail. Disk': {
+          value: '85.5%',
+          agg_type: 'avg',
+          alert: {
+            mode: 'threshold-avg',
+            value: 10,
+            interval: 180,
+            cmp: '<'
+          }
+        },
+        'Operating System': {
+          value: 'Raspbian 8',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'CPU usage': {
+          value: '30.00%',
+          agg_type: 'avg',
+          alert: {
+            mode: 'threshold-avg',
+            value: 90,
+            interval: 100,
+            cmp: '>'
+          }
+        },
+        'eth1 output': {
+          value: '0.08MB/s',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'eth1 input': {
+          value: '0.04MB/s',
           agg_type: 'avg',
           alert: {}
         }
@@ -112,42 +421,670 @@
         network: false,
         ports: false,
         module_conf: {},
-        module_name: 'clusteredPUBSUBnode',
-        module_version: '1.1.3',
+        module_name: 'pm2-server-monit',
+        module_version: '1.1.0',
         pmx_version: '0.6.2',
-        error: true
+        error: true,
+        widget: {
+          type: 'generic',
+          logo: 'https://www.glcomp.com/media/catalog/category/Dell-R620_3_1_1.png',
+          theme: [
+            '#111111',
+            '#1B2228',
+            '#807C7C',
+            '#807C7C'
+          ],
+          block: {
+            actions: false,
+            issues: true,
+            meta: true,
+            cpu: false,
+            mem: false,
+            main_probes: [
+              'CPU usage',
+              'Free memory',
+              'Avail. Disk',
+              'Total Processes',
+              'TTY/SSH opened',
+              'eth0 input',
+              'eth0 output',
+              'Operating System'
+            ]
+          },
+          el: {
+            probes: true,
+            actions: true
+          }
+        },
+        isModule: true,
+        description: 'Rack to monitor a server'
       },
       axm_dynamic: {},
-      created_at: 1467464544878,
+      created_at: 1468079527803,
+      pm_id: 1,
       restart_time: 0,
       unstable_restarts: 0,
-      _pm2_version: '1.1.3',
-      versioning: {
-        type: 'git',
-        url: 'git@github.com:giancarlobonansea/clusterednode-pubsub.git',
-        revision: '53f3fb133223d3aba73e36901c8997abf40e311a',
-        update_time: '2016-07-05T19:12:42.997Z',
-        comment: 'Simpler implementation - operation chosen by client or stress tool',
-        unstaged: true,
-        branch: 'master',
-        remotes: [
-          'origin'
-        ],
-        remote: 'origin',
-        branch_exists_on_remote: true,
-        ahead: false,
-        next_rev: null,
-        prev_rev: 'ec8fa189172237e76c87f6983d3ea9bb19c672a9',
-        repo_path: '/home/pi/cluster/current'
-      },
-      node_version: '6.2.2',
-      exit_code: 0,
-      instances: 1,
-      pm_id: 0
+      versioning: null,
+      node_version: '6.3.0'
     },
-    pm_id: 0,
+    pm_id: 1,
     monit: {
-      memory: 36982784,
+      memory: 31956992,
+      cpu: 2
+    }
+  },
+  {
+    pid: 15062,
+    name: 'pm2-logrotate',
+    pm2_env: {
+      name: 'pm2-logrotate',
+      vizion: true,
+      pmx: true,
+      automation: true,
+      autorestart: true,
+      treekill: true,
+      exec_mode: 'fork_mode',
+      cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
+      pmx_module: true,
+      node_args: [],
+      pm_exec_path: '/home/pi/.pm2/node_modules/pm2-logrotate/app.js',
+      env: {
+        PM2_JSON_PROCESSING: 'true',
+        _: '/usr/bin/pm2',
+        SSH_CONNECTION: '192.168.69.18 49991 192.168.69.238 22',
+        LOGNAME: 'pi',
+        HOME: '/home/pi',
+        SHLVL: '1',
+        NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+        LANG: 'en_GB.UTF-8',
+        PWD: '/home/pi',
+        PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games',
+        MAIL: '/var/mail/pi',
+        LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+        USER: 'pi',
+        SSH_TTY: '/dev/pts/0',
+        SSH_CLIENT: '192.168.69.18 49991 22',
+        SHELL: '/bin/bash',
+        TERM: 'xterm-256color',
+        pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
+        'pm2-logrotate': '{"interval_unit":"DD","interval":"1","max_size":"10M","retain":"6"}',
+        name: 'pm2-logrotate',
+        vizion: true,
+        pmx: true,
+        automation: true,
+        autorestart: true,
+        treekill: true,
+        exec_mode: 'fork_mode',
+        cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
+        pmx_module: true,
+        node_args: [],
+        pm_exec_path: '/home/pi/.pm2/node_modules/pm2-logrotate/app.js',
+        exec_interpreter: 'node',
+        instances: 1,
+        pm_out_log_path: '/home/pi/.pm2/logs/pm2-logrotate-out.log',
+        pm_err_log_path: '/home/pi/.pm2/logs/pm2-logrotate-error.log',
+        pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate.pid',
+        PM2_PROGRAMMATIC: 'true',
+        interval_unit: 'DD',
+        interval: '1',
+        max_size: '10M',
+        retain: '6'
+      },
+      pm_cwd: '/home/pi/.pm2/node_modules/pm2-logrotate',
+      exec_interpreter: 'node',
+      instances: 1,
+      pm_out_log_path: '/home/pi/.pm2/logs/pm2-logrotate-out.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/pm2-logrotate-error.log',
+      pm_pid_path: '/home/pi/.pm2/pids/pm2-logrotate.pid',
+      NODE_APP_INSTANCE: 0,
+      vizion_running: false,
+      PM2_JSON_PROCESSING: 'true',
+      _: '/usr/bin/pm2',
+      SSH_CONNECTION: '192.168.69.18 49991 192.168.69.238 22',
+      LOGNAME: 'pi',
+      HOME: '/home/pi',
+      SHLVL: '1',
+      NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+      LANG: 'en_GB.UTF-8',
+      PWD: '/home/pi',
+      PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games',
+      MAIL: '/var/mail/pi',
+      LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+      USER: 'pi',
+      SSH_TTY: '/dev/pts/0',
+      SSH_CLIENT: '192.168.69.18 49991 22',
+      SHELL: '/bin/bash',
+      TERM: 'xterm-256color',
+      'pm2-logrotate': '{"interval_unit":"DD","interval":"1","max_size":"10M","retain":"6"}',
+      status: 'online',
+      pm_uptime: 1468080011975,
+      axm_actions: [
+        {
+          action_name: 'list files',
+          opts: null,
+          arity: 1
+        }
+      ],
+      axm_monitor: {
+        'Loop delay': {
+          value: '0.5ms',
+          agg_type: 'avg',
+          alert: {}
+        }
+      },
+      axm_options: {
+        http: false,
+        http_latency: 200,
+        http_code: 500,
+        ignore_routes: [],
+        profiling: true,
+        errors: true,
+        alert_enabled: true,
+        custom_probes: true,
+        network: false,
+        ports: false,
+        module_conf: {
+          interval_unit: 'DD',
+          interval: 1,
+          max_size: '10M',
+          retain: 6
+        },
+        module_name: 'pm2-logrotate',
+        module_version: '1.3.1',
+        pmx_version: '0.6.2',
+        retain: 6,
+        max_size: '10M',
+        interval: 1,
+        interval_unit: 'DD',
+        error: true,
+        widget: {
+          type: 'generic',
+          logo: 'http://web.townsendsecurity.com/Portals/15891/images/logging.png',
+          theme: [
+            '#111111',
+            '#1B2228',
+            '#31C2F1',
+            '#807C7C'
+          ],
+          block: {
+            issues: false,
+            cpu: false,
+            mem: false,
+            actions: true
+          },
+          el: {
+            probes: false,
+            actions: false
+          }
+        },
+        isModule: true,
+        description: 'Module to rotate logs of every pm2 application'
+      },
+      axm_dynamic: {},
+      created_at: 1468080011869,
+      pm_id: 2,
+      restart_time: 4,
+      unstable_restarts: 0,
+      versioning: null,
+      node_version: '6.3.0',
+      exit_code: 0,
+      PM2_PROGRAMMATIC: 'true',
+      interval_unit: 'DD',
+      interval: '1',
+      max_size: '10M',
+      retain: '6'
+    },
+    pm_id: 2,
+    monit: {
+      memory: 37232640,
+      cpu: 0
+    }
+  },
+  {
+    pid: 20359,
+    name: 'pm2-redis',
+    pm2_env: {
+      name: 'pm2-redis',
+      vizion: true,
+      pmx: true,
+      automation: true,
+      autorestart: true,
+      treekill: true,
+      exec_mode: 'fork_mode',
+      cwd: '/home/pi/.pm2/node_modules/pm2-redis',
+      pmx_module: true,
+      node_args: [],
+      pm_exec_path: '/home/pi/.pm2/node_modules/pm2-redis/app.js',
+      env: {
+        PM2_JSON_PROCESSING: 'true',
+        _: '/usr/bin/pm2',
+        SSH_CONNECTION: '192.168.69.18 49991 192.168.69.238 22',
+        LOGNAME: 'pi',
+        HOME: '/home/pi',
+        SHLVL: '1',
+        NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+        LANG: 'en_GB.UTF-8',
+        PWD: '/home/pi',
+        PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games',
+        MAIL: '/var/mail/pi',
+        LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+        USER: 'pi',
+        SSH_TTY: '/dev/pts/0',
+        SSH_CLIENT: '192.168.69.18 49991 22',
+        SHELL: '/bin/bash',
+        TERM: 'xterm-256color',
+        pm_cwd: '/home/pi/.pm2/node_modules/pm2-redis',
+        'pm2-redis': '{"port":"6379","ip":"192.168.69.238"}',
+        name: 'pm2-redis',
+        vizion: true,
+        pmx: true,
+        automation: true,
+        autorestart: true,
+        treekill: true,
+        exec_mode: 'fork_mode',
+        cwd: '/home/pi/.pm2/node_modules/pm2-redis',
+        pmx_module: true,
+        node_args: [],
+        pm_exec_path: '/home/pi/.pm2/node_modules/pm2-redis/app.js',
+        exec_interpreter: 'node',
+        instances: 1,
+        pm_out_log_path: '/home/pi/.pm2/logs/pm2-redis-out.log',
+        pm_err_log_path: '/home/pi/.pm2/logs/pm2-redis-error.log',
+        pm_pid_path: '/home/pi/.pm2/pids/pm2-redis.pid',
+        PM2_PROGRAMMATIC: 'true',
+        port: '6379',
+        ip: '192.168.69.238'
+      },
+      pm_cwd: '/home/pi/.pm2/node_modules/pm2-redis',
+      exec_interpreter: 'node',
+      instances: 1,
+      pm_out_log_path: '/home/pi/.pm2/logs/pm2-redis-out.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/pm2-redis-error.log',
+      pm_pid_path: '/home/pi/.pm2/pids/pm2-redis.pid',
+      NODE_APP_INSTANCE: 0,
+      vizion_running: false,
+      PM2_JSON_PROCESSING: 'true',
+      _: '/usr/bin/pm2',
+      SSH_CONNECTION: '192.168.69.18 49991 192.168.69.238 22',
+      LOGNAME: 'pi',
+      HOME: '/home/pi',
+      SHLVL: '1',
+      NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+      LANG: 'en_GB.UTF-8',
+      PWD: '/home/pi',
+      PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games',
+      MAIL: '/var/mail/pi',
+      LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+      USER: 'pi',
+      SSH_TTY: '/dev/pts/0',
+      SSH_CLIENT: '192.168.69.18 49991 22',
+      SHELL: '/bin/bash',
+      TERM: 'xterm-256color',
+      'pm2-redis': '{"port":"6379","ip":"192.168.69.238"}',
+      status: 'online',
+      pm_uptime: 1468081296355,
+      axm_actions: [
+        {
+          action_name: 'restart',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'backup',
+          opts: null,
+          arity: 1
+        },
+        {
+          action_name: 'upgrade',
+          opts: null,
+          arity: 1
+        }
+      ],
+      axm_monitor: {
+        'Loop delay': {
+          value: '0.36ms',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Process Id': {
+          value: '625',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'evt/sec': {
+          value: 0,
+          agg_type: 'avg',
+          alert: {}
+        },
+        'exp/sec': {
+          value: 0,
+          agg_type: 'avg',
+          alert: {}
+        },
+        'miss/sec': {
+          value: 0,
+          agg_type: 'avg',
+          alert: {}
+        },
+        'hits/sec': {
+          value: 0,
+          agg_type: 'avg',
+          alert: {}
+        },
+        'cmd/sec': {
+          value: 2,
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Used memory rss': {
+          value: '6.2MB',
+          agg_type: 'avg',
+          alert: {}
+        },
+        Uptime: {
+          value: '28.6 hours',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Used memory': {
+          value: '3.1MB',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Connected clients': {
+          value: '17',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Redis tcp port': {
+          value: '6379',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Redis Version': {
+          value: '3.2.1',
+          agg_type: 'avg',
+          alert: {}
+        },
+        'Total keys': {
+          value: 'N/A',
+          agg_type: 'avg',
+          alert: {}
+        }
+      },
+      axm_options: {
+        http: false,
+        http_latency: 200,
+        http_code: 500,
+        ignore_routes: [],
+        profiling: true,
+        errors: true,
+        alert_enabled: true,
+        custom_probes: true,
+        network: false,
+        ports: false,
+        module_conf: {
+          ip: '192.168.69.238',
+          port: 6379,
+          password: ''
+        },
+        module_name: 'pm2-redis',
+        module_version: '0.9.1',
+        pmx_version: '0.6.2',
+        ip: '192.168.69.238',
+        port: 6379,
+        error: true,
+        widget: {
+          type: 'generic',
+          logo: 'http://redis.io/images/redis-white.png',
+          theme: [
+            '#9F1414',
+            '#591313',
+            'white',
+            'white'
+          ],
+          block: {
+            actions: true,
+            issues: true,
+            meta: false,
+            main_probes: [
+              'Total keys',
+              'cmd/sec',
+              'hits/sec',
+              'miss/sec',
+              'evt/sec',
+              'exp/sec'
+            ]
+          },
+          el: {
+            probes: true,
+            actions: true
+          }
+        },
+        pid: {},
+        isModule: true,
+        description: 'Module to monitor redis',
+        password: ''
+      },
+      axm_dynamic: {},
+      created_at: 1468081296249,
+      pm_id: 3,
+      restart_time: 241,
+      unstable_restarts: 1,
+      versioning: null,
+      node_version: '6.3.0',
+      exit_code: 0,
+      PM2_PROGRAMMATIC: 'true',
+      port: '6379',
+      ip: '192.168.69.238'
+    },
+    pm_id: 3,
+    monit: {
+      memory: 0,
+      cpu: 0
+    }
+  },
+  {
+    pid: 16326,
+    name: 'pm2-webshell',
+    pm2_env: {
+      name: 'pm2-webshell',
+      max_memory_restart: 104857600,
+      merge_logs: true,
+      vizion: true,
+      pmx: true,
+      automation: true,
+      autorestart: true,
+      treekill: true,
+      exec_mode: 'fork_mode',
+      cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+      pmx_module: true,
+      node_args: [],
+      pm_exec_path: '/home/pi/.pm2/node_modules/pm2-webshell/app.js',
+      env: {
+        PM2_JSON_PROCESSING: 'true',
+        OLDPWD: '/home/pi/cluster',
+        _: '/usr/bin/pm2',
+        SSH_CONNECTION: '192.168.69.18 52858 192.168.69.238 22',
+        LOGNAME: 'pi',
+        HOME: '/home/pi',
+        SHLVL: '1',
+        NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+        LANG: 'en_GB.UTF-8',
+        PWD: '/home/pi',
+        PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games',
+        MAIL: '/var/mail/pi',
+        LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+        USER: 'pi',
+        SSH_TTY: '/dev/pts/0',
+        SSH_CLIENT: '192.168.69.18 52858 22',
+        SHELL: '/bin/bash',
+        TERM: 'xterm-256color',
+        pm_cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+        'pm2-webshell': '{"username":"pi","password":"raspberry","https":"true","port":"33334","ssl_cert":"/home/pi/nginx-selfsigned.crt","ssl_key":"/home/pi/nginx-selfsigned.key"}',
+        name: 'pm2-webshell',
+        max_memory_restart: 104857600,
+        merge_logs: true,
+        vizion: true,
+        pmx: true,
+        automation: true,
+        autorestart: true,
+        treekill: true,
+        exec_mode: 'fork_mode',
+        cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+        pmx_module: true,
+        node_args: [],
+        pm_exec_path: '/home/pi/.pm2/node_modules/pm2-webshell/app.js',
+        exec_interpreter: 'node',
+        instances: 1,
+        pm_out_log_path: '/home/pi/.pm2/logs/pm2-webshell-out.log',
+        pm_err_log_path: '/home/pi/.pm2/logs/pm2-webshell-error.log',
+        pm_pid_path: '/home/pi/.pm2/pids/pm2-webshell.pid',
+        PM2_PROGRAMMATIC: 'true',
+        username: 'pi',
+        password: 'raspberry',
+        https: 'true',
+        port: '33334',
+        ssl_cert: '/home/pi/nginx-selfsigned.crt',
+        ssl_key: '/home/pi/nginx-selfsigned.key'
+      },
+      pm_cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+      exec_interpreter: 'node',
+      instances: 1,
+      pm_out_log_path: '/home/pi/.pm2/logs/pm2-webshell-out.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/pm2-webshell-error.log',
+      pm_pid_path: '/home/pi/.pm2/pids/pm2-webshell.pid',
+      NODE_APP_INSTANCE: 0,
+      vizion_running: false,
+      PM2_JSON_PROCESSING: 'true',
+      OLDPWD: '/home/pi/cluster',
+      _: '/usr/bin/pm2',
+      SSH_CONNECTION: '192.168.69.18 52858 192.168.69.238 22',
+      LOGNAME: 'pi',
+      HOME: '/home/pi',
+      SHLVL: '1',
+      NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+      LANG: 'en_GB.UTF-8',
+      PWD: '/home/pi',
+      PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games',
+      MAIL: '/var/mail/pi',
+      LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+      USER: 'pi',
+      SSH_TTY: '/dev/pts/0',
+      SSH_CLIENT: '192.168.69.18 52858 22',
+      SHELL: '/bin/bash',
+      TERM: 'xterm-256color',
+      'pm2-webshell': '{"username":"pi","password":"raspberry","https":"true","port":"33334","ssl_cert":"/home/pi/nginx-selfsigned.crt","ssl_key":"/home/pi/nginx-selfsigned.key"}',
+      status: 'online',
+      pm_uptime: 1468094497395,
+      axm_actions: [],
+      axm_monitor: {
+        'Loop delay': {
+          value: '0.35ms',
+          agg_type: 'avg',
+          alert: {}
+        },
+        HTTPS: {
+          value: true,
+          agg_type: 'avg',
+          alert: {}
+        },
+        Bind: {
+          value: '0.0.0.0',
+          agg_type: 'avg',
+          alert: {}
+        },
+        Username: {
+          value: 'pi',
+          agg_type: 'avg',
+          alert: {}
+        },
+        Port: {
+          value: 33334,
+          agg_type: 'avg',
+          alert: {}
+        }
+      },
+      axm_options: {
+        http: false,
+        http_latency: 200,
+        http_code: 500,
+        ignore_routes: [],
+        profiling: true,
+        errors: true,
+        alert_enabled: true,
+        custom_probes: true,
+        network: false,
+        ports: false,
+        module_conf: {
+          port: 33334,
+          username: 'pi',
+          password: 'Password hidden',
+          https: true,
+          bind: '0.0.0.0',
+          ssl_key: '/home/pi/nginx-selfsigned.key',
+          ssl_cert: '/home/pi/nginx-selfsigned.crt'
+        },
+        module_name: 'pm2-webshell',
+        module_version: '1.24.0',
+        pmx_version: '0.5.9',
+        ssl_key: '/home/pi/nginx-selfsigned.key',
+        ssl_cert: '/home/pi/nginx-selfsigned.crt',
+        port: 33334,
+        https: true,
+        password: 'raspberry',
+        username: 'pi',
+        error: true,
+        widget: {
+          type: 'generic',
+          logo: 'http://www.creativetechs.com/iq/tip_images/TerminalApp-Icon.png',
+          theme: [
+            '#111111',
+            '#1B2228',
+            '#807C7C',
+            '#807C7C'
+          ],
+          block: {
+            actions: false,
+            issues: false,
+            meta: false,
+            cpu: false,
+            mem: false,
+            main_probes: [
+              'Username',
+              'Port',
+              'Bind',
+              'HTTPS'
+            ]
+          },
+          el: {
+            probes: false,
+            actions: false
+          }
+        },
+        isModule: true,
+        description: 'Expose a fully capable terminal in your browser ',
+        bind: '0.0.0.0'
+      },
+      axm_dynamic: {},
+      created_at: 1468094497290,
+      pm_id: 4,
+      restart_time: 38,
+      unstable_restarts: 1,
+      versioning: null,
+      node_version: '6.3.0',
+      exit_code: 0,
+      PM2_PROGRAMMATIC: 'true',
+      username: 'pi',
+      password: 'raspberry',
+      https: 'true',
+      port: '33334',
+      ssl_cert: '/home/pi/nginx-selfsigned.crt',
+      ssl_key: '/home/pi/nginx-selfsigned.key'
+    },
+    pm_id: 4,
+    monit: {
+      memory: 33067008,
       cpu: 0
     }
   }

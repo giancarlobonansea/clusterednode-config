@@ -1,1 +1,1 @@
-Linux raspberrypi0 4.4.13+ #894 Mon Jun 13 12:43:26 BST 2016 armv6l GNU/Linux
+Linux raspberrypi0 4.4.14+ #896 Sat Jul 2 14:16:46 BST 2016 armv6l GNU/Linux

@@ -2,14 +2,15 @@
 ┌──────────────────┬────┬─────────┬──────┬────────┬─────────┬────────┬─────────────┬──────────┐
 │ App name         │ id │ mode    │ pid  │ status │ restart │ uptime │ memory      │ watching │
 ├──────────────────┼────┼─────────┼──────┼────────┼─────────┼────────┼─────────────┼──────────┤
-│ clusteredHDRnode │ 3  │ cluster │ 1219 │ online │ 0       │ 17h    │ 32.711 MB   │ disabled │
+│ clusteredHDRnode │ 3  │ cluster │ 1220 │ online │ 0       │ 28h    │ 28.426 MB   │ disabled │
 └──────────────────┴────┴─────────┴──────┴────────┴─────────┴────────┴─────────────┴──────────┘
  Module activated
 ┌──────────────────┬─────────┬────────────┬────────┬─────────┬─────┬─────────────┐
 │ Module           │ version │ target PID │ status │ restart │ cpu │ memory      │
 ├──────────────────┼─────────┼────────────┼────────┼─────────┼─────┼─────────────┤
-│ pm2-nginx        │ 1.0.1   │ 1197       │ online │ 0       │ 0%  │ 2.219 MB    │
-│ pm2-server-monit │ 1.1.0   │ 1207       │ online │ 0       │ 0%  │ 31.547 MB   │
-│ pm2-logrotate    │ 1.3.1   │ 1213       │ online │ 0       │ 0%  │ 33.535 MB   │
+│ pm2-nginx        │ 1.0.1   │ 1198       │ online │ 0       │ 0%  │ 0 B         │
+│ pm2-server-monit │ 1.1.0   │ 1208       │ online │ 0       │ 0%  │ 31.363 MB   │
+│ pm2-logrotate    │ 1.3.1   │ 1214       │ online │ 0       │ 0%  │ 32.078 MB   │
+│ pm2-webshell     │ 1.24.0  │ 24363      │ online │ 17      │ 0%  │ 36.594 MB   │
 └──────────────────┴─────────┴────────────┴────────┴─────────┴─────┴─────────────┘
  Use `pm2 show <id|name>` to get more details about an app

@@ -1,6 +1,6 @@
 [
   {
-    pid: 1197,
+    pid: 1198,
     name: 'pm2-nginx',
     pm2_env: 
      { name: 'pm2-nginx',
@@ -89,7 +89,7 @@
        hostname: 'giancarlobonansea.homeip.net',
        protocol: 'http',
        status: 'online',
-       pm_uptime: 1467681993033,
+       pm_uptime: 1468007371874,
        axm_actions: [ { action_name: 'Show Configuration', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
@@ -102,33 +102,33 @@
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10000, interval: 180, cmp: '>' } },
          'Curr. Writing': {
-           value: '5',
+           value: '2',
            agg_type: 'avg',
            alert: {}
          },
           'Curr. Reading': { value: '0', agg_type: 'avg', alert: {} },
          'Req/Handled Conn.': {
-           value: '602.99',
+           value: '43.37',
            agg_type: 'avg',
            alert: {}
          },
          'Client Requests': {
-           value: '9857047',
+           value: '198807',
            agg_type: 'avg',
            alert: {}
          },
          'Handled Conn.': {
-           value: '16347',
+           value: '4584',
            agg_type: 'avg',
            alert: {}
          },
          'Accepted Conn.': {
-           value: '16347',
+           value: '4584',
            agg_type: 'avg',
            alert: {}
          },
          'Active Conn.': {
-           value: '4',
+           value: '2',
            agg_type: 'avg',
            alert: {}
          },
@@ -176,27 +176,27 @@
                    'Curr. Writing',
                    'Curr. Waiting' ] },
              el: { probes: true, actions: true } },
-          pid: 608,
+          pid: 606,
           isModule: true,
           description: 'PM2 Nginx Module',
           username: '',
           password: '' },
        axm_dynamic: {},
-       created_at: 1467681993033,
+       created_at: 1468007371874,
        pm_id: 0,
        restart_time: 0,
        unstable_restarts: 0,
        versioning: null,
-       node_version: '6.2.2'
+       node_version: '6.3.0'
      },
     pm_id: 0,
     monit: {
-      memory: 2326528,
+      memory: 0,
       cpu: 0
     }
   },
   {
-    pid: 1207,
+    pid: 1208,
     name: 'pm2-server-monit',
     pm2_env: 
      { name: 'pm2-server-monit',
@@ -275,7 +275,7 @@
        PM2_HOME: '/home/pi/.pm2',
        'pm2-server-monit': '{}',
        status: 'online',
-       pm_uptime: 1467681993429,
+       pm_uptime: 1468007372267,
        axm_actions: 
         [ { action_name: 'top cpu consuming', opts: null, arity: 1 },
           { action_name: 'top mem consuming', opts: null, arity: 1 },
@@ -288,7 +288,7 @@
           { action_name: 'open files', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '0.46ms',
+           value: '0.47ms',
            agg_type: 'avg',
            alert: {}
          },
@@ -297,7 +297,7 @@
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '>' } },
          'Total Processes': {
-           value: 117,
+           value: 121,
            agg_type: 'avg',
            alert: {}
          },
@@ -307,7 +307,7 @@
            alert: {}
          },
          'Free memory': {
-           value: '72.5%',
+           value: '64.2%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
          'TTY/SSH opened': {
@@ -320,21 +320,21 @@
            alert: {}
          },
          'Avail. Disk': {
-           value: '74.2%',
+           value: '73.9%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 10, interval: 180, cmp: '<' } },
           'Operating System': { value: 'Raspbian 8', agg_type: 'avg', alert: {} },
          'CPU usage': {
-           value: '36.36%',
+           value: '34.32%',
              agg_type: 'avg',
              alert: { mode: 'threshold-avg', value: 90, interval: 100, cmp: '>' } },
          'eth1 output': {
-           value: '0.25MB/s',
+           value: '0.06MB/s',
            agg_type: 'avg',
            alert: {}
          },
          'eth1 input': {
-           value: '0.11MB/s',
+           value: '0.00MB/s',
            agg_type: 'avg',
            alert: {}
          }
@@ -378,21 +378,21 @@
           isModule: true,
           description: 'Rack to monitor a server' },
        axm_dynamic: {},
-       created_at: 1467681993430,
+       created_at: 1468007372267,
        pm_id: 1,
        restart_time: 0,
        unstable_restarts: 0,
        versioning: null,
-       node_version: '6.2.2'
+       node_version: '6.3.0'
      },
     pm_id: 1,
     monit: {
-      memory: 33624064,
-      cpu: 0
+      memory: 33411072,
+      cpu: 4
     }
   },
   {
-    pid: 1213,
+    pid: 1214,
     name: 'pm2-logrotate',
     pm2_env: 
      { name: 'pm2-logrotate',
@@ -478,11 +478,11 @@
        interval: '1',
        'max-size': '10M',
        status: 'online',
-       pm_uptime: 1467681993719,
+       pm_uptime: 1468007372588,
        axm_actions: [ { action_name: 'list files', opts: null, arity: 1 } ],
        axm_monitor: {
          'Loop delay': {
-           value: '0.58ms',
+           value: '0.57ms',
            agg_type: 'avg',
            alert: {}
          }
@@ -524,21 +524,21 @@
           max_size: '10M'
         },
        axm_dynamic: {},
-       created_at: 1467681993719,
+       created_at: 1468007372588,
        pm_id: 2,
        restart_time: 0,
        unstable_restarts: 0,
        versioning: null,
-       node_version: '6.2.2'
+       node_version: '6.3.0'
      },
     pm_id: 2,
     monit: {
-      memory: 35164160,
+      memory: 33906688,
       cpu: 0
     }
   },
   {
-    pid: 1219,
+    pid: 1220,
     name: 'clusteredHDRnode',
     pm2_env: 
      { name: 'clusteredHDRnode',
@@ -624,16 +624,16 @@
        _: '/usr/bin/pm2',
        PM2_JSON_PROCESSING: 'true',
        status: 'online',
-       pm_uptime: 1467681994053,
+       pm_uptime: 1468007372940,
        axm_actions: [],
        axm_monitor: {
          'Loop delay': {
-           value: '0.34ms',
+           value: '0.35ms',
            agg_type: 'avg',
            alert: {}
          },
          'pmx:http:latency': {
-           value: '33.54ms',
+           value: '30.05ms',
            agg_type: 'avg',
            alert: {}
          },
@@ -670,7 +670,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-hdrhist.git',
           revision: '76b9aa73c8383f6cb0c312e9432c9cf16c096020',
-          update_time: '2016-07-05T19:12:14.070Z',
+          update_time: '2016-07-10T00:25:52.020Z',
           comment: 'Simpler implementation - operation chosen by client or stress tool',
           unstaged: true,
           branch: 'master',
@@ -681,7 +681,7 @@
           next_rev: null,
           prev_rev: '399dca0c1cea89f92c08f8f3015de3fd382ff1e7',
           repo_path: '/home/pi/clusterednode-hdrhist/current' },
-       node_version: '6.2.2',
+       node_version: '6.3.0',
        exit_code: 0,
        script: 'hdrsrv.js',
        NODEPORT: 8012,
@@ -690,8 +690,216 @@
        pm_id: 3 },
     pm_id: 3,
     monit: {
-      memory: 34299904,
+      memory: 28999680,
       cpu: 0
+    }
+  },
+  {
+    pid: 24363,
+    name: 'pm2-webshell',
+    pm2_env: {
+      name: 'pm2-webshell',
+      max_memory_restart: 104857600,
+      merge_logs: true,
+      vizion: true,
+      pmx: true,
+      automation: true,
+      autorestart: true,
+      treekill: true,
+      exec_mode: 'fork_mode',
+      cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+      pmx_module: true,
+      node_args: [],
+      pm_exec_path: '/home/pi/.pm2/node_modules/pm2-webshell/app.js',
+      env: {
+        PM2_JSON_PROCESSING: 'true',
+        _: '/usr/bin/pm2',
+        XDG_RUNTIME_DIR: '/run/user/1000',
+        SSH_CONNECTION: '192.168.69.18 52864 192.168.69.242 22',
+        LOGNAME: 'pi',
+        HOME: '/home/pi',
+        SHLVL: '1',
+        NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+        TZ: 'America/Sao_Paulo',
+        LANG: 'en_GB.UTF-8',
+        PWD: '/home/pi',
+        PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/local/heroku/bin',
+        MAIL: '/var/mail/pi',
+        LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+        USER: 'pi',
+        SSH_TTY: '/dev/pts/0',
+        SSH_CLIENT: '192.168.69.18 52864 22',
+        SHELL: '/bin/bash',
+        TERM: 'xterm-256color',
+        XDG_SESSION_ID: 'c43',
+        pm_cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+        'pm2-webshell': '{"username":"pi","password":"raspberry","https":"true","port":"33334","ssl_cert":"/home/pi/nginx-selfsigned.crt","ssl_key":"/home/pi/nginx-selfsigned.key"}',
+        name: 'pm2-webshell',
+        max_memory_restart: 104857600,
+        merge_logs: true,
+        vizion: true,
+        pmx: true,
+        automation: true,
+        autorestart: true,
+        treekill: true,
+        exec_mode: 'fork_mode',
+        cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+        pmx_module: true,
+        node_args: [],
+        pm_exec_path: '/home/pi/.pm2/node_modules/pm2-webshell/app.js',
+        exec_interpreter: 'node',
+        instances: 1,
+        pm_out_log_path: '/home/pi/.pm2/logs/pm2-webshell-out.log',
+        pm_err_log_path: '/home/pi/.pm2/logs/pm2-webshell-error.log',
+        pm_pid_path: '/home/pi/.pm2/pids/pm2-webshell.pid',
+        PM2_PROGRAMMATIC: 'true',
+        username: 'pi',
+        password: 'raspberry',
+        https: 'true',
+        port: '33334',
+        ssl_cert: '/home/pi/nginx-selfsigned.crt',
+        ssl_key: '/home/pi/nginx-selfsigned.key'
+      },
+      pm_cwd: '/home/pi/.pm2/node_modules/pm2-webshell',
+      exec_interpreter: 'node',
+      instances: 1,
+      pm_out_log_path: '/home/pi/.pm2/logs/pm2-webshell-out.log',
+      pm_err_log_path: '/home/pi/.pm2/logs/pm2-webshell-error.log',
+      pm_pid_path: '/home/pi/.pm2/pids/pm2-webshell.pid',
+      NODE_APP_INSTANCE: 0,
+      vizion_running: false,
+      PM2_JSON_PROCESSING: 'true',
+      _: '/usr/bin/pm2',
+      XDG_RUNTIME_DIR: '/run/user/1000',
+      SSH_CONNECTION: '192.168.69.18 52864 192.168.69.242 22',
+      LOGNAME: 'pi',
+      HOME: '/home/pi',
+      SHLVL: '1',
+      NODE_PATH: '/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript',
+      TZ: 'America/Sao_Paulo',
+      LANG: 'en_GB.UTF-8',
+      PWD: '/home/pi',
+      PATH: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/local/heroku/bin',
+      MAIL: '/var/mail/pi',
+      LS_COLORS: 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:',
+      USER: 'pi',
+      SSH_TTY: '/dev/pts/0',
+      SSH_CLIENT: '192.168.69.18 52864 22',
+      SHELL: '/bin/bash',
+      TERM: 'xterm-256color',
+      XDG_SESSION_ID: 'c43',
+      'pm2-webshell': '{"username":"pi","password":"raspberry","https":"true","port":"33334","ssl_cert":"/home/pi/nginx-selfsigned.crt","ssl_key":"/home/pi/nginx-selfsigned.key"}',
+      status: 'online',
+      pm_uptime: 1468094508420,
+      axm_actions: [],
+      axm_monitor: {
+        'Loop delay': {
+          value: '0.52ms',
+          agg_type: 'avg',
+          alert: {}
+        },
+        HTTPS: {
+          value: true,
+          agg_type: 'avg',
+          alert: {}
+        },
+        Bind: {
+          value: '0.0.0.0',
+          agg_type: 'avg',
+          alert: {}
+        },
+        Username: {
+          value: 'pi',
+          agg_type: 'avg',
+          alert: {}
+        },
+        Port: {
+          value: 33334,
+          agg_type: 'avg',
+          alert: {}
+        }
+      },
+      axm_options: {
+        http: false,
+        http_latency: 200,
+        http_code: 500,
+        ignore_routes: [],
+        profiling: true,
+        errors: true,
+        alert_enabled: true,
+        custom_probes: true,
+        network: false,
+        ports: false,
+        module_conf: {
+          port: 33334,
+          username: 'pi',
+          password: 'Password hidden',
+          https: true,
+          bind: '0.0.0.0',
+          ssl_key: '/home/pi/nginx-selfsigned.key',
+          ssl_cert: '/home/pi/nginx-selfsigned.crt'
+        },
+        module_name: 'pm2-webshell',
+        module_version: '1.24.0',
+        pmx_version: '0.5.9',
+        ssl_key: '/home/pi/nginx-selfsigned.key',
+        ssl_cert: '/home/pi/nginx-selfsigned.crt',
+        port: 33334,
+        https: true,
+        password: 'raspberry',
+        username: 'pi',
+        error: true,
+        widget: {
+          type: 'generic',
+          logo: 'http://www.creativetechs.com/iq/tip_images/TerminalApp-Icon.png',
+          theme: [
+            '#111111',
+            '#1B2228',
+            '#807C7C',
+            '#807C7C'
+          ],
+          block: {
+            actions: false,
+            issues: false,
+            meta: false,
+            cpu: false,
+            mem: false,
+            main_probes: [
+              'Username',
+              'Port',
+              'Bind',
+              'HTTPS'
+            ]
+          },
+          el: {
+            probes: false,
+            actions: false
+          }
+        },
+        isModule: true,
+        description: 'Expose a fully capable terminal in your browser ',
+        bind: '0.0.0.0'
+      },
+      axm_dynamic: {},
+      created_at: 1468094508083,
+      pm_id: 4,
+      restart_time: 17,
+      unstable_restarts: 0,
+      versioning: null,
+      node_version: '6.3.0',
+      exit_code: 255,
+      PM2_PROGRAMMATIC: 'true',
+      username: 'pi',
+      password: 'raspberry',
+      https: 'true',
+      port: '33334',
+      ssl_cert: '/home/pi/nginx-selfsigned.crt',
+      ssl_key: '/home/pi/nginx-selfsigned.key'
+    },
+    pm_id: 4,
+    monit: {
+      memory: 38371328,
+      cpu: 1
     }
   }
 ]

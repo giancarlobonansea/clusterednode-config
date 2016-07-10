@@ -2,8 +2,8 @@
 ┌───────────────────┬───────────────────────────────────────────────┐
 │ status            │ online                                        │
 │ name              │ clusteredAPInode                              │
-│ restarts          │ 1                                             │
-│ uptime            │ 3h                                            │
+│ restarts          │ 3                                             │
+│ uptime            │ 5h                                            │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js       │
 │ script args       │ N/A                                           │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
@@ -14,29 +14,29 @@
 │ script id         │ 2                                             │
 │ exec cwd          │ /home/pi/cluster/current                      │
 │ exec mode         │ cluster_mode                                  │
-│ node.js version   │ 6.2.2                                         │
+│ node.js version   │ 6.3.0                                         │
 │ watch & reload    │ ✘                                             │
 │ unstable restarts │ 0                                             │
-│ created at        │ 2016-07-05T15:16:29.047Z                      │
+│ created at        │ 2016-07-09T18:53:16.075Z                      │
 └───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬───────────────────────────────────────────────────────────┐
-│ revision control │ git                                                       │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
-│ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-05T19:11:39.618Z                                  │
-│ revision         │ 6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3                  │
-│ comment          │ V8 deoptimization prevention updates                      │
-│ branch           │ master                                                    │
-└──────────────────┴───────────────────────────────────────────────────────────┘
+┌──────────────────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ revision control │ git                                                                                                                    │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                              │
+│ repository root  │ /home/pi/cluster/current                                                                                               │
+│ last update      │ 2016-07-10T00:25:23.336Z                                                                                               │
+│ revision         │ 60503705280a135f9a2e696949785ed76de5548f                                                                               │
+│ comment          │ V8 optimization - targeting 2kb block - reducing JSON message size for optimal message transmission on V8 inline cache │
+│ branch           │ master                                                                                                                 │
+└──────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────────┐
-│ Loop delay       │ 0.44ms        │
-│ pmx:http:latency │ 7.52ms        │
-│ HTTP             │ 1.88req/s     │
-│ Network Upload   │ 0.001 MB/s    │
-│ Network Download │ 0.000116 MB/s │
-└──────────────────┴───────────────┘
+┌──────────────────┬────────┐
+│ Loop delay       │ 0.41ms │
+│ pmx:http:latency │ 6.27ms │
+│ HTTP             │ 0req/s │
+│ Network Upload   │ 0 MB/s │
+│ Network Download │ 0 MB/s │
+└──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -44,8 +44,8 @@
 ┌───────────────────┬───────────────────────────────────────────────┐
 │ status            │ online                                        │
 │ name              │ clusteredAPInode                              │
-│ restarts          │ 1                                             │
-│ uptime            │ 3h                                            │
+│ restarts          │ 3                                             │
+│ uptime            │ 5h                                            │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js       │
 │ script args       │ N/A                                           │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
@@ -56,29 +56,29 @@
 │ script id         │ 3                                             │
 │ exec cwd          │ /home/pi/cluster/current                      │
 │ exec mode         │ cluster_mode                                  │
-│ node.js version   │ 6.2.2                                         │
+│ node.js version   │ 6.3.0                                         │
 │ watch & reload    │ ✘                                             │
 │ unstable restarts │ 0                                             │
-│ created at        │ 2016-07-05T15:16:33.125Z                      │
+│ created at        │ 2016-07-09T18:53:20.177Z                      │
 └───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬───────────────────────────────────────────────────────────┐
-│ revision control │ git                                                       │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
-│ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-05T19:11:39.888Z                                  │
-│ revision         │ 6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3                  │
-│ comment          │ V8 deoptimization prevention updates                      │
-│ branch           │ master                                                    │
-└──────────────────┴───────────────────────────────────────────────────────────┘
+┌──────────────────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ revision control │ git                                                                                                                    │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                              │
+│ repository root  │ /home/pi/cluster/current                                                                                               │
+│ last update      │ 2016-07-10T00:25:23.616Z                                                                                               │
+│ revision         │ 60503705280a135f9a2e696949785ed76de5548f                                                                               │
+│ comment          │ V8 optimization - targeting 2kb block - reducing JSON message size for optimal message transmission on V8 inline cache │
+│ branch           │ master                                                                                                                 │
+└──────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────────┐
-│ Loop delay       │ 0.46ms        │
-│ pmx:http:latency │ 7.57ms        │
-│ HTTP             │ 1.88req/s     │
-│ Network Upload   │ 0.001 MB/s    │
-│ Network Download │ 0.000816 MB/s │
-└──────────────────┴───────────────┘
+┌──────────────────┬────────┐
+│ Loop delay       │ 0.41ms │
+│ pmx:http:latency │ 6.32ms │
+│ HTTP             │ 0req/s │
+│ Network Upload   │ 0 MB/s │
+│ Network Download │ 0 MB/s │
+└──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -86,8 +86,8 @@
 ┌───────────────────┬───────────────────────────────────────────────┐
 │ status            │ online                                        │
 │ name              │ clusteredAPInode                              │
-│ restarts          │ 1                                             │
-│ uptime            │ 3h                                            │
+│ restarts          │ 3                                             │
+│ uptime            │ 5h                                            │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js       │
 │ script args       │ N/A                                           │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
@@ -98,29 +98,29 @@
 │ script id         │ 4                                             │
 │ exec cwd          │ /home/pi/cluster/current                      │
 │ exec mode         │ cluster_mode                                  │
-│ node.js version   │ 6.2.2                                         │
+│ node.js version   │ 6.3.0                                         │
 │ watch & reload    │ ✘                                             │
 │ unstable restarts │ 0                                             │
-│ created at        │ 2016-07-05T15:16:37.208Z                      │
+│ created at        │ 2016-07-09T18:53:24.160Z                      │
 └───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬───────────────────────────────────────────────────────────┐
-│ revision control │ git                                                       │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
-│ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-05T19:11:40.238Z                                  │
-│ revision         │ 6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3                  │
-│ comment          │ V8 deoptimization prevention updates                      │
-│ branch           │ master                                                    │
-└──────────────────┴───────────────────────────────────────────────────────────┘
+┌──────────────────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ revision control │ git                                                                                                                    │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                              │
+│ repository root  │ /home/pi/cluster/current                                                                                               │
+│ last update      │ 2016-07-10T00:25:23.976Z                                                                                               │
+│ revision         │ 60503705280a135f9a2e696949785ed76de5548f                                                                               │
+│ comment          │ V8 optimization - targeting 2kb block - reducing JSON message size for optimal message transmission on V8 inline cache │
+│ branch           │ master                                                                                                                 │
+└──────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬───────────────┐
-│ Loop delay       │ 0.47ms        │
-│ pmx:http:latency │ 7.41ms        │
-│ HTTP             │ 1.9req/s      │
-│ Network Upload   │ 0.000796 MB/s │
-│ Network Download │ 0.000695 MB/s │
-└──────────────────┴───────────────┘
+┌──────────────────┬────────┐
+│ Loop delay       │ 0.42ms │
+│ pmx:http:latency │ 6.1ms  │
+│ HTTP             │ 0req/s │
+│ Network Upload   │ 0 MB/s │
+│ Network Download │ 0 MB/s │
+└──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -128,8 +128,8 @@
 ┌───────────────────┬───────────────────────────────────────────────┐
 │ status            │ online                                        │
 │ name              │ clusteredAPInode                              │
-│ restarts          │ 1                                             │
-│ uptime            │ 3h                                            │
+│ restarts          │ 3                                             │
+│ uptime            │ 5h                                            │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js       │
 │ script args       │ N/A                                           │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
@@ -140,29 +140,29 @@
 │ script id         │ 5                                             │
 │ exec cwd          │ /home/pi/cluster/current                      │
 │ exec mode         │ cluster_mode                                  │
-│ node.js version   │ 6.2.2                                         │
+│ node.js version   │ 6.3.0                                         │
 │ watch & reload    │ ✘                                             │
 │ unstable restarts │ 0                                             │
-│ created at        │ 2016-07-05T15:16:41.222Z                      │
+│ created at        │ 2016-07-09T18:53:28.159Z                      │
 └───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬───────────────────────────────────────────────────────────┐
-│ revision control │ git                                                       │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
-│ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-05T19:11:40.628Z                                  │
-│ revision         │ 6f85afdbc9c2627cbbe2ced2ddfa971a59989bc3                  │
-│ comment          │ V8 deoptimization prevention updates                      │
-│ branch           │ master                                                    │
-└──────────────────┴───────────────────────────────────────────────────────────┘
+┌──────────────────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ revision control │ git                                                                                                                    │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git                                                              │
+│ repository root  │ /home/pi/cluster/current                                                                                               │
+│ last update      │ 2016-07-10T00:25:24.256Z                                                                                               │
+│ revision         │ 60503705280a135f9a2e696949785ed76de5548f                                                                               │
+│ comment          │ V8 optimization - targeting 2kb block - reducing JSON message size for optimal message transmission on V8 inline cache │
+│ branch           │ master                                                                                                                 │
+└──────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬────────────┐
-│ Loop delay       │ 0.43ms     │
-│ pmx:http:latency │ 7.3ms      │
-│ HTTP             │ 1.9req/s   │
-│ Network Upload   │ 0.002 MB/s │
-│ Network Download │ 0.001 MB/s │
-└──────────────────┴────────────┘
+┌──────────────────┬────────┐
+│ Loop delay       │ 0.42ms │
+│ pmx:http:latency │ 5.79ms │
+│ HTTP             │ 0req/s │
+│ Network Upload   │ 0 MB/s │
+│ Network Download │ 0 MB/s │
+└──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode (--lines 1000)` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
