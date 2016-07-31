@@ -1,18 +1,18 @@
 ● Agent online - public key: yv4vbsdfeyy99wn - machine name: raspberrypi5 - Web access: https://app.keymetrics.io/
-┌──────────────────┬────┬─────────┬─────┬────────┬─────────┬────────┬─────┬────────────┬──────────┐
-│ App name         │ id │ mode    │ pid │ status │ restart │ uptime │ cpu │ mem        │ watching │
-├──────────────────┼────┼─────────┼─────┼────────┼─────────┼────────┼─────┼────────────┼──────────┤
-│ clusteredAPInode │ 3  │ cluster │ 776 │ online │ 0       │ 26h    │ 0%  │ 83.9 MB    │ disabled │
-│ clusteredAPInode │ 4  │ cluster │ 777 │ online │ 0       │ 26h    │ 0%  │ 157.0 MB   │ disabled │
-│ clusteredAPInode │ 5  │ cluster │ 783 │ online │ 0       │ 26h    │ 0%  │ 85.5 MB    │ disabled │
-│ clusteredAPInode │ 6  │ cluster │ 789 │ online │ 0       │ 26h    │ 0%  │ 82.6 MB    │ disabled │
-└──────────────────┴────┴─────────┴─────┴────────┴─────────┴────────┴─────┴────────────┴──────────┘
+┌──────────────────┬────┬─────────┬─────┬────────┬─────────┬────────┬─────┬───────────┬──────────┐
+│ App name         │ id │ mode    │ pid │ status │ restart │ uptime │ cpu │ mem       │ watching │
+├──────────────────┼────┼─────────┼─────┼────────┼─────────┼────────┼─────┼───────────┼──────────┤
+│ clusteredAPInode │ 3  │ cluster │ 775 │ online │ 0       │ 18m    │ 0%  │ 35.4 MB   │ disabled │
+│ clusteredAPInode │ 4  │ cluster │ 781 │ online │ 0       │ 18m    │ 0%  │ 35.8 MB   │ disabled │
+│ clusteredAPInode │ 5  │ cluster │ 782 │ online │ 0       │ 18m    │ 0%  │ 37.4 MB   │ disabled │
+│ clusteredAPInode │ 6  │ cluster │ 788 │ online │ 0       │ 18m    │ 0%  │ 36.1 MB   │ disabled │
+└──────────────────┴────┴─────────┴─────┴────────┴─────────┴────────┴─────┴───────────┴──────────┘
  Module activated
 ┌──────────────────┬─────────┬────────────┬────────┬─────────┬─────┬─────────────┐
 │ Module           │ version │ target PID │ status │ restart │ cpu │ memory      │
 ├──────────────────┼─────────┼────────────┼────────┼─────────┼─────┼─────────────┤
-│ pm2-logrotate    │ 1.3.1   │ 764        │ online │ 0       │ 0%  │ 31.648 MB   │
-│ pm2-server-monit │ 2.0.0   │ 4804       │ online │ 0       │ 0%  │ 30.945 MB   │
-│ pm2-webshell     │ 1.24.0  │ 770        │ online │ 0       │ 0%  │ 29.977 MB   │
+│ pm2-logrotate    │ 1.3.1   │ 753        │ online │ 0       │ 0%  │ 28.664 MB   │
+│ pm2-server-monit │ 2.0.0   │ 769        │ online │ 0       │ 0%  │ 27.426 MB   │
+│ pm2-webshell     │ 1.24.0  │ 763        │ online │ 0       │ 20% │ 27.922 MB   │
 └──────────────────┴─────────┴────────────┴────────┴─────────┴─────┴─────────────┘
  Use `pm2 show <id|name>` to get more details about an app

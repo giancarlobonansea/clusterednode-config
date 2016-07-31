@@ -1,23 +1,23 @@
- Describing process with id 1 - name pm2-logrotate 
+ Describing process with id 0 - name pm2-logrotate 
 ┌───────────────────┬─────────────────────────────────────────────────┐
 │ status            │ online                                          │
 │ name              │ pm2-logrotate                                   │
 │ restarts          │ 0                                               │
-│ uptime            │ 26h                                             │
+│ uptime            │ 18m                                             │
 │ script path       │ /home/pi/.pm2/node_modules/pm2-logrotate/app.js │
 │ script args       │ N/A                                             │
-│ error log path    │ /home/pi/.pm2/logs/pm2-logrotate-error-1.log    │
-│ out log path      │ /home/pi/.pm2/logs/pm2-logrotate-out-1.log      │
-│ pid path          │ /home/pi/.pm2/pids/pm2-logrotate-1.pid          │
+│ error log path    │ /home/pi/.pm2/logs/pm2-logrotate-error-0.log    │
+│ out log path      │ /home/pi/.pm2/logs/pm2-logrotate-out-0.log      │
+│ pid path          │ /home/pi/.pm2/pids/pm2-logrotate-0.pid          │
 │ interpreter       │ node                                            │
 │ interpreter args  │ N/A                                             │
-│ script id         │ 1                                               │
+│ script id         │ 0                                               │
 │ exec cwd          │ /home/pi/.pm2/node_modules/pm2-logrotate        │
 │ exec mode         │ fork_mode                                       │
 │ node.js version   │ 6.3.1                                           │
 │ watch & reload    │ ✘                                               │
 │ unstable restarts │ 0                                               │
-│ created at        │ 2016-07-30T16:43:36.879Z                        │
+│ created at        │ 2016-07-31T21:46:05.669Z                        │
 └───────────────────┴─────────────────────────────────────────────────┘
 Process configuration
 ┌───────────────┬─────┐
@@ -29,7 +29,7 @@ Process configuration
 └───────────────┴─────┘
  Code metrics value 
 ┌────────────┬────────┐
-│ Loop delay │ 0.58ms │
+│ Loop delay │ 3.87ms │
 └────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs pm2-logrotate [--lines 1000]` to display logs
