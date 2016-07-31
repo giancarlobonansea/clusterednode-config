@@ -120,7 +120,7 @@
        versioning: null,
        node_version: '6.3.0' },
     pm_id: 0,
-    monit: { memory: 28954624, cpu: 0 } },
+    monit: { memory: 29024256, cpu: 0 } },
   { pid: 904,
     name: 'pm2-webshell',
     pm2_env: 
@@ -266,7 +266,7 @@
        versioning: null,
        node_version: '6.3.0' },
     pm_id: 2,
-    monit: { memory: 31170560, cpu: 0 } },
+    monit: { memory: 31166464, cpu: 0 } },
   { pid: 10211,
     name: 'pm2-server-monit',
     pm2_env: 
@@ -360,7 +360,7 @@
           { action_name: 'open ports', opts: null, arity: 1 },
           { action_name: 'ifconfig', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '1.17ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '1.18ms' },
           'CPU usage': 
            { alert: { cmp: '>', interval: 100, value: 90, mode: 'threshold-avg' },
              agg_type: 'avg',
@@ -374,16 +374,16 @@
           'TTY/SSH opened': 
            { alert: { cmp: '>', interval: 180, value: 15, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '1\n' },
-          'Open files': { alert: {}, agg_type: 'avg', value: 763 },
+             value: '0\n' },
+          'Open files': { alert: {}, agg_type: 'avg', value: 689 },
           'Free memory': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '69.2%' },
+             value: '68.4%' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '0.1GB / 0.5GB' },
           'network in': { alert: {}, agg_type: 'avg', value: '0.00MB/S' },
           'network out': { alert: {}, agg_type: 'avg', value: '0.03MB/s' },
-          'Total Processes': { alert: {}, agg_type: 'avg', value: 100 },
+          'Total Processes': { alert: {}, agg_type: 'avg', value: 97 },
           'Zombie processes': 
            { alert: { cmp: '>', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
@@ -437,4 +437,4 @@
        versioning: null,
        node_version: '6.3.0' },
     pm_id: 4,
-    monit: { memory: 25944064, cpu: 0 } } ]
+    monit: { memory: 28667904, cpu: 5 } } ]

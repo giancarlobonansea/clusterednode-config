@@ -87,7 +87,7 @@
           'CPU usage': 
            { alert: { cmp: '>', interval: 100, value: 90, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '25.00%' },
+             value: '29.77%' },
           'Operating System': { alert: {}, agg_type: 'avg', value: 'Raspbian 8' },
           'Avail. Disk': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
@@ -98,20 +98,20 @@
            { alert: { cmp: '>', interval: 180, value: 15, mode: 'threshold-avg' },
              agg_type: 'avg',
              value: '1\n' },
-          'Open files': { alert: {}, agg_type: 'avg', value: 736 },
+          'Open files': { alert: {}, agg_type: 'avg', value: 800 },
           'Free memory': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
              value: '80.8%' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '0.2GB / 1.0GB' },
-          'network in': { alert: {}, agg_type: 'avg', value: '0.05MB/S' },
+          'network in': { alert: {}, agg_type: 'avg', value: '0.04MB/S' },
           'network out': { alert: {}, agg_type: 'avg', value: '0.04MB/s' },
-          'Total Processes': { alert: {}, agg_type: 'avg', value: 119 },
+          'Total Processes': { alert: {}, agg_type: 'avg', value: 121 },
           'Zombie processes': 
            { alert: { cmp: '>', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
              value: 0 },
-          'eth1 input': { alert: {}, agg_type: 'avg', value: '0.05MB/s' },
+          'eth1 input': { alert: {}, agg_type: 'avg', value: '0.04MB/s' },
           'eth1 output': { alert: {}, agg_type: 'avg', value: '0.04MB/s' } },
        axm_options: 
         { http: false,
@@ -160,7 +160,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 0,
-    monit: { memory: 25370624, cpu: 0 } },
+    monit: { memory: 29315072, cpu: 1 } },
   { pid: 787,
     name: 'pm2-logrotate',
     pm2_env: 
@@ -279,7 +279,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 1,
-    monit: { memory: 32002048, cpu: 0 } },
+    monit: { memory: 31551488, cpu: 0 } },
   { pid: 793,
     name: 'pm2-webshell',
     pm2_env: 
@@ -427,7 +427,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 2,
-    monit: { memory: 30265344, cpu: 0 } },
+    monit: { memory: 30306304, cpu: 0 } },
   { pid: 799,
     name: 'pm2-redis',
     pm2_env: 
@@ -515,7 +515,7 @@
           'Redis tcp port': { alert: {}, agg_type: 'avg', value: '6379' },
           'Connected clients': { alert: {}, agg_type: 'avg', value: '17' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '3.1MB' },
-          Uptime: { alert: {}, agg_type: 'avg', value: '25.3 hours' },
+          Uptime: { alert: {}, agg_type: 'avg', value: '25.6 hours' },
           'Used memory rss': { alert: {}, agg_type: 'avg', value: '6.0MB' },
           'cmd/sec': { alert: {}, agg_type: 'avg', value: 1 },
           'hits/sec': { alert: {}, agg_type: 'avg', value: 0 },
@@ -672,7 +672,7 @@
           { action_name: 'km:cpu:profiling:start', opts: null, arity: 1 },
           { action_name: 'km:cpu:profiling:stop', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.53ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.48ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
@@ -705,7 +705,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-pubsub.git',
           revision: '54706c87bcbbe15392f1069c89e5fd1729800ba7',
-          update_time: '2016-07-31T19:19:51.976Z',
+          update_time: '2016-07-31T19:36:22.004Z',
           comment: 'New UGLIFY version',
           unstaged: true,
           branch: 'master',
@@ -718,4 +718,4 @@
           repo_path: '/home/pi/cluster/current' },
        node_version: '6.3.1' },
     pm_id: 4,
-    monit: { memory: 39448576, cpu: 0 } } ]
+    monit: { memory: 40263680, cpu: 0 } } ]

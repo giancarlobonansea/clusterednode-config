@@ -28,9 +28,9 @@ Process configuration
 │ interval      │ 1   │
 └───────────────┴─────┘
  Code metrics value 
-┌────────────┬────────┐
-│ Loop delay │ 0.81ms │
-└────────────┴────────┘
+┌────────────┬───────┐
+│ Loop delay │ 0.8ms │
+└────────────┴───────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs pm2-logrotate [--lines 1000]` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage pm2-logrotate

@@ -6,6 +6,11 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi0-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi0-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi0-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi0-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi0-initd-znodesrv.txt && \
+sudo cp /etc/init.d/ipsec /home/pi/clusterednode-config/rpi0-initd-ipsec.txt && \
+sudo cp /etc/ipsec.conf /home/pi/clusterednode-config/rpi0-ipsec.conf && \
+sudo cp /etc/xl2tpd/xl2tpd.conf /home/pi/clusterednode-config/rpi0-xl2tpd-xl2tpd.conf && \
 uname -a > /home/pi/clusterednode-config/rpi0-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi0-api-pm2-list.txt && \
 pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi0-logrotate-pm2-show.txt && \
@@ -19,6 +24,8 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi1-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi1-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi1-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi1-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi1-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi1-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi1-api-pm2-list.txt && \
 pm2 show pm2-logrotate > /home/pi/clusterednode-config/rpi1-logrotate-pm2-show.txt && \
@@ -32,6 +39,8 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi2-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi2-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi2-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi2-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi2-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi2-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi2-api-pm2-list.txt && \
 pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi2-api-pm2-show.txt && \
@@ -48,6 +57,8 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi3-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi3-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi3-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi3-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi3-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi3-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi3-api-pm2-list.txt && \
 pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi3-api-pm2-show.txt && \
@@ -64,6 +75,8 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi4-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi4-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi4-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi4-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi4-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi4-uname.txt && \
 sudo cp /etc/fstab /home/pi/clusterednode-config/rpi4-fstab.txt && \
 sudo cp /etc/nginx/nginx.conf /home/pi/clusterednode-config/rpi4-nginx.conf && \
@@ -83,6 +96,8 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi9-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi9-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi9-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi9-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi9-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi9-uname.txt && \
 sudo cp /etc/fstab /home/pi/clusterednode-config/rpi9-fstab.txt && \
 sudo cp /etc/nginx/nginx.conf /home/pi/clusterednode-config/rpi9-nginx.conf && \
@@ -104,6 +119,8 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi10-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi10-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi10-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi10-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi10-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi10-uname.txt && \
 sudo cp /etc/fstab /home/pi/clusterednode-config/rpi10-fstab.txt && \
 sudo cp /etc/nginx/nginx.conf /home/pi/clusterednode-config/rpi10-nginx.conf && \
@@ -125,6 +142,8 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi5-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi5-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi5-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi5-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi5-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi5-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi5-api-pm2-list.txt && \
 pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi5-api-pm2-show.txt && \
@@ -141,6 +160,8 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi6-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi6-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi6-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi6-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi6-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi6-uname.txt && \
 pm2 list > /home/pi/clusterednode-config/rpi6-api-pm2-list.txt && \
 pm2 show clusteredAPInode > /home/pi/clusterednode-config/rpi6-api-pm2-show.txt && \
@@ -157,6 +178,8 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi7-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi7-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi7-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi7-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi7-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi7-uname.txt && \
 pm2 show clusteredPUBSUBnode > /home/pi/clusterednode-config/rpi7-pubsub-pm2-show.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi7-pm2-prettylist.json && \
@@ -178,6 +201,8 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi8-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi8-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi8-initd-networking.txt && \
+sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi8-initd-rng_tools.txt && \
+sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi8-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi8-uname.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi8-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi8-sysctl.conf && \

@@ -1,0 +1,49 @@
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          nodesrv
+# Required-Start:    +xrdp $all
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: nodeJS services Start Script
+# Description:       This file is a init.d script for Debian-based linux systems
+### END INIT INFO
+
+NODESRV_HOME=/home/pi/node
+NODESRV_USER=pi
+#
+# Start the service
+start() {
+        su $NODESRV_USER -c "$NODESRV_HOME/start.sh >/dev/null 2>&1 &"
+        echo
+}
+# Restart the service 
+stop() {
+        pkill -f node
+        sleep 5
+        if ps ax | grep -v "grep" | grep -q node ; then failure $"nodeJS shutdown"; else success $"nodeJS shutdown"; fi
+        echo
+}
+### main logic ###
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        stop
+        ;;
+  debug)
+        start
+        ;;
+  status)
+        echo This command is not implemented yet.
+        ;;
+  restart|reload|condrestart)
+        stop
+        start
+        ;;
+  *)
+        echo $"Usage: $0 {start|debug|stop|restart|reload}"
+        exit 1
+esac
+exit 0

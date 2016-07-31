@@ -126,7 +126,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 1,
-    monit: { memory: 32751616, cpu: 0 } },
+    monit: { memory: 33456128, cpu: 1 } },
   { pid: 770,
     name: 'pm2-webshell',
     pm2_env: 
@@ -278,7 +278,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 2,
-    monit: { memory: 31657984, cpu: 0 } },
+    monit: { memory: 31698944, cpu: 0 } },
   { pid: 776,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -298,7 +298,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: 'bec9006cd5e76d2e5b08e1c9e4d7ec0dcae17c1f',
-          update_time: '2016-07-31T19:19:42.654Z',
+          update_time: '2016-07-31T19:36:12.685Z',
           comment: 'New UGLIFY version',
           unstaged: true,
           branch: 'master',
@@ -333,7 +333,7 @@
           latency: true,
           heapdump: true },
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.92ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.91ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
@@ -437,7 +437,7 @@
        instances: 4,
        pm_id: 3 },
     pm_id: 3,
-    monit: { memory: 87724032, cpu: 1 } },
+    monit: { memory: 87236608, cpu: 0 } },
   { pid: 777,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -457,7 +457,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: 'bec9006cd5e76d2e5b08e1c9e4d7ec0dcae17c1f',
-          update_time: '2016-07-31T19:19:42.934Z',
+          update_time: '2016-07-31T19:36:12.965Z',
           comment: 'New UGLIFY version',
           unstaged: true,
           branch: 'master',
@@ -492,7 +492,7 @@
           latency: true,
           heapdump: true },
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.78ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.77ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
@@ -596,7 +596,7 @@
        instances: 4,
        pm_id: 4 },
     pm_id: 4,
-    monit: { memory: 164020224, cpu: 0 } },
+    monit: { memory: 164896768, cpu: 0 } },
   { pid: 783,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -615,7 +615,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: 'bec9006cd5e76d2e5b08e1c9e4d7ec0dcae17c1f',
-          update_time: '2016-07-31T19:19:43.154Z',
+          update_time: '2016-07-31T19:36:13.265Z',
           comment: 'New UGLIFY version',
           unstaged: true,
           branch: 'master',
@@ -755,7 +755,7 @@
        instances: 4,
        pm_id: 5 },
     pm_id: 5,
-    monit: { memory: 90144768, cpu: 1 } },
+    monit: { memory: 89874432, cpu: 0 } },
   { pid: 789,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -775,7 +775,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: 'bec9006cd5e76d2e5b08e1c9e4d7ec0dcae17c1f',
-          update_time: '2016-07-31T19:19:43.364Z',
+          update_time: '2016-07-31T19:36:13.535Z',
           comment: 'New UGLIFY version',
           unstaged: true,
           branch: 'master',
@@ -810,7 +810,7 @@
           latency: true,
           heapdump: true },
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.92ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.91ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
@@ -914,7 +914,7 @@
        instances: 4,
        pm_id: 6 },
     pm_id: 6,
-    monit: { memory: 86806528, cpu: 0 } },
+    monit: { memory: 86896640, cpu: 0 } },
   { pid: 4804,
     name: 'pm2-server-monit',
     pm2_env: 
@@ -1022,7 +1022,7 @@
           'CPU usage': 
            { alert: { cmp: '>', interval: 100, value: 90, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '56.59%' },
+             value: '38.76%' },
           'Operating System': { alert: {}, agg_type: 'avg', value: 'Raspbian 8' },
           'Avail. Disk': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
@@ -1033,15 +1033,15 @@
            { alert: { cmp: '>', interval: 180, value: 15, mode: 'threshold-avg' },
              agg_type: 'avg',
              value: '0\n' },
-          'Open files': { alert: {}, agg_type: 'avg', value: 704 },
+          'Open files': { alert: {}, agg_type: 'avg', value: 800 },
           'Free memory': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '47.7%' },
+             value: '46.6%' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '0.5GB / 1.0GB' },
           'network in': { alert: {}, agg_type: 'avg', value: '0.00MB/S' },
           'network out': { alert: {}, agg_type: 'avg', value: '0.05MB/s' },
-          'Total Processes': { alert: {}, agg_type: 'avg', value: 116 },
+          'Total Processes': { alert: {}, agg_type: 'avg', value: 122 },
           'Zombie processes': 
            { alert: { cmp: '>', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
@@ -1095,4 +1095,4 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 8,
-    monit: { memory: 29265920, cpu: 2 } } ]
+    monit: { memory: 32305152, cpu: 5 } } ]

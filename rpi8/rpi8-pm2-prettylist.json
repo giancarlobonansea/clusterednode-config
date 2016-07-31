@@ -83,11 +83,11 @@
           { action_name: 'open ports', opts: null, arity: 1 },
           { action_name: 'ifconfig', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '8.48ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '8.47ms' },
           'CPU usage': 
            { alert: { cmp: '>', interval: 100, value: 90, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '27.50%' },
+             value: '30.00%' },
           'Operating System': { alert: {}, agg_type: 'avg', value: 'Raspbian 8' },
           'Avail. Disk': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
@@ -98,15 +98,15 @@
            { alert: { cmp: '>', interval: 180, value: 15, mode: 'threshold-avg' },
              agg_type: 'avg',
              value: '1\n' },
-          'Open files': { alert: {}, agg_type: 'avg', value: 704 },
+          'Open files': { alert: {}, agg_type: 'avg', value: 672 },
           'Free memory': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '81.4%' },
+             value: '83.5%' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '0.2GB / 1.0GB' },
           'network in': { alert: {}, agg_type: 'avg', value: '0.04MB/S' },
           'network out': { alert: {}, agg_type: 'avg', value: '0.04MB/s' },
-          'Total Processes': { alert: {}, agg_type: 'avg', value: 121 },
+          'Total Processes': { alert: {}, agg_type: 'avg', value: 119 },
           'Zombie processes': 
            { alert: { cmp: '>', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
@@ -160,7 +160,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 0,
-    monit: { memory: 33787904, cpu: 1 } },
+    monit: { memory: 28348416, cpu: 1 } },
   { pid: 752,
     name: 'pm2-logrotate',
     pm2_env: 
@@ -279,7 +279,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 1,
-    monit: { memory: 31784960, cpu: 0 } },
+    monit: { memory: 31858688, cpu: 0 } },
   { pid: 758,
     name: 'pm2-webshell',
     pm2_env: 
@@ -427,7 +427,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 2,
-    monit: { memory: 30351360, cpu: 0 } },
+    monit: { memory: 30392320, cpu: 0 } },
   { pid: 764,
     name: 'pm2-redis',
     pm2_env: 
@@ -515,7 +515,7 @@
           'Redis tcp port': { alert: {}, agg_type: 'avg', value: '6379' },
           'Connected clients': { alert: {}, agg_type: 'avg', value: '3' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '1.8MB' },
-          Uptime: { alert: {}, agg_type: 'avg', value: '25.3 hours' },
+          Uptime: { alert: {}, agg_type: 'avg', value: '25.6 hours' },
           'Used memory rss': { alert: {}, agg_type: 'avg', value: '4.5MB' },
           'cmd/sec': { alert: {}, agg_type: 'avg', value: 0 },
           'hits/sec': { alert: {}, agg_type: 'avg', value: 0 },
