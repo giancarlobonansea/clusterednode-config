@@ -3,7 +3,7 @@
 │ status            │ online                                           │
 │ name              │ clusteredHDRnode                                 │
 │ restarts          │ 0                                                │
-│ uptime            │ 29m                                              │
+│ uptime            │ 46m                                              │
 │ script path       │ /home/pi/clusterednode-hdrhist/current/hdrsrv.js │
 │ script args       │ N/A                                              │
 │ error log path    │ /home/pi/.pm2/logs/clusteredHDRnode-error-4.log  │
@@ -31,7 +31,7 @@
 └──────────────────┴────────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬─────────┐
-│ Loop delay       │ 35.74ms │
+│ Loop delay       │ 22.42ms │
 │ Network Download │ 0 MB/s  │
 │ Network Upload   │ 0 MB/s  │
 │ HTTP             │ 0req/s  │

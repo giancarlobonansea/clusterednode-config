@@ -77,7 +77,7 @@
        status: 'online',
        pm_uptime: 1469897105428,
        axm_actions: [ { action_name: 'list files', opts: null, arity: 1 } ],
-       axm_monitor: { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.81ms' } },
+       axm_monitor: { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.8ms' } },
        axm_options: 
         { http: false,
           http_latency: 200,
@@ -120,7 +120,7 @@
        versioning: null,
        node_version: '6.3.0' },
     pm_id: 0,
-    monit: { memory: 28647424, cpu: 0 } },
+    monit: { memory: 28954624, cpu: 0 } },
   { pid: 904,
     name: 'pm2-webshell',
     pm2_env: 
@@ -266,7 +266,7 @@
        versioning: null,
        node_version: '6.3.0' },
     pm_id: 2,
-    monit: { memory: 30449664, cpu: 1 } },
+    monit: { memory: 31170560, cpu: 0 } },
   { pid: 10211,
     name: 'pm2-server-monit',
     pm2_env: 
@@ -374,16 +374,16 @@
           'TTY/SSH opened': 
            { alert: { cmp: '>', interval: 180, value: 15, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '0\n' },
-          'Open files': { alert: {}, agg_type: 'avg', value: 699 },
+             value: '1\n' },
+          'Open files': { alert: {}, agg_type: 'avg', value: 763 },
           'Free memory': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '68.9%' },
+             value: '69.2%' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '0.1GB / 0.5GB' },
           'network in': { alert: {}, agg_type: 'avg', value: '0.00MB/S' },
           'network out': { alert: {}, agg_type: 'avg', value: '0.03MB/s' },
-          'Total Processes': { alert: {}, agg_type: 'avg', value: 97 },
+          'Total Processes': { alert: {}, agg_type: 'avg', value: 100 },
           'Zombie processes': 
            { alert: { cmp: '>', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
@@ -437,4 +437,4 @@
        versioning: null,
        node_version: '6.3.0' },
     pm_id: 4,
-    monit: { memory: 30990336, cpu: 3 } } ]
+    monit: { memory: 25944064, cpu: 0 } } ]

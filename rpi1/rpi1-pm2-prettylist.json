@@ -122,7 +122,7 @@
        versioning: null,
        node_version: '6.3.0' },
     pm_id: 0,
-    monit: { memory: 28516352, cpu: 1 } },
+    monit: { memory: 28848128, cpu: 0 } },
   { pid: 608,
     name: 'pm2-webshell',
     pm2_env: 
@@ -270,7 +270,7 @@
        versioning: null,
        node_version: '6.3.0' },
     pm_id: 2,
-    monit: { memory: 30830592, cpu: 1 } },
+    monit: { memory: 31571968, cpu: 1 } },
   { pid: 9587,
     name: 'pm2-server-monit',
     pm2_env: 
@@ -381,15 +381,15 @@
            { alert: { cmp: '>', interval: 180, value: 15, mode: 'threshold-avg' },
              agg_type: 'avg',
              value: '0\n' },
-          'Open files': { alert: {}, agg_type: 'avg', value: 593 },
+          'Open files': { alert: {}, agg_type: 'avg', value: 592 },
           'Free memory': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '67.2%' },
+             value: '66.1%' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '0.2GB / 0.5GB' },
           'network in': { alert: {}, agg_type: 'avg', value: '0.00MB/S' },
           'network out': { alert: {}, agg_type: 'avg', value: '0.03MB/s' },
-          'Total Processes': { alert: {}, agg_type: 'avg', value: 88 },
+          'Total Processes': { alert: {}, agg_type: 'avg', value: 89 },
           'Zombie processes': 
            { alert: { cmp: '>', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
@@ -443,4 +443,4 @@
        versioning: null,
        node_version: '6.3.0' },
     pm_id: 3,
-    monit: { memory: 29085696, cpu: 2 } } ]
+    monit: { memory: 31440896, cpu: 3 } } ]

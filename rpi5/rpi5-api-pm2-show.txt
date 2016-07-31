@@ -24,14 +24,14 @@
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-31T19:02:42.602Z                                  │
+│ last update      │ 2016-07-31T19:19:42.654Z                                  │
 │ revision         │ bec9006cd5e76d2e5b08e1c9e4d7ec0dcae17c1f                  │
 │ comment          │ New UGLIFY version                                        │
 │ branch           │ master                                                    │
 └──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬──────────┐
-│ Loop delay       │ 0.93ms   │
+│ Loop delay       │ 0.92ms   │
 │ Network Download │ 0 MB/s   │
 │ Network Upload   │ 0 MB/s   │
 │ HTTP             │ 0req/s   │
@@ -66,7 +66,7 @@
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-31T19:02:42.862Z                                  │
+│ last update      │ 2016-07-31T19:19:42.934Z                                  │
 │ revision         │ bec9006cd5e76d2e5b08e1c9e4d7ec0dcae17c1f                  │
 │ comment          │ New UGLIFY version                                        │
 │ branch           │ master                                                    │
@@ -108,14 +108,14 @@
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-31T19:02:43.172Z                                  │
+│ last update      │ 2016-07-31T19:19:43.154Z                                  │
 │ revision         │ bec9006cd5e76d2e5b08e1c9e4d7ec0dcae17c1f                  │
 │ comment          │ New UGLIFY version                                        │
 │ branch           │ master                                                    │
 └──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬──────────┐
-│ Loop delay       │ 0.94ms   │
+│ Loop delay       │ 0.93ms   │
 │ Network Download │ 0 MB/s   │
 │ Network Upload   │ 0 MB/s   │
 │ HTTP             │ 0req/s   │
@@ -150,7 +150,7 @@
 │ revision control │ git                                                       │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
 │ repository root  │ /home/pi/cluster/current                                  │
-│ last update      │ 2016-07-31T19:02:43.452Z                                  │
+│ last update      │ 2016-07-31T19:19:43.364Z                                  │
 │ revision         │ bec9006cd5e76d2e5b08e1c9e4d7ec0dcae17c1f                  │
 │ comment          │ New UGLIFY version                                        │
 │ branch           │ master                                                    │

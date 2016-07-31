@@ -158,7 +158,6 @@ sudo cp /etc/hosts /home/pi/clusterednode-config/rpi7-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi7-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi7-initd-networking.txt && \
 uname -a > /home/pi/clusterednode-config/rpi7-uname.txt && \
-pm2 list > /home/pi/clusterednode-config/rpi7-api-pm2-list.txt && \
 pm2 show clusteredPUBSUBnode > /home/pi/clusterednode-config/rpi7-pubsub-pm2-show.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi7-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi7-sysctl.conf && \
@@ -180,7 +179,6 @@ sudo cp /etc/hosts /home/pi/clusterednode-config/rpi8-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi8-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi8-initd-networking.txt && \
 uname -a > /home/pi/clusterednode-config/rpi8-uname.txt && \
-pm2 list > /home/pi/clusterednode-config/rpi8-api-pm2-list.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi8-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi8-sysctl.conf && \
 sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi8-stunnel-redis-server.conf && \
@@ -193,3 +191,6 @@ sudo cp /etc/redis/6379.conf /home/pi/clusterednode-config/rpi8-redis-6379.conf 
 sudo cp /etc/redis/6378.conf /home/pi/clusterednode-config/rpi8-redis-6378.conf && \
 sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi8-redis-6377.conf"
 scp -r pi@raspberrypi8:~/clusterednode-config/* ./rpi8/
+
+#pm2 list > /home/pi/clusterednode-config/rpi7-api-pm2-list.txt && \
+#pm2 list > /home/pi/clusterednode-config/rpi8-api-pm2-list.txt && \
