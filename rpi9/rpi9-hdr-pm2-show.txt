@@ -1,0 +1,42 @@
+ Describing process with id 4 - name clusteredHDRnode 
+┌───────────────────┬──────────────────────────────────────────────────┐
+│ status            │ online                                           │
+│ name              │ clusteredHDRnode                                 │
+│ restarts          │ 0                                                │
+│ uptime            │ 29m                                              │
+│ script path       │ /home/pi/clusterednode-hdrhist/current/hdrsrv.js │
+│ script args       │ N/A                                              │
+│ error log path    │ /home/pi/.pm2/logs/clusteredHDRnode-error-4.log  │
+│ out log path      │ /home/pi/.pm2/logs/clusteredHDRnode-out-4.log    │
+│ pid path          │ /home/pi/.pm2/pids/clusteredHDRnode-4.pid        │
+│ interpreter       │ node                                             │
+│ interpreter args  │ N/A                                              │
+│ script id         │ 4                                                │
+│ exec cwd          │ /home/pi/clusterednode-hdrhist/current           │
+│ exec mode         │ cluster_mode                                     │
+│ node.js version   │ 6.3.1                                            │
+│ watch & reload    │ ✔                                                │
+│ unstable restarts │ 0                                                │
+│ created at        │ 2016-07-31T11:29:38.315Z                         │
+└───────────────────┴──────────────────────────────────────────────────┘
+ Revision control metadata 
+┌──────────────────┬────────────────────────────────────────────────────────────┐
+│ revision control │ git                                                        │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-hdrhist.git │
+│ repository root  │ /home/pi/clusterednode-hdrhist/current                     │
+│ last update      │ 2016-07-31T19:02:22.746Z                                   │
+│ revision         │ f76180958ddc280d73a17c166ddc4cb0361a2d37                   │
+│ comment          │ New UGLIFY version                                         │
+│ branch           │ master                                                     │
+└──────────────────┴────────────────────────────────────────────────────────────┘
+ Code metrics value 
+┌──────────────────┬─────────┐
+│ Loop delay       │ 19.19ms │
+│ Network Download │ 0 MB/s  │
+│ Network Upload   │ 0 MB/s  │
+│ HTTP             │ 0req/s  │
+│ pmx:http:latency │ 0ms     │
+└──────────────────┴─────────┘
+ Add your own code metrics: http://bit.ly/code-metrics
+ Use `pm2 logs clusteredHDRnode [--lines 1000]` to display logs
+ Use `pm2 monit` to monitor CPU and Memory usage clusteredHDRnode

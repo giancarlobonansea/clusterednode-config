@@ -1,1 +1,1 @@
-Linux raspberrypi8 4.4.14-v7+ #896 SMP Sat Jul 2 15:09:43 BST 2016 armv7l GNU/Linux
+Linux raspberrypi8 4.4.16-v7+ #899 SMP Thu Jul 28 12:40:33 BST 2016 armv7l GNU/Linux

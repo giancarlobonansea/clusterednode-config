@@ -1,0 +1,15 @@
+auto lo
+iface lo inet loopback
+auto lo:0
+iface lo:0 inet static
+address 192.168.69.233
+netmask 255.255.255.255
+broadcast 192.168.69.233
+auto eth1
+iface eth1 inet static
+address 192.168.69.234
+gateway 192.168.69.1
+netmask 255.255.255.0
+network 192.168.69.0
+broadcast 192.168.69.255
+dns-nameservers 8.8.8.8 8.8.4.4
