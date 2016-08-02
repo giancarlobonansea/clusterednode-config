@@ -128,7 +128,8 @@ start)
 echo 'e' > /sys/class/net/eth1/queues/rx-0/rps_cpus
 echo '32768' > /proc/sys/net/core/rps_sock_flow_entries
 echo '32768' > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
-ipvsadm -A -t 192.168.69.233:8010 -s nq
+ipvsadm -C
+ipvsadm -A -t 192.168.69.233:8010 -s rr
 ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.235:8010 -g
 ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.234:8010 -g
 ipvsadm -A -t 192.168.69.233:8011 -s rr
@@ -148,7 +149,8 @@ ipvsadm -a -t 192.168.69.233:33331 -r 192.168.69.237:33331 -g
 echo 'e' > /sys/class/net/eth1/queues/rx-0/rps_cpus
 echo '32768' > /proc/sys/net/core/rps_sock_flow_entries
 echo '32768' > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
-ipvsadm -A -t 192.168.69.233:8010 -s nq
+ipvsadm -C
+ipvsadm -A -t 192.168.69.233:8010 -s rr
 ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.235:8010 -g
 ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.234:8010 -g
 ipvsadm -A -t 192.168.69.233:8011 -s rr
@@ -176,7 +178,8 @@ ipvsadm -a -t 192.168.69.233:33331 -r 192.168.69.237:33331 -g
 echo 'e' > /sys/class/net/eth1/queues/rx-0/rps_cpus
 echo '32768' > /proc/sys/net/core/rps_sock_flow_entries
 echo '32768' > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
-ipvsadm -A -t 192.168.69.233:8010 -s nq
+ipvsadm -C
+ipvsadm -A -t 192.168.69.233:8010 -s rr
 ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.235:8010 -g
 ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.234:8010 -g
 ipvsadm -A -t 192.168.69.233:8011 -s rr

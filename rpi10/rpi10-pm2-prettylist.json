@@ -81,7 +81,7 @@
        status: 'online',
        pm_uptime: 1470116095535,
        axm_actions: [ { action_name: 'list files', opts: null, arity: 1 } ],
-       axm_monitor: { 'Loop delay': { alert: {}, agg_type: 'avg', value: '13.5ms' } },
+       axm_monitor: { 'Loop delay': { alert: {}, agg_type: 'avg', value: '1.09ms' } },
        axm_options: 
         { http: false,
           http_latency: 200,
@@ -124,7 +124,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 0,
-    monit: { memory: 31080448, cpu: 0 } },
+    monit: { memory: 30474240, cpu: 0 } },
   { pid: 1203,
     name: 'pm2-server-monit',
     pm2_env: 
@@ -210,11 +210,11 @@
           { action_name: 'open ports', opts: null, arity: 1 },
           { action_name: 'ifconfig', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '8ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '7.63ms' },
           'CPU usage': 
            { alert: { cmp: '>', interval: 100, value: 90, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '25.00%' },
+             value: '27.50%' },
           'Operating System': { alert: {}, agg_type: 'avg', value: 'Raspbian 8' },
           'Avail. Disk': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
@@ -229,16 +229,16 @@
           'Free memory': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '81.3%' },
+             value: '75.8%' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '0.2GB / 1.0GB' },
-          'network in': { alert: {}, agg_type: 'avg', value: '0.00MB/S' },
+          'network in': { alert: {}, agg_type: 'avg', value: '0.01MB/S' },
           'network out': { alert: {}, agg_type: 'avg', value: '0.04MB/s' },
-          'Total Processes': { alert: {}, agg_type: 'avg', value: 127 },
+          'Total Processes': { alert: {}, agg_type: 'avg', value: 121 },
           'Zombie processes': 
            { alert: { cmp: '>', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
              value: 0 },
-          'eth1 input': { alert: {}, agg_type: 'avg', value: '0.00MB/s' },
+          'eth1 input': { alert: {}, agg_type: 'avg', value: '0.01MB/s' },
           'eth1 output': { alert: {}, agg_type: 'avg', value: '0.04MB/s' } },
        axm_options: 
         { http: false,
@@ -287,7 +287,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 1,
-    monit: { memory: 25931776, cpu: 2 } },
+    monit: { memory: 32591872, cpu: 2 } },
   { pid: 1209,
     name: 'pm2-webshell',
     pm2_env: 
@@ -378,7 +378,7 @@
        pm_uptime: 1470116095838,
        axm_actions: [],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '9.32ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.88ms' },
           Port: { alert: {}, agg_type: 'avg', value: 33334 },
           Username: { alert: {}, agg_type: 'avg', value: 'pi' },
           Bind: { alert: {}, agg_type: 'avg', value: '0.0.0.0' },
@@ -435,7 +435,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 2,
-    monit: { memory: 28540928, cpu: 0 } },
+    monit: { memory: 29691904, cpu: 0 } },
   { pid: 1215,
     name: 'pm2-nginx',
     pm2_env: 
@@ -522,13 +522,13 @@
        pm_uptime: 1470116095945,
        axm_actions: [ { action_name: 'Show Configuration', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '10.94ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.86ms' },
           'Nginx Version': { alert: {}, agg_type: 'avg', value: 'nginx/1.11.3' },
           'Active Conn.': { alert: {}, agg_type: 'avg', value: '1' },
-          'Accepted Conn.': { alert: {}, agg_type: 'avg', value: '52' },
-          'Handled Conn.': { alert: {}, agg_type: 'avg', value: '52' },
-          'Client Requests': { alert: {}, agg_type: 'avg', value: '52' },
-          'Req/Handled Conn.': { alert: {}, agg_type: 'avg', value: '1.00' },
+          'Accepted Conn.': { alert: {}, agg_type: 'avg', value: '1321' },
+          'Handled Conn.': { alert: {}, agg_type: 'avg', value: '1321' },
+          'Client Requests': { alert: {}, agg_type: 'avg', value: '227612' },
+          'Req/Handled Conn.': { alert: {}, agg_type: 'avg', value: '172.30' },
           'Curr. Reading': { alert: {}, agg_type: 'avg', value: '0' },
           'Curr. Writing': { alert: {}, agg_type: 'avg', value: '1' },
           'Curr. Waiting': 
@@ -687,11 +687,11 @@
        pm_uptime: 1470116096472,
        axm_actions: [],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '1.37ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.25ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
-          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '0ms' } },
+          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '18.79ms' } },
        axm_options: 
         { http: true,
           http_latency: 200,
@@ -718,7 +718,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-hdrhist.git',
           revision: '044ad3d28fde53e7da15930f88e08f01f0789e6e',
-          update_time: '2016-08-02T05:38:22.496Z',
+          update_time: '2016-08-02T06:57:52.630Z',
           comment: 'Updated npm versions and ecosystem.json',
           unstaged: true,
           branch: 'master',
@@ -734,4 +734,4 @@
        instances: 1,
        pm_id: 4 },
     pm_id: 4,
-    monit: { memory: 26533888, cpu: 0 } } ]
+    monit: { memory: 30072832, cpu: 0 } } ]

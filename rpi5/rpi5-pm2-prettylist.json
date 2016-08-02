@@ -83,7 +83,7 @@
        status: 'online',
        pm_uptime: 1470116109278,
        axm_actions: [ { action_name: 'list files', opts: null, arity: 1 } ],
-       axm_monitor: { 'Loop delay': { alert: {}, agg_type: 'avg', value: '18.31ms' } },
+       axm_monitor: { 'Loop delay': { alert: {}, agg_type: 'avg', value: '1.3ms' } },
        axm_options: 
         { http: false,
           http_latency: 200,
@@ -126,7 +126,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 0,
-    monit: { memory: 31543296, cpu: 0 } },
+    monit: { memory: 31850496, cpu: 0 } },
   { pid: 762,
     name: 'pm2-webshell',
     pm2_env: 
@@ -221,7 +221,7 @@
        pm_uptime: 1470116109573,
        axm_actions: [],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '10.94ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.99ms' },
           Port: { alert: {}, agg_type: 'avg', value: 33334 },
           Username: { alert: {}, agg_type: 'avg', value: 'pi' },
           Bind: { alert: {}, agg_type: 'avg', value: '0.0.0.0' },
@@ -278,7 +278,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 1,
-    monit: { memory: 28618752, cpu: 0 } },
+    monit: { memory: 29241344, cpu: 2 } },
   { pid: 768,
     name: 'pm2-server-monit',
     pm2_env: 
@@ -368,11 +368,11 @@
           { action_name: 'open ports', opts: null, arity: 1 },
           { action_name: 'ifconfig', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '11.64ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '10.57ms' },
           'CPU usage': 
            { alert: { cmp: '>', interval: 100, value: 90, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '35.28%' },
+             value: '30.00%' },
           'Operating System': { alert: {}, agg_type: 'avg', value: 'Raspbian 8' },
           'Avail. Disk': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
@@ -383,15 +383,15 @@
            { alert: { cmp: '>', interval: 180, value: 15, mode: 'threshold-avg' },
              agg_type: 'avg',
              value: '0\n' },
-          'Open files': { alert: {}, agg_type: 'avg', value: 768 },
+          'Open files': { alert: {}, agg_type: 'avg', value: 672 },
           'Free memory': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '79.7%' },
+             value: '78.1%' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '0.2GB / 1.0GB' },
           'network in': { alert: {}, agg_type: 'avg', value: '0.00MB/S' },
           'network out': { alert: {}, agg_type: 'avg', value: '0.05MB/s' },
-          'Total Processes': { alert: {}, agg_type: 'avg', value: 122 },
+          'Total Processes': { alert: {}, agg_type: 'avg', value: 118 },
           'Zombie processes': 
            { alert: { cmp: '>', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
@@ -445,7 +445,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 2,
-    monit: { memory: 25595904, cpu: 2 } },
+    monit: { memory: 33476608, cpu: 4 } },
   { pid: 774,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -465,7 +465,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: 'da8ed6ca4c7c4126a88cc02669cff66953c9fca4',
-          update_time: '2016-08-02T05:38:34.703Z',
+          update_time: '2016-08-02T06:58:04.894Z',
           comment: 'Updated back to HTTP/2 server for better performance',
           unstaged: true,
           branch: 'master',
@@ -500,11 +500,11 @@
           latency: true,
           heapdump: true },
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '9.5ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.89ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
-          HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
-          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '0ms' } },
+          HTTP: { alert: {}, agg_type: 'avg', value: '0.81req/s' },
+          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '13.41ms' } },
        axm_actions: 
         [ { action_name: 'km:heapdump', opts: null, arity: 1 },
           { action_name: 'km:cpu:profiling:start', opts: null, arity: 1 },
@@ -604,7 +604,7 @@
        instances: 4,
        pm_id: 3 },
     pm_id: 3,
-    monit: { memory: 32411648, cpu: 1 } },
+    monit: { memory: 35848192, cpu: 0 } },
   { pid: 780,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -624,7 +624,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: 'da8ed6ca4c7c4126a88cc02669cff66953c9fca4',
-          update_time: '2016-08-02T05:38:34.913Z',
+          update_time: '2016-08-02T06:58:05.114Z',
           comment: 'Updated back to HTTP/2 server for better performance',
           unstaged: true,
           branch: 'master',
@@ -659,11 +659,11 @@
           latency: true,
           heapdump: true },
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '9.64ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.84ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
-          HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
-          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '0ms' } },
+          HTTP: { alert: {}, agg_type: 'avg', value: '0.81req/s' },
+          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '13.64ms' } },
        axm_actions: 
         [ { action_name: 'km:heapdump', opts: null, arity: 1 },
           { action_name: 'km:cpu:profiling:start', opts: null, arity: 1 },
@@ -763,7 +763,7 @@
        instances: 4,
        pm_id: 4 },
     pm_id: 4,
-    monit: { memory: 32337920, cpu: 1 } },
+    monit: { memory: 34680832, cpu: 0 } },
   { pid: 781,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -782,7 +782,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: 'da8ed6ca4c7c4126a88cc02669cff66953c9fca4',
-          update_time: '2016-08-02T05:38:35.143Z',
+          update_time: '2016-08-02T06:58:05.344Z',
           comment: 'Updated back to HTTP/2 server for better performance',
           unstaged: true,
           branch: 'master',
@@ -818,11 +818,11 @@
           latency: true,
           heapdump: true },
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '9.85ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.84ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
-          HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
-          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '0ms' } },
+          HTTP: { alert: {}, agg_type: 'avg', value: '0.81req/s' },
+          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '13.42ms' } },
        axm_actions: 
         [ { action_name: 'km:heapdump', opts: null, arity: 1 },
           { action_name: 'km:cpu:profiling:start', opts: null, arity: 1 },
@@ -922,7 +922,7 @@
        instances: 4,
        pm_id: 5 },
     pm_id: 5,
-    monit: { memory: 32567296, cpu: 5 } },
+    monit: { memory: 37879808, cpu: 0 } },
   { pid: 787,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -942,7 +942,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: 'da8ed6ca4c7c4126a88cc02669cff66953c9fca4',
-          update_time: '2016-08-02T05:38:35.353Z',
+          update_time: '2016-08-02T06:58:05.554Z',
           comment: 'Updated back to HTTP/2 server for better performance',
           unstaged: true,
           branch: 'master',
@@ -977,11 +977,11 @@
           latency: true,
           heapdump: true },
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '9.51ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.81ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
-          HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
-          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '0ms' } },
+          HTTP: { alert: {}, agg_type: 'avg', value: '0.81req/s' },
+          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '13.86ms' } },
        axm_actions: 
         [ { action_name: 'km:heapdump', opts: null, arity: 1 },
           { action_name: 'km:cpu:profiling:start', opts: null, arity: 1 },
@@ -1081,4 +1081,4 @@
        instances: 4,
        pm_id: 6 },
     pm_id: 6,
-    monit: { memory: 31272960, cpu: 0 } } ]
+    monit: { memory: 36610048, cpu: 0 } } ]
