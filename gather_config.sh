@@ -182,6 +182,7 @@ sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi7-initd-rng_tools
 sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi7-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi7-uname.txt && \
 pm2 show clusteredPUBSUBnode > /home/pi/clusterednode-config/rpi7-pubsub-pm2-show.txt && \
+pm2 list > /home/pi/clusterednode-config/rpi7-api-pm2-list.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi7-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi7-sysctl.conf && \
 sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi7-stunnel-redis-server.conf && \
@@ -204,6 +205,8 @@ sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi8-initd-networki
 sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi8-initd-rng_tools.txt && \
 sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi8-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi8-uname.txt && \
+pm2 show clusteredPUBSUBnode > /home/pi/clusterednode-config/rpi8-pubsub-pm2-show.txt && \
+pm2 list > /home/pi/clusterednode-config/rpi8-api-pm2-list.txt && \
 pm2 prettylist > /home/pi/clusterednode-config/rpi8-pm2-prettylist.json && \
 sudo cp /etc/sysctl.conf /home/pi/clusterednode-config/rpi8-sysctl.conf && \
 sudo cp /etc/stunnel/redis-server.conf /home/pi/clusterednode-config/rpi8-stunnel-redis-server.conf && \
@@ -217,5 +220,3 @@ sudo cp /etc/redis/6378.conf /home/pi/clusterednode-config/rpi8-redis-6378.conf 
 sudo cp /etc/redis/6377.conf /home/pi/clusterednode-config/rpi8-redis-6377.conf"
 scp -r pi@raspberrypi8:~/clusterednode-config/* ./rpi8/
 
-#pm2 list > /home/pi/clusterednode-config/rpi7-api-pm2-list.txt && \
-#pm2 list > /home/pi/clusterednode-config/rpi8-api-pm2-list.txt && \
