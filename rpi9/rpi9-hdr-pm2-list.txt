@@ -1,15 +1,16 @@
+● Agent online - public key: yv4vbsdfeyy99wn - machine name: raspberrypi9 - Web access: https://app.keymetrics.io/
 ┌──────────────────┬────┬─────────┬──────┬────────┬─────────┬────────┬─────┬───────────┬──────────┐
 │ App name         │ id │ mode    │ pid  │ status │ restart │ uptime │ cpu │ mem       │ watching │
 ├──────────────────┼────┼─────────┼──────┼────────┼─────────┼────────┼─────┼───────────┼──────────┤
-│ clusteredHDRnode │ 4  │ cluster │ 1213 │ online │ 0       │ 117m   │ 0%  │ 28.5 MB   │  enabled │
+│ clusteredHDRnode │ 4  │ cluster │ 1225 │ online │ 0       │ 3m     │ 0%  │ 25.2 MB   │ disabled │
 └──────────────────┴────┴─────────┴──────┴────────┴─────────┴────────┴─────┴───────────┴──────────┘
  Module activated
 ┌──────────────────┬─────────┬────────────┬────────┬─────────┬─────┬─────────────┐
 │ Module           │ version │ target PID │ status │ restart │ cpu │ memory      │
 ├──────────────────┼─────────┼────────────┼────────┼─────────┼─────┼─────────────┤
-│ pm2-logrotate    │ 1.3.1   │ 1185       │ online │ 0       │ 0%  │ 28.465 MB   │
-│ pm2-nginx        │ 1.0.1   │ 1207       │ online │ 0       │ 0%  │ 2.516 MB    │
-│ pm2-server-monit │ 2.0.0   │ 1195       │ online │ 0       │ 33% │ 26.648 MB   │
-│ pm2-webshell     │ 1.24.0  │ 1201       │ online │ 0       │ 0%  │ 28.074 MB   │
+│ pm2-logrotate    │ 1.3.1   │ 1197       │ online │ 0       │ 0%  │ 29.793 MB   │
+│ pm2-nginx        │ 1.0.1   │ 1219       │ online │ 0       │ 0%  │ 2.496 MB    │
+│ pm2-server-monit │ 2.0.0   │ 1207       │ online │ 0       │ 0%  │ 24.418 MB   │
+│ pm2-webshell     │ 1.24.0  │ 1213       │ online │ 0       │ 0%  │ 27.238 MB   │
 └──────────────────┴─────────┴────────────┴────────┴─────────┴─────┴─────────────┘
  Use `pm2 show <id|name>` to get more details about an app

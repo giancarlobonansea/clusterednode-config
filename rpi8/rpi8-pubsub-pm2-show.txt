@@ -17,21 +17,21 @@
 │ node.js version   │ 6.3.1                                              │
 │ watch & reload    │ ✘                                                  │
 │ unstable restarts │ 0                                                  │
-│ created at        │ 2016-08-02T04:57:35.067Z                           │
+│ created at        │ 2016-08-02T04:57:09.955Z                           │
 └───────────────────┴────────────────────────────────────────────────────┘
  Revision control metadata 
 ┌──────────────────┬──────────────────────────────────────────────────────────────────────────────────────┐
 │ revision control │ git                                                                                  │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-pubsub.git                            │
 │ repository root  │ /home/pi/cluster/current                                                             │
-│ last update      │ 2016-08-02T05:39:05.382Z                                                             │
+│ last update      │ 2016-08-02T05:39:05.975Z                                                             │
 │ revision         │ f0685dbab0b30d05fb520fec97302cd7ed68215d                                             │
 │ comment          │ Add cluster functionality and pubsub refactoring for no fixed IP variable dependency │
 │ branch           │ master                                                                               │
 └──────────────────┴──────────────────────────────────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬────────┐
-│ Loop delay       │ 4.01ms │
+│ Loop delay       │ 3.93ms │
 │ Network Download │ 0 MB/s │
 │ Network Upload   │ 0 MB/s │
 │ HTTP             │ 0req/s │

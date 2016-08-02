@@ -2,17 +2,17 @@
 ┌──────────────────┬────┬─────────┬─────┬────────┬─────────┬────────┬─────┬───────────┬──────────┐
 │ App name         │ id │ mode    │ pid │ status │ restart │ uptime │ cpu │ mem       │ watching │
 ├──────────────────┼────┼─────────┼─────┼────────┼─────────┼────────┼─────┼───────────┼──────────┤
-│ clusteredAPInode │ 3  │ cluster │ 702 │ online │ 0       │ 17m    │ 0%  │ 34.5 MB   │ disabled │
-│ clusteredAPInode │ 4  │ cluster │ 708 │ online │ 0       │ 17m    │ 0%  │ 34.6 MB   │ disabled │
-│ clusteredAPInode │ 5  │ cluster │ 709 │ online │ 0       │ 17m    │ 0%  │ 34.7 MB   │ disabled │
-│ clusteredAPInode │ 6  │ cluster │ 715 │ online │ 0       │ 17m    │ 0%  │ 34.8 MB   │ disabled │
+│ clusteredAPInode │ 3  │ cluster │ 704 │ online │ 0       │ 2m     │ 0%  │ 31.0 MB   │ disabled │
+│ clusteredAPInode │ 4  │ cluster │ 705 │ online │ 0       │ 2m     │ 0%  │ 31.0 MB   │ disabled │
+│ clusteredAPInode │ 5  │ cluster │ 711 │ online │ 0       │ 2m     │ 0%  │ 32.3 MB   │ disabled │
+│ clusteredAPInode │ 6  │ cluster │ 722 │ online │ 0       │ 2m     │ 0%  │ 32.2 MB   │ disabled │
 └──────────────────┴────┴─────────┴─────┴────────┴─────────┴────────┴─────┴───────────┴──────────┘
  Module activated
 ┌──────────────────┬─────────┬────────────┬────────┬─────────┬─────┬─────────────┐
 │ Module           │ version │ target PID │ status │ restart │ cpu │ memory      │
 ├──────────────────┼─────────┼────────────┼────────┼─────────┼─────┼─────────────┤
-│ pm2-logrotate    │ 1.3.1   │ 680        │ online │ 0       │ 0%  │ 28.180 MB   │
-│ pm2-server-monit │ 2.0.0   │ 696        │ online │ 0       │ 0%  │ 26.695 MB   │
-│ pm2-webshell     │ 1.24.0  │ 690        │ online │ 0       │ 0%  │ 27.363 MB   │
+│ pm2-logrotate    │ 1.3.1   │ 682        │ online │ 0       │ 0%  │ 30.023 MB   │
+│ pm2-server-monit │ 2.0.0   │ 698        │ online │ 0       │ 0%  │ 24.434 MB   │
+│ pm2-webshell     │ 1.24.0  │ 692        │ online │ 0       │ 0%  │ 27.500 MB   │
 └──────────────────┴─────────┴────────────┴────────┴─────────┴─────┴─────────────┘
  Use `pm2 show <id|name>` to get more details about an app
