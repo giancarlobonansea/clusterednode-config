@@ -2,41 +2,41 @@
 ┌───────────────────┬──────────────────────────────────────────────────┐
 │ status            │ online                                           │
 │ name              │ clusteredHDRnode                                 │
-│ restarts          │ 0                                                │
-│ uptime            │ 33h                                              │
+│ restarts          │ 1                                                │
+│ uptime            │ 14m                                              │
 │ script path       │ /home/pi/clusterednode-hdrhist/current/hdrsrv.js │
 │ script args       │ N/A                                              │
-│ error log path    │ /home/pi/.pm2/logs/clusteredHDRnode-error-4.log  │
-│ out log path      │ /home/pi/.pm2/logs/clusteredHDRnode-out-4.log    │
-│ pid path          │ /home/pi/.pm2/pids/clusteredHDRnode-4.pid        │
+│ error log path    │ /home/pi/.pm2/logs/clusteredHDRnode-error.log    │
+│ out log path      │ /home/pi/.pm2/logs/clusteredHDRnode-out.log      │
+│ pid path          │ /home/pi/.pm2/pids/clusteredHDRnode.pid          │
 │ interpreter       │ node                                             │
 │ interpreter args  │ N/A                                              │
 │ script id         │ 4                                                │
 │ exec cwd          │ /home/pi/clusterednode-hdrhist/current           │
 │ exec mode         │ cluster_mode                                     │
 │ node.js version   │ 6.3.1                                            │
-│ watch & reload    │ ✘                                                │
+│ watch & reload    │ ✔                                                │
 │ unstable restarts │ 0                                                │
-│ created at        │ 2016-08-02T05:26:14.546Z                         │
+│ created at        │ 2016-08-05T04:36:53.753Z                         │
 └───────────────────┴──────────────────────────────────────────────────┘
  Revision control metadata 
 ┌──────────────────┬────────────────────────────────────────────────────────────┐
 │ revision control │ git                                                        │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-hdrhist.git │
 │ repository root  │ /home/pi/clusterednode-hdrhist/current                     │
-│ last update      │ 2016-08-04T13:46:20.052Z                                   │
-│ revision         │ 044ad3d28fde53e7da15930f88e08f01f0789e6e                   │
-│ comment          │ Updated npm versions and ecosystem.json                    │
+│ last update      │ 2016-08-05T04:51:22.706Z                                   │
+│ revision         │ 291d9a4c179cbe8621f2c2660f85f1bee3d52570                   │
+│ comment          │ Updated HTTP headers                                       │
 │ branch           │ master                                                     │
 └──────────────────┴────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬─────────┐
-│ Loop delay       │ 0.33ms  │
-│ Network Download │ 0 MB/s  │
-│ Network Upload   │ 0 MB/s  │
-│ HTTP             │ 0req/s  │
-│ pmx:http:latency │ 19.79ms │
-└──────────────────┴─────────┘
+┌──────────────────┬───────────┐
+│ Loop delay       │ 0.18ms    │
+│ Network Download │ 0 MB/s    │
+│ Network Upload   │ 0 MB/s    │
+│ HTTP             │ 0.01req/s │
+│ pmx:http:latency │ 20.59ms   │
+└──────────────────┴───────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredHDRnode [--lines 1000]` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredHDRnode

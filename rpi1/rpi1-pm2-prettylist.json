@@ -79,7 +79,7 @@
        status: 'online',
        pm_uptime: 1470196677425,
        axm_actions: [ { action_name: 'list files', opts: null, arity: 1 } ],
-       axm_monitor: { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.74ms' } },
+       axm_monitor: { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.7ms' } },
        axm_options: 
         { http: false,
           http_latency: 200,
@@ -122,7 +122,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 0,
-    monit: { memory: 33759232, cpu: 0 } },
+    monit: { memory: 27541504, cpu: 0 } },
   { pid: 586,
     name: 'pm2-webshell',
     pm2_env: 
@@ -213,7 +213,7 @@
        pm_uptime: 1470196678779,
        axm_actions: [],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.7ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.68ms' },
           Port: { alert: {}, agg_type: 'avg', value: 33334 },
           Username: { alert: {}, agg_type: 'avg', value: 'pi' },
           Bind: { alert: {}, agg_type: 'avg', value: '0.0.0.0' },
@@ -270,7 +270,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 1,
-    monit: { memory: 30892032, cpu: 0 } },
+    monit: { memory: 30523392, cpu: 0 } },
   { pid: 592,
     name: 'pm2-server-monit',
     pm2_env: 
@@ -371,20 +371,20 @@
            { alert: { cmp: '>', interval: 180, value: 15, mode: 'threshold-avg' },
              agg_type: 'avg',
              value: '0\n' },
-          'Open files': { alert: {}, agg_type: 'avg', value: 620 },
+          'Open files': { alert: {}, agg_type: 'avg', value: 617 },
           'Free memory': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '75.4%' },
+             value: '78.4%' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '0.1GB / 0.5GB' },
-          'network in': { alert: {}, agg_type: 'avg', value: '0.00MB/S' },
+          'network in': { alert: {}, agg_type: 'avg', value: '0.01MB/S' },
           'network out': { alert: {}, agg_type: 'avg', value: '0.00MB/s' },
-          'Total Processes': { alert: {}, agg_type: 'avg', value: 87 },
+          'Total Processes': { alert: {}, agg_type: 'avg', value: 88 },
           'Zombie processes': 
            { alert: { cmp: '>', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
              value: 0 },
-          'eth1 input': { alert: {}, agg_type: 'avg', value: '0.00MB/s' },
+          'eth1 input': { alert: {}, agg_type: 'avg', value: '0.01MB/s' },
           'eth1 output': { alert: {}, agg_type: 'avg', value: '0.00MB/s' } },
        axm_options: 
         { http: false,
@@ -433,4 +433,4 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 2,
-    monit: { memory: 29921280, cpu: 4 } } ]
+    monit: { memory: 27267072, cpu: 4 } } ]
