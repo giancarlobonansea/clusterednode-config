@@ -75,6 +75,7 @@ rm /home/pi/clusterednode-config/* && \
 sudo cp /etc/hosts /home/pi/clusterednode-config/rpi4-hosts.txt && \
 sudo cp /etc/network/interfaces /home/pi/clusterednode-config/rpi4-network-interfaces.txt && \
 sudo cp /etc/init.d/networking /home/pi/clusterednode-config/rpi4-initd-networking.txt && \
+sudo cp /etc/ipvsadm.rules /home/pi/clusterednode-config/rpi4-ipvsadm-rules.txt && \
 sudo cp /etc/init.d/rng-tools /home/pi/clusterednode-config/rpi4-initd-rng_tools.txt && \
 sudo cp /etc/init.d/znodesrv /home/pi/clusterednode-config/rpi4-initd-znodesrv.txt && \
 uname -a > /home/pi/clusterednode-config/rpi4-uname.txt && \
