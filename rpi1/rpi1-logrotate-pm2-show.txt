@@ -3,7 +3,7 @@
 │ status            │ online                                          │
 │ name              │ pm2-logrotate                                   │
 │ restarts          │ 0                                               │
-│ uptime            │ 2D                                              │
+│ uptime            │ 4m                                              │
 │ script path       │ /home/pi/.pm2/node_modules/pm2-logrotate/app.js │
 │ script args       │ N/A                                             │
 │ error log path    │ /home/pi/.pm2/logs/pm2-logrotate-error-0.log    │
@@ -17,7 +17,7 @@
 │ node.js version   │ 6.3.1                                           │
 │ watch & reload    │ ✘                                               │
 │ unstable restarts │ 0                                               │
-│ created at        │ 2016-08-03T03:57:57.426Z                        │
+│ created at        │ 2016-08-07T01:02:27.832Z                        │
 └───────────────────┴─────────────────────────────────────────────────┘
 Process configuration
 ┌───────────────┬─────┐
@@ -28,9 +28,9 @@ Process configuration
 │ interval      │ 1   │
 └───────────────┴─────┘
  Code metrics value 
-┌────────────┬───────┐
-│ Loop delay │ 0.7ms │
-└────────────┴───────┘
+┌────────────┬─────────┐
+│ Loop delay │ 58.69ms │
+└────────────┴─────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs pm2-logrotate [--lines 1000]` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage pm2-logrotate
