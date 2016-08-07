@@ -83,7 +83,7 @@
        status: 'online',
        pm_uptime: 1470531712369,
        axm_actions: [ { action_name: 'list files', opts: null, arity: 1 } ],
-       axm_monitor: { 'Loop delay': { alert: {}, agg_type: 'avg', value: '8.9ms' } },
+       axm_monitor: { 'Loop delay': { alert: {}, agg_type: 'avg', value: '1.07ms' } },
        axm_options: 
         { http: false,
           http_latency: 200,
@@ -126,7 +126,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 0,
-    monit: { memory: 29343744, cpu: 0 } },
+    monit: { memory: 30867456, cpu: 0 } },
   { pid: 764,
     name: 'pm2-webshell',
     pm2_env: 
@@ -221,7 +221,7 @@
        pm_uptime: 1470531712687,
        axm_actions: [],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '5.74ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.87ms' },
           Port: { alert: {}, agg_type: 'avg', value: 33334 },
           Username: { alert: {}, agg_type: 'avg', value: 'pi' },
           Bind: { alert: {}, agg_type: 'avg', value: '0.0.0.0' },
@@ -278,7 +278,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 1,
-    monit: { memory: 27922432, cpu: 0 } },
+    monit: { memory: 31043584, cpu: 0 } },
   { pid: 770,
     name: 'pm2-server-monit',
     pm2_env: 
@@ -368,7 +368,7 @@
           { action_name: 'open ports', opts: null, arity: 1 },
           { action_name: 'ifconfig', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '11.17ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '10.58ms' },
           'CPU usage': 
            { alert: { cmp: '>', interval: 100, value: 90, mode: 'threshold-avg' },
              agg_type: 'avg',
@@ -387,7 +387,7 @@
           'Free memory': 
            { alert: { cmp: '<', interval: 180, value: 10, mode: 'threshold-avg' },
              agg_type: 'avg',
-             value: '80.4%' },
+             value: '76.9%' },
           'Used memory': { alert: {}, agg_type: 'avg', value: '0.2GB / 1.0GB' },
           'network in': { alert: {}, agg_type: 'avg', value: '0.00MB/S' },
           'network out': { alert: {}, agg_type: 'avg', value: '0.05MB/s' },
@@ -445,7 +445,7 @@
        versioning: null,
        node_version: '6.3.1' },
     pm_id: 2,
-    monit: { memory: 26722304, cpu: 2 } },
+    monit: { memory: 30859264, cpu: 6 } },
   { pid: 776,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -546,11 +546,11 @@
           { action_name: 'km:cpu:profiling:start', opts: null, arity: 1 },
           { action_name: 'km:cpu:profiling:stop', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '5.12ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.67ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
-          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '0ms' } },
+          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '135ms' } },
        axm_options: 
         { http: true,
           http_latency: 200,
@@ -578,7 +578,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: '840f163f0090e2faf8446c3742b314e7185a79d4',
-          update_time: '2016-08-07T01:08:47.768Z',
+          update_time: '2016-08-07T02:54:48.046Z',
           comment: 'Back from ES6 to ES5 due to performance issues on Node.js 6.3.1',
           unstaged: true,
           branch: 'master',
@@ -604,7 +604,7 @@
        instances: 4,
        pm_id: 3 },
     pm_id: 3,
-    monit: { memory: 32751616, cpu: 0 } },
+    monit: { memory: 35344384, cpu: 0 } },
   { pid: 782,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -705,11 +705,11 @@
           { action_name: 'km:cpu:profiling:start', opts: null, arity: 1 },
           { action_name: 'km:cpu:profiling:stop', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '5ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.64ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
-          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '0ms' } },
+          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '78ms' } },
        axm_options: 
         { http: true,
           http_latency: 200,
@@ -737,7 +737,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: '840f163f0090e2faf8446c3742b314e7185a79d4',
-          update_time: '2016-08-07T01:08:48.058Z',
+          update_time: '2016-08-07T02:54:48.256Z',
           comment: 'Back from ES6 to ES5 due to performance issues on Node.js 6.3.1',
           unstaged: true,
           branch: 'master',
@@ -763,7 +763,7 @@
        instances: 4,
        pm_id: 4 },
     pm_id: 4,
-    monit: { memory: 33226752, cpu: 1 } },
+    monit: { memory: 35762176, cpu: 0 } },
   { pid: 788,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -864,11 +864,11 @@
           { action_name: 'km:cpu:profiling:start', opts: null, arity: 1 },
           { action_name: 'km:cpu:profiling:stop', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '4.78ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.64ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
-          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '0ms' } },
+          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '26.21ms' } },
        axm_options: 
         { http: true,
           http_latency: 200,
@@ -896,7 +896,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: '840f163f0090e2faf8446c3742b314e7185a79d4',
-          update_time: '2016-08-07T01:08:48.328Z',
+          update_time: '2016-08-07T02:54:48.476Z',
           comment: 'Back from ES6 to ES5 due to performance issues on Node.js 6.3.1',
           unstaged: true,
           branch: 'master',
@@ -922,7 +922,7 @@
        instances: 4,
        pm_id: 5 },
     pm_id: 5,
-    monit: { memory: 33558528, cpu: 1 } },
+    monit: { memory: 36769792, cpu: 0 } },
   { pid: 794,
     name: 'clusteredAPInode',
     pm2_env: 
@@ -1023,11 +1023,11 @@
           { action_name: 'km:cpu:profiling:start', opts: null, arity: 1 },
           { action_name: 'km:cpu:profiling:stop', opts: null, arity: 1 } ],
        axm_monitor: 
-        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '4.86ms' },
+        { 'Loop delay': { alert: {}, agg_type: 'avg', value: '0.64ms' },
           'Network Download': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           'Network Upload': { alert: {}, agg_type: 'sum', value: '0 MB/s' },
           HTTP: { alert: {}, agg_type: 'avg', value: '0req/s' },
-          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '0ms' } },
+          'pmx:http:latency': { alert: {}, agg_type: 'avg', value: '21.26ms' } },
        axm_options: 
         { http: true,
           http_latency: 200,
@@ -1055,7 +1055,7 @@
         { type: 'git',
           url: 'git@github.com:giancarlobonansea/clusterednode-worker.git',
           revision: '840f163f0090e2faf8446c3742b314e7185a79d4',
-          update_time: '2016-08-07T01:08:48.598Z',
+          update_time: '2016-08-07T02:54:48.696Z',
           comment: 'Back from ES6 to ES5 due to performance issues on Node.js 6.3.1',
           unstaged: true,
           branch: 'master',
@@ -1081,4 +1081,4 @@
        instances: 4,
        pm_id: 6 },
     pm_id: 6,
-    monit: { memory: 32985088, cpu: 0 } } ]
+    monit: { memory: 35708928, cpu: 2 } } ]

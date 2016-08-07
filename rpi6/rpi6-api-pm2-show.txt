@@ -3,7 +3,7 @@
 │ status            │ online                                          │
 │ name              │ clusteredAPInode                                │
 │ restarts          │ 0                                               │
-│ uptime            │ 7m                                              │
+│ uptime            │ 113m                                            │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js         │
 │ script args       │ N/A                                             │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-3.log │
@@ -24,18 +24,18 @@
 │ revision control │ git                                                             │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git       │
 │ repository root  │ /home/pi/cluster/current                                        │
-│ last update      │ 2016-08-07T01:08:47.768Z                                        │
+│ last update      │ 2016-08-07T02:54:48.046Z                                        │
 │ revision         │ 840f163f0090e2faf8446c3742b314e7185a79d4                        │
 │ comment          │ Back from ES6 to ES5 due to performance issues on Node.js 6.3.1 │
 │ branch           │ master                                                          │
 └──────────────────┴─────────────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬────────┐
-│ Loop delay       │ 5.21ms │
+│ Loop delay       │ 0.67ms │
 │ Network Download │ 0 MB/s │
 │ Network Upload   │ 0 MB/s │
 │ HTTP             │ 0req/s │
-│ pmx:http:latency │ 0ms    │
+│ pmx:http:latency │ 135ms  │
 └──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode [--lines 1000]` to display logs
@@ -45,7 +45,7 @@
 │ status            │ online                                          │
 │ name              │ clusteredAPInode                                │
 │ restarts          │ 0                                               │
-│ uptime            │ 7m                                              │
+│ uptime            │ 113m                                            │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js         │
 │ script args       │ N/A                                             │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-4.log │
@@ -66,18 +66,18 @@
 │ revision control │ git                                                             │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git       │
 │ repository root  │ /home/pi/cluster/current                                        │
-│ last update      │ 2016-08-07T01:08:48.058Z                                        │
+│ last update      │ 2016-08-07T02:54:48.256Z                                        │
 │ revision         │ 840f163f0090e2faf8446c3742b314e7185a79d4                        │
 │ comment          │ Back from ES6 to ES5 due to performance issues on Node.js 6.3.1 │
 │ branch           │ master                                                          │
 └──────────────────┴─────────────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬────────┐
-│ Loop delay       │ 5.1ms  │
+│ Loop delay       │ 0.64ms │
 │ Network Download │ 0 MB/s │
 │ Network Upload   │ 0 MB/s │
 │ HTTP             │ 0req/s │
-│ pmx:http:latency │ 0ms    │
+│ pmx:http:latency │ 78ms   │
 └──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode [--lines 1000]` to display logs
@@ -87,7 +87,7 @@
 │ status            │ online                                          │
 │ name              │ clusteredAPInode                                │
 │ restarts          │ 0                                               │
-│ uptime            │ 7m                                              │
+│ uptime            │ 113m                                            │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js         │
 │ script args       │ N/A                                             │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-5.log │
@@ -108,19 +108,19 @@
 │ revision control │ git                                                             │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git       │
 │ repository root  │ /home/pi/cluster/current                                        │
-│ last update      │ 2016-08-07T01:08:48.328Z                                        │
+│ last update      │ 2016-08-07T02:54:48.476Z                                        │
 │ revision         │ 840f163f0090e2faf8446c3742b314e7185a79d4                        │
 │ comment          │ Back from ES6 to ES5 due to performance issues on Node.js 6.3.1 │
 │ branch           │ master                                                          │
 └──────────────────┴─────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬────────┐
-│ Loop delay       │ 4.86ms │
-│ Network Download │ 0 MB/s │
-│ Network Upload   │ 0 MB/s │
-│ HTTP             │ 0req/s │
-│ pmx:http:latency │ 0ms    │
-└──────────────────┴────────┘
+┌──────────────────┬─────────┐
+│ Loop delay       │ 0.64ms  │
+│ Network Download │ 0 MB/s  │
+│ Network Upload   │ 0 MB/s  │
+│ HTTP             │ 0req/s  │
+│ pmx:http:latency │ 26.21ms │
+└──────────────────┴─────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode [--lines 1000]` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
@@ -129,7 +129,7 @@
 │ status            │ online                                          │
 │ name              │ clusteredAPInode                                │
 │ restarts          │ 0                                               │
-│ uptime            │ 7m                                              │
+│ uptime            │ 113m                                            │
 │ script path       │ /home/pi/cluster/current/nodeworker2.js         │
 │ script args       │ N/A                                             │
 │ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-6.log │
@@ -150,19 +150,19 @@
 │ revision control │ git                                                             │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git       │
 │ repository root  │ /home/pi/cluster/current                                        │
-│ last update      │ 2016-08-07T01:08:48.598Z                                        │
+│ last update      │ 2016-08-07T02:54:48.696Z                                        │
 │ revision         │ 840f163f0090e2faf8446c3742b314e7185a79d4                        │
 │ comment          │ Back from ES6 to ES5 due to performance issues on Node.js 6.3.1 │
 │ branch           │ master                                                          │
 └──────────────────┴─────────────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬────────┐
-│ Loop delay       │ 4.95ms │
-│ Network Download │ 0 MB/s │
-│ Network Upload   │ 0 MB/s │
-│ HTTP             │ 0req/s │
-│ pmx:http:latency │ 0ms    │
-└──────────────────┴────────┘
+┌──────────────────┬─────────┐
+│ Loop delay       │ 0.64ms  │
+│ Network Download │ 0 MB/s  │
+│ Network Upload   │ 0 MB/s  │
+│ HTTP             │ 0req/s  │
+│ pmx:http:latency │ 21.26ms │
+└──────────────────┴─────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode [--lines 1000]` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode

@@ -3,7 +3,7 @@
 │ status            │ online                                           │
 │ name              │ clusteredHDRnode                                 │
 │ restarts          │ 0                                                │
-│ uptime            │ 6m                                               │
+│ uptime            │ 112m                                             │
 │ script path       │ /home/pi/clusterednode-hdrhist/current/hdrsrv.js │
 │ script args       │ N/A                                              │
 │ error log path    │ /home/pi/.pm2/logs/clusteredHDRnode-error-4.log  │
@@ -24,7 +24,7 @@
 │ revision control │ git                                                        │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-hdrhist.git │
 │ repository root  │ /home/pi/clusterednode-hdrhist/current                     │
-│ last update      │ 2016-08-07T01:07:59.627Z                                   │
+│ last update      │ 2016-08-07T02:53:59.805Z                                   │
 │ revision         │ 291d9a4c179cbe8621f2c2660f85f1bee3d52570                   │
 │ comment          │ Updated HTTP headers                                       │
 │ branch           │ master                                                     │
