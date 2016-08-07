@@ -13,8 +13,3 @@ iface eth1:0 inet static
 address 192.168.69.233
 netmask 255.255.255.255
 broadcast 192.168.69.233
-
-#allow-hotplug wlan0
-#iface wlan0 inet manual
-#wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
-#iface default inet dhcp

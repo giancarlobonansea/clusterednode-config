@@ -1,168 +1,168 @@
  Describing process with id 3 - name clusteredAPInode 
-┌───────────────────┬─────────────────────────────────────────────────┐
-│ status            │ online                                          │
-│ name              │ clusteredAPInode                                │
-│ restarts          │ 0                                               │
-│ uptime            │ 112m                                            │
-│ script path       │ /home/pi/cluster/current/nodeworker2.js         │
-│ script args       │ N/A                                             │
-│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-3.log │
-│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out-3.log   │
-│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode-3.pid       │
-│ interpreter       │ node                                            │
-│ interpreter args  │ N/A                                             │
-│ script id         │ 3                                               │
-│ exec cwd          │ /home/pi/cluster/current                        │
-│ exec mode         │ cluster_mode                                    │
-│ node.js version   │ 6.3.1                                           │
-│ watch & reload    │ ✘                                               │
-│ unstable restarts │ 0                                               │
-│ created at        │ 2016-08-06T13:55:42.853Z                        │
-└───────────────────┴─────────────────────────────────────────────────┘
+┌───────────────────┬───────────────────────────────────────────────┐
+│ status            │ online                                        │
+│ name              │ clusteredAPInode                              │
+│ restarts          │ 1                                             │
+│ uptime            │ 10m                                           │
+│ script path       │ /home/pi/cluster/current/nodeworker2.js       │
+│ script args       │ N/A                                           │
+│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
+│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out.log   │
+│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode.pid       │
+│ interpreter       │ node                                          │
+│ interpreter args  │ N/A                                           │
+│ script id         │ 3                                             │
+│ exec cwd          │ /home/pi/cluster/current                      │
+│ exec mode         │ cluster_mode                                  │
+│ node.js version   │ 6.3.1                                         │
+│ watch & reload    │ ✔                                             │
+│ unstable restarts │ 0                                             │
+│ created at        │ 2016-08-07T22:01:22.315Z                      │
+└───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬─────────────────────────────────────────────────────────────────┐
-│ revision control │ git                                                             │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git       │
-│ repository root  │ /home/pi/cluster/current                                        │
-│ last update      │ 2016-08-07T02:53:45.082Z                                        │
-│ revision         │ 840f163f0090e2faf8446c3742b314e7185a79d4                        │
-│ comment          │ Back from ES6 to ES5 due to performance issues on Node.js 6.3.1 │
-│ branch           │ master                                                          │
-└──────────────────┴─────────────────────────────────────────────────────────────────┘
+┌──────────────────┬───────────────────────────────────────────────────────────┐
+│ revision control │ git                                                       │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
+│ repository root  │ /home/pi/cluster/current                                  │
+│ last update      │ 2016-08-07T22:11:27.715Z                                  │
+│ revision         │ a9985f3f8843896fdc94631358d9787a5ef856d9                  │
+│ comment          │ New TCP ports for loadbalancing                           │
+│ branch           │ master                                                    │
+└──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬────────┐
-│ Loop delay       │ 0.63ms │
+│ Loop delay       │ 5.93ms │
 │ Network Download │ 0 MB/s │
 │ Network Upload   │ 0 MB/s │
 │ HTTP             │ 0req/s │
-│ pmx:http:latency │ 138ms  │
+│ pmx:http:latency │ 0ms    │
 └──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode [--lines 1000]` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
  Describing process with id 4 - name clusteredAPInode 
-┌───────────────────┬─────────────────────────────────────────────────┐
-│ status            │ online                                          │
-│ name              │ clusteredAPInode                                │
-│ restarts          │ 0                                               │
-│ uptime            │ 112m                                            │
-│ script path       │ /home/pi/cluster/current/nodeworker2.js         │
-│ script args       │ N/A                                             │
-│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-4.log │
-│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out-4.log   │
-│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode-4.pid       │
-│ interpreter       │ node                                            │
-│ interpreter args  │ N/A                                             │
-│ script id         │ 4                                               │
-│ exec cwd          │ /home/pi/cluster/current                        │
-│ exec mode         │ cluster_mode                                    │
-│ node.js version   │ 6.3.1                                           │
-│ watch & reload    │ ✘                                               │
-│ unstable restarts │ 0                                               │
-│ created at        │ 2016-08-06T13:55:42.878Z                        │
-└───────────────────┴─────────────────────────────────────────────────┘
+┌───────────────────┬───────────────────────────────────────────────┐
+│ status            │ online                                        │
+│ name              │ clusteredAPInode                              │
+│ restarts          │ 1                                             │
+│ uptime            │ 10m                                           │
+│ script path       │ /home/pi/cluster/current/nodeworker2.js       │
+│ script args       │ N/A                                           │
+│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
+│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out.log   │
+│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode.pid       │
+│ interpreter       │ node                                          │
+│ interpreter args  │ N/A                                           │
+│ script id         │ 4                                             │
+│ exec cwd          │ /home/pi/cluster/current                      │
+│ exec mode         │ cluster_mode                                  │
+│ node.js version   │ 6.3.1                                         │
+│ watch & reload    │ ✔                                             │
+│ unstable restarts │ 0                                             │
+│ created at        │ 2016-08-07T22:01:22.402Z                      │
+└───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬─────────────────────────────────────────────────────────────────┐
-│ revision control │ git                                                             │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git       │
-│ repository root  │ /home/pi/cluster/current                                        │
-│ last update      │ 2016-08-07T02:53:45.332Z                                        │
-│ revision         │ 840f163f0090e2faf8446c3742b314e7185a79d4                        │
-│ comment          │ Back from ES6 to ES5 due to performance issues on Node.js 6.3.1 │
-│ branch           │ master                                                          │
-└──────────────────┴─────────────────────────────────────────────────────────────────┘
+┌──────────────────┬───────────────────────────────────────────────────────────┐
+│ revision control │ git                                                       │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
+│ repository root  │ /home/pi/cluster/current                                  │
+│ last update      │ 2016-08-07T22:11:27.965Z                                  │
+│ revision         │ a9985f3f8843896fdc94631358d9787a5ef856d9                  │
+│ comment          │ New TCP ports for loadbalancing                           │
+│ branch           │ master                                                    │
+└──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬─────────┐
-│ Loop delay       │ 0.72ms  │
-│ Network Download │ 0 MB/s  │
-│ Network Upload   │ 0 MB/s  │
-│ HTTP             │ 0req/s  │
-│ pmx:http:latency │ 15.94ms │
-└──────────────────┴─────────┘
+┌──────────────────┬────────┐
+│ Loop delay       │ 4.36ms │
+│ Network Download │ 0 MB/s │
+│ Network Upload   │ 0 MB/s │
+│ HTTP             │ 0req/s │
+│ pmx:http:latency │ 0ms    │
+└──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode [--lines 1000]` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
  Describing process with id 5 - name clusteredAPInode 
-┌───────────────────┬─────────────────────────────────────────────────┐
-│ status            │ online                                          │
-│ name              │ clusteredAPInode                                │
-│ restarts          │ 0                                               │
-│ uptime            │ 112m                                            │
-│ script path       │ /home/pi/cluster/current/nodeworker2.js         │
-│ script args       │ N/A                                             │
-│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-5.log │
-│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out-5.log   │
-│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode-5.pid       │
-│ interpreter       │ node                                            │
-│ interpreter args  │ N/A                                             │
-│ script id         │ 5                                               │
-│ exec cwd          │ /home/pi/cluster/current                        │
-│ exec mode         │ cluster_mode                                    │
-│ node.js version   │ 6.3.1                                           │
-│ watch & reload    │ ✘                                               │
-│ unstable restarts │ 0                                               │
-│ created at        │ 2016-08-06T13:55:42.905Z                        │
-└───────────────────┴─────────────────────────────────────────────────┘
+┌───────────────────┬───────────────────────────────────────────────┐
+│ status            │ online                                        │
+│ name              │ clusteredAPInode                              │
+│ restarts          │ 1                                             │
+│ uptime            │ 10m                                           │
+│ script path       │ /home/pi/cluster/current/nodeworker2.js       │
+│ script args       │ N/A                                           │
+│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
+│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out.log   │
+│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode.pid       │
+│ interpreter       │ node                                          │
+│ interpreter args  │ N/A                                           │
+│ script id         │ 5                                             │
+│ exec cwd          │ /home/pi/cluster/current                      │
+│ exec mode         │ cluster_mode                                  │
+│ node.js version   │ 6.3.1                                         │
+│ watch & reload    │ ✔                                             │
+│ unstable restarts │ 0                                             │
+│ created at        │ 2016-08-07T22:01:22.436Z                      │
+└───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬─────────────────────────────────────────────────────────────────┐
-│ revision control │ git                                                             │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git       │
-│ repository root  │ /home/pi/cluster/current                                        │
-│ last update      │ 2016-08-07T02:53:45.542Z                                        │
-│ revision         │ 840f163f0090e2faf8446c3742b314e7185a79d4                        │
-│ comment          │ Back from ES6 to ES5 due to performance issues on Node.js 6.3.1 │
-│ branch           │ master                                                          │
-└──────────────────┴─────────────────────────────────────────────────────────────────┘
+┌──────────────────┬───────────────────────────────────────────────────────────┐
+│ revision control │ git                                                       │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
+│ repository root  │ /home/pi/cluster/current                                  │
+│ last update      │ 2016-08-07T22:11:28.185Z                                  │
+│ revision         │ a9985f3f8843896fdc94631358d9787a5ef856d9                  │
+│ comment          │ New TCP ports for loadbalancing                           │
+│ branch           │ master                                                    │
+└──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬────────┐
-│ Loop delay       │ 0.69ms │
+│ Loop delay       │ 4.51ms │
 │ Network Download │ 0 MB/s │
 │ Network Upload   │ 0 MB/s │
 │ HTTP             │ 0req/s │
-│ pmx:http:latency │ 136ms  │
+│ pmx:http:latency │ 0ms    │
 └──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode [--lines 1000]` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode
  Describing process with id 6 - name clusteredAPInode 
-┌───────────────────┬─────────────────────────────────────────────────┐
-│ status            │ online                                          │
-│ name              │ clusteredAPInode                                │
-│ restarts          │ 0                                               │
-│ uptime            │ 112m                                            │
-│ script path       │ /home/pi/cluster/current/nodeworker2.js         │
-│ script args       │ N/A                                             │
-│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error-6.log │
-│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out-6.log   │
-│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode-6.pid       │
-│ interpreter       │ node                                            │
-│ interpreter args  │ N/A                                             │
-│ script id         │ 6                                               │
-│ exec cwd          │ /home/pi/cluster/current                        │
-│ exec mode         │ cluster_mode                                    │
-│ node.js version   │ 6.3.1                                           │
-│ watch & reload    │ ✘                                               │
-│ unstable restarts │ 0                                               │
-│ created at        │ 2016-08-06T13:55:42.934Z                        │
-└───────────────────┴─────────────────────────────────────────────────┘
+┌───────────────────┬───────────────────────────────────────────────┐
+│ status            │ online                                        │
+│ name              │ clusteredAPInode                              │
+│ restarts          │ 1                                             │
+│ uptime            │ 10m                                           │
+│ script path       │ /home/pi/cluster/current/nodeworker2.js       │
+│ script args       │ N/A                                           │
+│ error log path    │ /home/pi/.pm2/logs/clusteredAPInode-error.log │
+│ out log path      │ /home/pi/.pm2/logs/clusteredAPInode-out.log   │
+│ pid path          │ /home/pi/.pm2/pids/clusteredAPInode.pid       │
+│ interpreter       │ node                                          │
+│ interpreter args  │ N/A                                           │
+│ script id         │ 6                                             │
+│ exec cwd          │ /home/pi/cluster/current                      │
+│ exec mode         │ cluster_mode                                  │
+│ node.js version   │ 6.3.1                                         │
+│ watch & reload    │ ✔                                             │
+│ unstable restarts │ 0                                             │
+│ created at        │ 2016-08-07T22:01:22.470Z                      │
+└───────────────────┴───────────────────────────────────────────────┘
  Revision control metadata 
-┌──────────────────┬─────────────────────────────────────────────────────────────────┐
-│ revision control │ git                                                             │
-│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git       │
-│ repository root  │ /home/pi/cluster/current                                        │
-│ last update      │ 2016-08-07T02:53:45.762Z                                        │
-│ revision         │ 840f163f0090e2faf8446c3742b314e7185a79d4                        │
-│ comment          │ Back from ES6 to ES5 due to performance issues on Node.js 6.3.1 │
-│ branch           │ master                                                          │
-└──────────────────┴─────────────────────────────────────────────────────────────────┘
+┌──────────────────┬───────────────────────────────────────────────────────────┐
+│ revision control │ git                                                       │
+│ remote url       │ git@github.com:giancarlobonansea/clusterednode-worker.git │
+│ repository root  │ /home/pi/cluster/current                                  │
+│ last update      │ 2016-08-07T22:11:28.395Z                                  │
+│ revision         │ a9985f3f8843896fdc94631358d9787a5ef856d9                  │
+│ comment          │ New TCP ports for loadbalancing                           │
+│ branch           │ master                                                    │
+└──────────────────┴───────────────────────────────────────────────────────────┘
  Code metrics value 
-┌──────────────────┬─────────┐
-│ Loop delay       │ 0.69ms  │
-│ Network Download │ 0 MB/s  │
-│ Network Upload   │ 0 MB/s  │
-│ HTTP             │ 0req/s  │
-│ pmx:http:latency │ 19.31ms │
-└──────────────────┴─────────┘
+┌──────────────────┬────────┐
+│ Loop delay       │ 4.94ms │
+│ Network Download │ 0 MB/s │
+│ Network Upload   │ 0 MB/s │
+│ HTTP             │ 0req/s │
+│ pmx:http:latency │ 0ms    │
+└──────────────────┴────────┘
  Add your own code metrics: http://bit.ly/code-metrics
  Use `pm2 logs clusteredAPInode [--lines 1000]` to display logs
  Use `pm2 monit` to monitor CPU and Memory usage clusteredAPInode

@@ -125,19 +125,12 @@ ifup_hotplug () {
 case "$1" in
 start)
 	if init_is_upstart; then
+ifconfig eth0 down
 echo 'e' > /sys/class/net/eth1/queues/rx-0/rps_cpus
 echo '32768' > /proc/sys/net/core/rps_sock_flow_entries
 echo '32768' > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
-ipvsadm -C
-ipvsadm -A -t 192.168.69.233:8010 -s rr
-ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.235:8010 -g
-ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.234:8010 -g
-ipvsadm -A -t 192.168.69.233:8011 -s rr
-ipvsadm -a -t 192.168.69.233:8011 -r 192.168.69.235:8011 -g
-ipvsadm -a -t 192.168.69.233:8011 -r 192.168.69.234:8011 -g
-ipvsadm -A -t 192.168.69.233:33331 -s rr
-ipvsadm -a -t 192.168.69.233:33331 -r 192.168.69.238:33331 -g
-ipvsadm -a -t 192.168.69.233:33331 -r 192.168.69.237:33331 -g
+route add -host 192.168.69.233 dev eth1:0
+ipvsadm -R < /etc/ipvsadm.rules
 		exit 1
 	fi
 	process_options
@@ -146,19 +139,12 @@ ipvsadm -a -t 192.168.69.233:33331 -r 192.168.69.237:33331 -g
 	if [ "$CONFIGURE_INTERFACES" = no ]
 	then
 	    log_action_msg "Not configuring network interfaces, see /etc/default/networking"
+ifconfig eth0 down
 echo 'e' > /sys/class/net/eth1/queues/rx-0/rps_cpus
 echo '32768' > /proc/sys/net/core/rps_sock_flow_entries
 echo '32768' > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
-ipvsadm -C
-ipvsadm -A -t 192.168.69.233:8010 -s rr
-ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.235:8010 -g
-ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.234:8010 -g
-ipvsadm -A -t 192.168.69.233:8011 -s rr
-ipvsadm -a -t 192.168.69.233:8011 -r 192.168.69.235:8011 -g
-ipvsadm -a -t 192.168.69.233:8011 -r 192.168.69.234:8011 -g
-ipvsadm -A -t 192.168.69.233:33331 -s rr
-ipvsadm -a -t 192.168.69.233:33331 -r 192.168.69.238:33331 -g
-ipvsadm -a -t 192.168.69.233:33331 -r 192.168.69.237:33331 -g
+route add -host 192.168.69.233 dev eth1:0
+ipvsadm -R < /etc/ipvsadm.rules
 	    exit 0
 	fi
 	set -f
@@ -175,19 +161,12 @@ ipvsadm -a -t 192.168.69.233:33331 -r 192.168.69.237:33331 -g
 	else
 	    log_action_end_msg $?
 	fi
+ifconfig eth0 down
 echo 'e' > /sys/class/net/eth1/queues/rx-0/rps_cpus
 echo '32768' > /proc/sys/net/core/rps_sock_flow_entries
 echo '32768' > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
-ipvsadm -C
-ipvsadm -A -t 192.168.69.233:8010 -s rr
-ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.235:8010 -g
-ipvsadm -a -t 192.168.69.233:8010 -r 192.168.69.234:8010 -g
-ipvsadm -A -t 192.168.69.233:8011 -s rr
-ipvsadm -a -t 192.168.69.233:8011 -r 192.168.69.235:8011 -g
-ipvsadm -a -t 192.168.69.233:8011 -r 192.168.69.234:8011 -g
-ipvsadm -A -t 192.168.69.233:33331 -s rr
-ipvsadm -a -t 192.168.69.233:33331 -r 192.168.69.238:33331 -g
-ipvsadm -a -t 192.168.69.233:33331 -r 192.168.69.237:33331 -g
+route add -host 192.168.69.233 dev eth1:0
+ipvsadm -R < /etc/ipvsadm.rules
 	;;
 
 stop)

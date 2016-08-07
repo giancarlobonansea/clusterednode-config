@@ -2,36 +2,36 @@
 ┌───────────────────┬──────────────────────────────────────────────────┐
 │ status            │ online                                           │
 │ name              │ clusteredHDRnode                                 │
-│ restarts          │ 0                                                │
-│ uptime            │ 112m                                             │
+│ restarts          │ 1                                                │
+│ uptime            │ 13m                                              │
 │ script path       │ /home/pi/clusterednode-hdrhist/current/hdrsrv.js │
 │ script args       │ N/A                                              │
-│ error log path    │ /home/pi/.pm2/logs/clusteredHDRnode-error-4.log  │
-│ out log path      │ /home/pi/.pm2/logs/clusteredHDRnode-out-4.log    │
-│ pid path          │ /home/pi/.pm2/pids/clusteredHDRnode-4.pid        │
+│ error log path    │ /home/pi/.pm2/logs/clusteredHDRnode-error.log    │
+│ out log path      │ /home/pi/.pm2/logs/clusteredHDRnode-out.log      │
+│ pid path          │ /home/pi/.pm2/pids/clusteredHDRnode.pid          │
 │ interpreter       │ node                                             │
 │ interpreter args  │ N/A                                              │
 │ script id         │ 4                                                │
 │ exec cwd          │ /home/pi/clusterednode-hdrhist/current           │
 │ exec mode         │ cluster_mode                                     │
 │ node.js version   │ 6.3.1                                            │
-│ watch & reload    │ ✘                                                │
+│ watch & reload    │ ✔                                                │
 │ unstable restarts │ 0                                                │
-│ created at        │ 2016-08-06T13:52:41.729Z                         │
+│ created at        │ 2016-08-07T21:58:18.516Z                         │
 └───────────────────┴──────────────────────────────────────────────────┘
  Revision control metadata 
 ┌──────────────────┬────────────────────────────────────────────────────────────┐
 │ revision control │ git                                                        │
 │ remote url       │ git@github.com:giancarlobonansea/clusterednode-hdrhist.git │
 │ repository root  │ /home/pi/clusterednode-hdrhist/current                     │
-│ last update      │ 2016-08-07T02:53:59.805Z                                   │
-│ revision         │ 291d9a4c179cbe8621f2c2660f85f1bee3d52570                   │
-│ comment          │ Updated HTTP headers                                       │
+│ last update      │ 2016-08-07T22:11:39.105Z                                   │
+│ revision         │ 53bdc6374937c111715aaeb5974306e6590117fb                   │
+│ comment          │ New TCP ports for loadbalancing                            │
 │ branch           │ master                                                     │
 └──────────────────┴────────────────────────────────────────────────────────────┘
  Code metrics value 
 ┌──────────────────┬────────┐
-│ Loop delay       │ 0.22ms │
+│ Loop delay       │ 0.18ms │
 │ Network Download │ 0 MB/s │
 │ Network Upload   │ 0 MB/s │
 │ HTTP             │ 0req/s │
