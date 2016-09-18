@@ -125,6 +125,7 @@ ifup_hotplug () {
 case "$1" in
 start)
 	if init_is_upstart; then
+		route add -host 192.168.69.233 dev lo:0
 		exit 1
 	fi
 	process_options
@@ -133,6 +134,7 @@ start)
 	if [ "$CONFIGURE_INTERFACES" = no ]
 	then
 	    log_action_msg "Not configuring network interfaces, see /etc/default/networking"
+	    route add -host 192.168.69.233 dev lo:0
 	    exit 0
 	fi
 	set -f
@@ -149,6 +151,7 @@ start)
 	else
 	    log_action_end_msg $?
 	fi
+	route add -host 192.168.69.233 dev lo:0
 	;;
 
 stop)

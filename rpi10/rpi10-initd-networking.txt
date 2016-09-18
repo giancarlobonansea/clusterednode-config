@@ -125,6 +125,7 @@ ifup_hotplug () {
 case "$1" in
 start)
 	if init_is_upstart; then
+		route add -host 192.168.69.233 dev lo:0
                 echo 'e' > /sys/class/net/eth1/queues/rx-0/rps_cpus
                 echo '32768' > /proc/sys/net/core/rps_sock_flow_entries
                 echo '32768' > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
@@ -136,6 +137,7 @@ start)
 	if [ "$CONFIGURE_INTERFACES" = no ]
 	then
 	    log_action_msg "Not configuring network interfaces, see /etc/default/networking"
+		route add -host 192.168.69.233 dev lo:0
                 echo 'e' > /sys/class/net/eth1/queues/rx-0/rps_cpus
                 echo '32768' > /proc/sys/net/core/rps_sock_flow_entries
                 echo '32768' > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
@@ -155,6 +157,7 @@ start)
 	else
 	    log_action_end_msg $?
 	fi
+		route add -host 192.168.69.233 dev lo:0
                 echo 'e' > /sys/class/net/eth1/queues/rx-0/rps_cpus
                 echo '32768' > /proc/sys/net/core/rps_sock_flow_entries
                 echo '32768' > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
